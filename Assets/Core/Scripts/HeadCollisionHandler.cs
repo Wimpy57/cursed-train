@@ -6,6 +6,8 @@ public class HeadCollisionHandler : MonoBehaviour
     [SerializeField] private HeadCollisionDetector _detector;
     [SerializeField] private CharacterController _characterController;
     [SerializeField] private float _pushBackStrength = 1f;
+    [SerializeField] private HeadCollisionTypeAction _typeAction;
+    [SerializeField] private FadeEffect _fadeEffect;
 
     private Vector3 CalculatePushBackDirection(List<RaycastHit> colliderHits)
     {
@@ -21,9 +23,48 @@ public class HeadCollisionHandler : MonoBehaviour
     {
         if (_detector.DetectedColliderHits.Count <= 0)
         {
+            if (_typeAction != HeadCollisionTypeAction.PushBack)
+            {
+                _fadeEffect.Fade(false);
+            }
             return;
         }
+
+        if (_detector.IsInsideCollider && _typeAction != HeadCollisionTypeAction.PushBack)
+        {
+            _fadeEffect.Fade(true);
+        }
+
+        switch (_typeAction)
+        {
+            case HeadCollisionTypeAction.PushBack :
+                PushBack();
+                break;
+            case HeadCollisionTypeAction.BlackScreen :
+                BlackScreen();
+                break;
+            case HeadCollisionTypeAction.BlackScreenAndPushBack :
+                BlackScreen();
+                PushBack();
+                break;
+        }
+    }
+
+    private void PushBack()
+    {
         Vector3 pushBackDirection = CalculatePushBackDirection(_detector.DetectedColliderHits);
         _characterController.Move(pushBackDirection.normalized * (_pushBackStrength * Time.deltaTime));
     }
+
+    private void BlackScreen()
+    {
+        _fadeEffect.Fade(true);
+    }
+}
+
+public enum HeadCollisionTypeAction
+{
+    BlackScreen,
+    PushBack,
+    BlackScreenAndPushBack,
 }
