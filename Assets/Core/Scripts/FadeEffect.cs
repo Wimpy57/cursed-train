@@ -31,7 +31,7 @@ public class FadeEffect : MonoBehaviour
 
     private IEnumerator PlayEffect(bool fadeOut)
     {
-        float startAlpha = _material.GetFloat("Alpha");
+        float startAlpha = _material.GetFloat("_Alpha");
         float endAlpha = fadeOut ? 1f : 0f;
         float remainingTime = _fadeDelay * Mathf.Abs(endAlpha - startAlpha);
         
@@ -40,9 +40,9 @@ public class FadeEffect : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             float currentValue = Mathf.Lerp(startAlpha, endAlpha, elapsedTime / remainingTime);
-            _material.SetFloat("Alpha", currentValue);
+            _material.SetFloat("_Alpha", currentValue);
             yield return null;
         }
-        _material.SetFloat("Alpha", endAlpha);
+        _material.SetFloat("_Alpha", endAlpha);
     }
 }
