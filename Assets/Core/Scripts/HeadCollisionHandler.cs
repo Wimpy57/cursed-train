@@ -48,7 +48,6 @@ public class HeadCollisionHandler : MonoBehaviour
                 PushBack();
                 break;
         }
-        Debug.Log("norm");
     }
 
     private void PushBack()
