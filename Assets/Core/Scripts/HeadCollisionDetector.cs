@@ -7,6 +7,8 @@ public class HeadCollisionDetector : MonoBehaviour
     [SerializeField] private float _detectionDistance = 0.2f;
     [SerializeField] private LayerMask _detectionLayer;
 
+    public bool IsInsideCollider { get; private set; }
+
     public List<RaycastHit> DetectedColliderHits { get; private set; }
 
     private float _currentTime = 0f;
@@ -21,9 +23,19 @@ public class HeadCollisionDetector : MonoBehaviour
         _currentTime += Time.deltaTime;
         if (_currentTime > _detectionDelay)
         {
+            IsInsideCollider = false;
             _currentTime = 0f;
             DetectedColliderHits = PerformDetection(transform.position, _detectionDistance, _detectionLayer);
+            if (DetectedColliderHits.Count <= 0)
+            {
+                IsInsideCollider = CheckInsideCollider(transform.position, _detectionDistance, _detectionLayer);
+            }
         }
+    }
+
+    private bool CheckInsideCollider(Vector3 position, float distance, LayerMask mask)
+    {
+        return Physics.CheckSphere(position, distance, mask, QueryTriggerInteraction.Ignore);
     }
     
     private List<RaycastHit> PerformDetection(Vector3 position, float distance, LayerMask mask)
