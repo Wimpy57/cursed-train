@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Covers
+    second: {fileID: 2100000, guid: 2956fca0ff9f38c4ba7e46d76d1faaf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Floor
     second: {fileID: 2100000, guid: a1c510db95d15834ba8ac6656b7d7d62, type: 2}
   - first:
@@ -19,6 +24,26 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Good_steel
     second: {fileID: 2100000, guid: 8b8d03cdca6f2bf45943ee352442f9df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: f6ce262b358580749bf7c8e7270ac45a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: 59c171a69d9af934daf2a5f436428925, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.008
+    second: {fileID: 2100000, guid: 15a1a5065656d91419c759a8a836af74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.010
+    second: {fileID: 2100000, guid: dc7bc514d29d9ab4b9335146a3c119b5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -53,77 +78,87 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: beige_wall_001_diff_2k
-    second: {fileID: 2800000, guid: f0f173f648bd87344a25d0ac5a0c468a, type: 3}
+    second: {fileID: 2800000, guid: da4442fdaed3a444aae7d82681284ef7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: beige_wall_001_nor_gl_2k
-    second: {fileID: 2800000, guid: 9e21fd11eee2e1a4ba9a4c4bc22da8fd, type: 3}
+    second: {fileID: 2800000, guid: bcc21127ff6c3a04e949a4d58c6d27c5, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: beige_wall_001_rough_2k
-    second: {fileID: 2800000, guid: 508fb74b5c4c51d4c9cb1ad552be9144, type: 3}
+    second: {fileID: 2800000, guid: e018ea6fd35775141add6262f8d1f47c, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: denmin_fabric_02_diff_2k
-    second: {fileID: 2800000, guid: ad01141fff135ad46a0627440f02257e, type: 3}
+    second: {fileID: 2800000, guid: eb9e58588e048dc41a3b36de9c9ef72b, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: denmin_fabric_02_nor_gl_2k
-    second: {fileID: 2800000, guid: d6e359d32289a254cb30e5e3b1745d06, type: 3}
+    second: {fileID: 2800000, guid: 7fbeff52cbc54b04f9fcf6662b9e5698, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: denmin_fabric_02_rough_2k
-    second: {fileID: 2800000, guid: 85d27985d2d03324d8731ca91d4e0b25, type: 3}
+    second: {fileID: 2800000, guid: 9f3f63ceda30b364586ffe097db448f7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: gravel_concrete_03_diff_2k
-    second: {fileID: 2800000, guid: 16c40bb35fb9ad34b9508224726e7274, type: 3}
+    second: {fileID: 2800000, guid: 0df5563d365ff5641ace302376168806, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: gravel_concrete_03_nor_gl_2k
-    second: {fileID: 2800000, guid: 866484815f68b9b418d31f35211b4afa, type: 3}
+    second: {fileID: 2800000, guid: 0814051477742e1409fc11958320a6b7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: gravel_concrete_03_rough_2k
-    second: {fileID: 2800000, guid: 4624d238d5b378a4e98811bbe49c6e00, type: 3}
+    second: {fileID: 2800000, guid: 810cb4c3bb8e4ba45ac6c04b8b9cea6d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: leather_red_02_nor_gl_2k
+    second: {fileID: 2800000, guid: 4553941687c0c5f4286cd551f660a436, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: leather_red_02_rough_2k
+    second: {fileID: 2800000, guid: 9844b0a10da92a149ae3a70b0e9ca6da, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: oak_veneer_01_diff_2k
-    second: {fileID: 2800000, guid: eb30945f21fe15141a60c00ea102226b, type: 3}
+    second: {fileID: 2800000, guid: 3d7393218ee97f64e80760cd4802f72b, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: oak_veneer_01_nor_gl_2k
-    second: {fileID: 2800000, guid: 0b67ea59e092a9b4a8d5cdbd0685b0f9, type: 3}
+    second: {fileID: 2800000, guid: e5e5fb5d00487154f9e2c9b1a47be067, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: oak_veneer_01_rough_2k
-    second: {fileID: 2800000, guid: 562a468c46da0fd4981d88d3bbf25d2f, type: 3}
+    second: {fileID: 2800000, guid: 7a03ae3b01c6062429a920eb9a3ee8bd, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: wood_table_worn_diff_2k
-    second: {fileID: 2800000, guid: 8a83876e37061c646976e56de48f14d0, type: 3}
+    second: {fileID: 2800000, guid: ea4708c6ed0b9524aa056dedcf64bc6e, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: wood_table_worn_nor_gl_2k
-    second: {fileID: 2800000, guid: 371278083b4aedd48b98f9f9c3ab9acc, type: 3}
+    second: {fileID: 2800000, guid: f97e174969125fe4fa97b58fe34ac87f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: wood_table_worn_rough_2k
-    second: {fileID: 2800000, guid: 4ccdb6ea6d51f5a449590ec0d456c9a6, type: 3}
+    second: {fileID: 2800000, guid: 0e82cea595bd0e2488c9a4b76ad74808, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
