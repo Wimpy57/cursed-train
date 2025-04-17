@@ -8,82 +8,82 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Black
-    second: {fileID: 2100000, guid: a2f6d260bd8f10c41bed9b680cc391f3, type: 2}
+    second: {fileID: 2100000, guid: f8757dbdd51a8ff4e82f852aa3c0e70a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Crane
-    second: {fileID: 2100000, guid: 305d0ff69902bcb478cac4cdfde43f12, type: 2}
+    second: {fileID: 2100000, guid: 2920edc9a801b3940a82418df6fc0f4b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Floor
-    second: {fileID: 2100000, guid: 206464dd601d199448bd5a7154a853ee, type: 2}
+    second: {fileID: 2100000, guid: 1a9879dd67c586b42b7c6753c527fc67, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Good_steel.001
-    second: {fileID: 2100000, guid: 16c96e311510a1c45819dfa725e04e69, type: 2}
+    second: {fileID: 2100000, guid: ff2d9a5a8d0a60048aba1c795f3f470e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SeatFabric
-    second: {fileID: 2100000, guid: 362c814fbafa6ad47a9a163830b5ffc8, type: 2}
+    second: {fileID: 2100000, guid: 8837921e3a4b74c42bd4b1bdf793dbfb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Walls
-    second: {fileID: 2100000, guid: 1aac64714b62f944c847227a5690c030, type: 2}
+    second: {fileID: 2100000, guid: c48178c559e5dd64b80ffed1efeda982, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: White
-    second: {fileID: 2100000, guid: e0b7b900baf3e5342ada731b645d9a55, type: 2}
+    second: {fileID: 2100000, guid: 5a882e2561b357a42b992e5570c390b7, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: beige_wall_001_diff_2k
-    second: {fileID: 2800000, guid: 7dc186ae1bc48644db4a176260f8cdec, type: 3}
+    second: {fileID: 2800000, guid: 0a12506f723fc46458ae70b7c7530eaa, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: beige_wall_001_nor_gl_2k
-    second: {fileID: 2800000, guid: 15278c753da9c3b4eaeee2cbded949ea, type: 3}
+    second: {fileID: 2800000, guid: d1075b67929014041a71c23bf54ad197, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: beige_wall_001_rough_2k
-    second: {fileID: 2800000, guid: c5232a687cc7166429d1ced5d82abb16, type: 3}
+    second: {fileID: 2800000, guid: 51db757ae4e320445add9c4d59e0625f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: denmin_fabric_02_diff_2k
-    second: {fileID: 2800000, guid: 437e476a5f8ca404496b89f5d52ea58f, type: 3}
+    second: {fileID: 2800000, guid: f3fde1360947ff841b5d15a85cf46b2f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: denmin_fabric_02_nor_gl_2k
-    second: {fileID: 2800000, guid: 5b66d026504e95c4a944d17c913544a4, type: 3}
+    second: {fileID: 2800000, guid: 659f95d4b614e944f96131d713b04603, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: denmin_fabric_02_rough_2k
-    second: {fileID: 2800000, guid: 8f7a6e6d95f598543a199b38fc51b0a1, type: 3}
+    second: {fileID: 2800000, guid: 0a4edea67b6984d42bee8543e470d13a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: gravel_concrete_03_diff_2k
-    second: {fileID: 2800000, guid: 391cd23a962c8564290f90e076483e46, type: 3}
+    second: {fileID: 2800000, guid: 5c01b489ca38e7c429923d46371e260d, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: gravel_concrete_03_nor_gl_2k
-    second: {fileID: 2800000, guid: d1c6998b93106bd43a540c61d6330839, type: 3}
+    second: {fileID: 2800000, guid: ebef1375e3d3faf499b6580c0b4a3c07, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: gravel_concrete_03_rough_2k
-    second: {fileID: 2800000, guid: 90f51308400934146a48a81ea6446f49, type: 3}
+    second: {fileID: 2800000, guid: 52a0335fccb88ce4e9cec79c07b12fd7, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
