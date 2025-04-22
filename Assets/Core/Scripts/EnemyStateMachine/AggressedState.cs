@@ -1,18 +1,25 @@
-using UnityEngine;
-
 namespace Core.Scripts.EnemyStateMachine
 {
     public class AggressedState : EnemyState
     {
         public override void Behave(Enemy enemyContext)
         {
-            enemyContext.Agent.destination = Player.Instance.transform.position;
-            //if ()
+            float distanceToPlayer = GetDistance(enemyContext.transform, Player.Instance.transform);
+            if (distanceToPlayer > enemyContext.DistanceToAggress)
+            {
+                enemyContext.ChangeState(new IdleState());
+            }
+
+            if (distanceToPlayer <= enemyContext.DistanceToAttack)
+            {
+                enemyContext.ChangeState(new AttackState());
+            }
         }
 
-        protected override void Transition(Enemy enemyContext)
+        public override void Enter(Enemy enemyContext)
         {
-            
+            enemyContext.SetDestination(Player.Instance.transform.position);
+            enemyContext.SetSpeed(enemyContext.AggressedStateSpeed);
         }
     }
     

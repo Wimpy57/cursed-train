@@ -1,11 +1,11 @@
 namespace Core.Scripts.EnemyStateMachine
 {
-    public class IdleState : EnemyState
+    public class AttackState : EnemyState
     {
         public override void Behave(Enemy enemyContext)
         {
             float distanceToPlayer = GetDistance(enemyContext.transform, Player.Instance.transform);
-            if (distanceToPlayer <= enemyContext.DistanceToAggress)
+            if (distanceToPlayer >= enemyContext.DistanceToAttack)
             {
                 enemyContext.ChangeState(new AggressedState());
             }

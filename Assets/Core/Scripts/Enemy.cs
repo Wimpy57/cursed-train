@@ -11,13 +11,11 @@ namespace Core.Scripts
         [Header("Enemy states settings")]
         [SerializeField] public float DistanceToAggress;
         [SerializeField] public float DistanceToAttack;
-
-        private EnemyState _currentState;
-        private readonly IdleState _idleState = new();
-        private readonly AggressedState _aggressedState = new();
-        private readonly FightState _fightState = new();
+        [SerializeField] public float AggressedStateSpeed;
         
-        public NavMeshAgent Agent;
+        private NavMeshAgent _agent;
+        
+        private EnemyState _currentState;
         
         private void OnCollisionEnter(Collision other)
         {
@@ -32,12 +30,12 @@ namespace Core.Scripts
 
         protected void Awake()
         {
-            _currentState = _aggressedState;    
+            _currentState = new IdleState();    
         }
 
         protected void Start()
         {
-            Agent = GetComponent<NavMeshAgent>();
+            _agent = GetComponent<NavMeshAgent>();
         }
         
         protected void Update()
@@ -48,6 +46,22 @@ namespace Core.Scripts
         private void UpdateState()
         {
             _currentState.Behave(this);
+        }
+
+        public void ChangeState(EnemyState state)
+        {
+            _currentState = state;
+            _currentState.Enter(this);
+        }
+
+        public void SetDestination(Vector3 destination)
+        {
+            _agent.SetDestination(destination);
+        }
+
+        public void SetSpeed(float speed)
+        {
+            _agent.speed = speed;
         }
     }
 }
