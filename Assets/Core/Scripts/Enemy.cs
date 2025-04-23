@@ -12,12 +12,13 @@ namespace Core.Scripts
         [SerializeField] public float DistanceToAggress;
         [SerializeField] public float DistanceToAttack;
         [SerializeField] public float AggressedStateSpeed;
+        [SerializeField] public int HpToRage;
         
         private NavMeshAgent _agent;
         
-        private EnemyState _currentState;
+        protected EnemyState CurrentState;
         
-        private void OnCollisionEnter(Collision other)
+        protected void OnCollisionEnter(Collision other)
         {
             if (!other.gameObject.CompareTag("Extinguisher")) return;
             
@@ -28,9 +29,9 @@ namespace Core.Scripts
             }
         }
 
-        protected void Awake()
+        protected virtual void Awake()
         {
-            _currentState = new IdleState();    
+            CurrentState = new IdleState();    
         }
 
         protected void Start()
@@ -45,13 +46,13 @@ namespace Core.Scripts
         
         private void UpdateState()
         {
-            _currentState.Behave(this);
+            CurrentState.Behave(this);
         }
 
         public void ChangeState(EnemyState state)
         {
-            _currentState = state;
-            _currentState.Enter(this);
+            CurrentState = state;
+            CurrentState.Enter(this);
         }
 
         public void SetDestination(Vector3 destination)
@@ -63,5 +64,7 @@ namespace Core.Scripts
         {
             _agent.speed = speed;
         }
+
+        public int GetHp() => Hp;
     }
 }
