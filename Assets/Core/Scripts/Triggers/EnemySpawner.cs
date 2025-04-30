@@ -1,10 +1,11 @@
+using Core.Scripts.States;
 using UnityEngine;
 
-namespace Core.Scripts
+namespace Core.Scripts.Triggers
 {
     public class EnemySpawner : MonoBehaviour
     {
-        [SerializeField] private GameState _enableOnState;
+        [SerializeField] private State _enableOnState;
         [SerializeField] private int _amountOfSpiders;
         [SerializeField] private GameObject _spiderPrefab;
         [SerializeField] private int _amountOfMonsters;
@@ -13,7 +14,7 @@ namespace Core.Scripts
 
         private void OnTriggerEnter(Collider other)
         {
-            if (GameStateManager.Instance.State != _enableOnState) return;
+            if (StateManager.Instance.CurrentState != _enableOnState) return;
             if (!other.gameObject.CompareTag("Player")) return;
             
             if (_amountOfMonsters > 0)
