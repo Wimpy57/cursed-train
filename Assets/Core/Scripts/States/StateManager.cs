@@ -5,7 +5,7 @@ namespace Core.Scripts.States
 {
     public class StateManager : MonoBehaviour
     {
-        [SerializeField] private State _defaultState = State.CoupeState;
+        [SerializeField] private State _defaultState = 0;
         
         public static StateManager Instance { get; private set; }
         public event EventHandler OnStateChanged;
@@ -33,8 +33,10 @@ namespace Core.Scripts.States
             DontDestroyOnLoad(gameObject);
         }
 
-        public void ChangeState()
+        public void UpgradeState(IStateChanger stateChanger)
         {
+            if (stateChanger == null) return;
+            
             CurrentState++;
         }
     }

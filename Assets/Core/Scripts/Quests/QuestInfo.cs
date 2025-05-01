@@ -5,6 +5,7 @@ namespace Core.Scripts.Quests
 {
     public class QuestInfo : MonoBehaviour
     {
+        private const string MENU_STATE_QUEST = "";
         private const string COUPE_STATE_QUEST = "Направляйтесь в туалет";
         private const string DARK_NEW_TRAIN_QUEST = "Вернитесь в купе";
         private const string OLD_MAN_SPEECH_QUEST = "Выслушайте старика";
@@ -15,6 +16,7 @@ namespace Core.Scripts.Quests
         
         public static readonly Dictionary<States.State, string> QuestByState = new()
         {
+            { States.State.Menu, MENU_STATE_QUEST},
             { States.State.CoupeState, COUPE_STATE_QUEST},
             { States.State.DarkNewTrain, DARK_NEW_TRAIN_QUEST },
             { States.State.OldManSpeech, OLD_MAN_SPEECH_QUEST },

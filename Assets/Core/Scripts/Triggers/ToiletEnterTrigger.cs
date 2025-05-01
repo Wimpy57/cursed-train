@@ -1,9 +1,10 @@
 using System.Collections;
+using Core.Scripts.States;
 using UnityEngine;
 
 namespace Core.Scripts.Triggers
 {
-    public class ToiletEnterTrigger : MonoBehaviour
+    public class ToiletEnterTrigger : MonoBehaviour, IStateChanger
     {
         [SerializeField] private Door _door;
      
@@ -12,6 +13,10 @@ namespace Core.Scripts.Triggers
             if (!other.CompareTag("Player")) return;
 
             StartCoroutine(LockDoor());
+            StateManager.Instance.UpgradeState(this);
+            
+            // turn collider off not to change states more than once
+            GetComponent<Collider>().enabled = false;
         }
 
         private IEnumerator LockDoor()

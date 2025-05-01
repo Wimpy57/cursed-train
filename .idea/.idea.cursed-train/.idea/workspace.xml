@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/GameStateManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/GameStateManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/EnemySpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Quests/QuestInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Quests/QuestInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/States/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/States/State.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/States/StateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/States/StateManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/ToiletEnterTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/ToiletEnterTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/EnemyState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/SpiderStateMachine/SpiderDisappearState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/FadeEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/IStateChanger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/77c95d4fdf1c463496f3c7ba3c00fe5111200/cf/20f071df/NavMeshAgent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5bf0c891ea345fe93688f835df32fdc1dda00/49/cefc6a96/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5bf0c891ea345fe93688f835df32fdc1dda00/80/0dec7314/Vector3.cs" root0="FORCE_HIGHLIGHTING" />
@@ -118,7 +120,8 @@
       <workItem from="1745216610320" duration="10547000" />
       <workItem from="1745331407564" duration="1770000" />
       <workItem from="1745392269404" duration="2555000" />
-      <workItem from="1745999299643" duration="3342000" />
+      <workItem from="1745999299643" duration="4075000" />
+      <workItem from="1746117093663" duration="706000" />
     </task>
     <servers />
   </component>
