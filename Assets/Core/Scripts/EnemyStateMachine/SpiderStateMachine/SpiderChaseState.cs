@@ -1,6 +1,6 @@
 ﻿namespace Core.Scripts.EnemyStateMachine.SpiderStateMachine
 {
-    public class SpiderChaseState : AggressedState
+    public class SpiderChaseState : ChaseState
     {
         public override void Behave(Enemy enemyContext)
         {

@@ -1,10 +1,12 @@
 namespace Core.Scripts.EnemyStateMachine
 {
-    public class AggressedState : EnemyState
+    public class ChaseState : EnemyState
     {
         public override void Behave(Enemy enemyContext)
         {
+            enemyContext.SetDestination(Player.Instance.transform.position);
             float distanceToPlayer = GetDistance(enemyContext.transform, Player.Instance.transform);
+            
             if (distanceToPlayer > enemyContext.DistanceToAggress)
             {
                 enemyContext.ChangeState(new IdleState());
@@ -18,8 +20,7 @@ namespace Core.Scripts.EnemyStateMachine
 
         public override void Enter(Enemy enemyContext)
         {
-            enemyContext.SetDestination(Player.Instance.transform.position);
-            enemyContext.SetSpeed(enemyContext.AggressedStateSpeed);
+            enemyContext.SetSpeed(enemyContext.ChaseStateSpeed);
         }
     }
     

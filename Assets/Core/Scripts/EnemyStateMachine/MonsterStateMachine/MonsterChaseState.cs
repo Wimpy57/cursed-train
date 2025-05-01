@@ -1,9 +1,10 @@
 ﻿namespace Core.Scripts.EnemyStateMachine.MonsterStateMachine
 {
-    public class MonsterChaseState : AggressedState
+    public class MonsterChaseState : ChaseState
     {
         public override void Behave(Enemy enemyContext)
         {
+            enemyContext.SetDestination(Player.Instance.transform.position);
             float distanceToPlayer = GetDistance(enemyContext.transform, Player.Instance.transform);
             if (distanceToPlayer > enemyContext.DistanceToAggress)
             {

@@ -123,6 +123,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hp: 3
+  DistanceToAggress: 5
+  DistanceToAttack: 1
+  AggressedStateSpeed: 0
+  HpToRage: 1
 --- !u!195 &1288443656976520067
 NavMeshAgent:
   m_ObjectHideFlags: 0

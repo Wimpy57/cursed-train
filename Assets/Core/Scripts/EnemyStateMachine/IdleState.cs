@@ -7,7 +7,7 @@ namespace Core.Scripts.EnemyStateMachine
             float distanceToPlayer = GetDistance(enemyContext.transform, Player.Instance.transform);
             if (distanceToPlayer <= enemyContext.DistanceToAggress)
             {
-                enemyContext.ChangeState(new AggressedState());
+                enemyContext.ChangeState(new ChaseState());
             }
         }
 

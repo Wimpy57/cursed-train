@@ -1,18 +1,24 @@
 using UnityEngine;
 using Core.Scripts.EnemyStateMachine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
 
 namespace Core.Scripts
 {
     public abstract class Enemy : MonoBehaviour
     {
         [SerializeField] protected int Hp;
+        [SerializeField] protected int Damage;
         
         [Header("Enemy states settings")]
         [SerializeField] public float DistanceToAggress;
         [SerializeField] public float DistanceToAttack;
-        [SerializeField] public float AggressedStateSpeed;
+        [SerializeField] public float ChaseStateSpeed;
         [SerializeField] public int HpToRage;
+        [SerializeField] public float HitIntervalMin;
+        [SerializeField] public float HitIntervalMax;
+        [SerializeField] public float RageHitInterval;
+        [SerializeField] public float RageLifetime;
         
         private NavMeshAgent _agent;
         
@@ -25,7 +31,7 @@ namespace Core.Scripts
             Hp--;
             if (Hp <= 0)
             {
-                Destroy(gameObject);
+                Die();
             }
         }
 
@@ -65,6 +71,13 @@ namespace Core.Scripts
             _agent.speed = speed;
         }
 
+        public void Die()
+        {
+            Destroy(gameObject);
+        }
+
         public int GetHp() => Hp;
+        
+        public int GetDamage() => Damage;
     }
 }

@@ -6,10 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Quests/QuestInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Quests/QuestInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/States/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/States/State.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/States/StateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/States/StateManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/ToiletEnterTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/ToiletEnterTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/DoorSocket (1).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/DoorSocket (1).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Monster.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/AggressedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/ChaseState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/AggressedState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/ChaseState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/AttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/AttackState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/IdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/IdleState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterAttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterAttackState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterChaseState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterChaseState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterRageState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterRageState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/SpiderStateMachine/SpiderChaseState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/SpiderStateMachine/SpiderChaseState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Monster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Monster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +132,7 @@
       <workItem from="1745331407564" duration="1770000" />
       <workItem from="1745392269404" duration="2555000" />
       <workItem from="1745999299643" duration="4075000" />
-      <workItem from="1746117093663" duration="706000" />
+      <workItem from="1746117093663" duration="5165000" />
     </task>
     <servers />
   </component>
