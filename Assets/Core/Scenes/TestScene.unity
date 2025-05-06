@@ -11693,6 +11693,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1929373123618628751, guid: cb177f7003929924eb66b34f9cded046, type: 3}
+      propertyPath: EnemyAnimator
+      value: 
+      objectReference: {fileID: 453192803}
+    - target: {fileID: 1929373123618628751, guid: cb177f7003929924eb66b34f9cded046, type: 3}
       propertyPath: HitIntervalMax
       value: 2
       objectReference: {fileID: 0}

@@ -1,7 +1,6 @@
 using UnityEngine;
 using Core.Scripts.EnemyStateMachine;
 using UnityEngine.AI;
-using UnityEngine.Serialization;
 
 namespace Core.Scripts
 {
@@ -19,6 +18,9 @@ namespace Core.Scripts
         [SerializeField] public float HitIntervalMax;
         [SerializeField] public float RageHitInterval;
         [SerializeField] public float RageLifetime;
+
+        [Header("Enemy animation")] 
+        [SerializeField] public Animator EnemyAnimator;
         
         private NavMeshAgent _agent;
         

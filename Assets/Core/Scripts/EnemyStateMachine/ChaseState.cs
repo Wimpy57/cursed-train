@@ -21,6 +21,9 @@ namespace Core.Scripts.EnemyStateMachine
         public override void Enter(Enemy enemyContext)
         {
             enemyContext.SetSpeed(enemyContext.ChaseStateSpeed);
+            
+            enemyContext.EnemyAnimator.SetBool("IsAgro", false);
+            enemyContext.EnemyAnimator.SetBool("IsChasing", true);
         }
     }
     
