@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/AttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/AttackState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/ChaseState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/ChaseState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/IdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/IdleState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Monster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Monster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Terrain/plane.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Terrain/plane.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Terrain/plane.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Terrain/plane.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Train/ConductorCoupe/Textures/Walls/Walls.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Train/ConductorCoupe/Textures/Walls/Walls.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +110,7 @@
       <workItem from="1746428923736" duration="2318000" />
       <workItem from="1746482722402" duration="652000" />
       <workItem from="1746522043939" duration="1390000" />
+      <workItem from="1746530972640" duration="2000" />
     </task>
     <servers />
   </component>
