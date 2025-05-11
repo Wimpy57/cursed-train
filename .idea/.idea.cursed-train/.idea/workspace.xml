@@ -6,11 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Monster.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/StateMachine(for report).meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Train/ConductorCoupe/Textures/Lever/Lever.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Train/ConductorCoupe/Textures/Lever/Lever.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/UI/MainMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +26,18 @@
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/FadeEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/IStateChanger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/UGUI/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/UGUI/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/UGUI/UI/Core/Slider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24e165613ea9441aa6d9c8989219aecd1f4200/02/5942e4ab/Focusable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24e165613ea9441aa6d9c8989219aecd1f4200/67/0ef74312/BaseSlider`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24e165613ea9441aa6d9c8989219aecd1f4200/81/85d1333f/BindableElement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24e165613ea9441aa6d9c8989219aecd1f4200/9f/d3fdd37f/VisualElement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24e165613ea9441aa6d9c8989219aecd1f4200/ac/dfd21e87/Slider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24e165613ea9441aa6d9c8989219aecd1f4200/e3/01e35617/BaseField`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24e165613ea9441aa6d9c8989219aecd1f4200/f6/532c8b5a/CallbackEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/77c95d4fdf1c463496f3c7ba3c00fe5111200/cf/20f071df/NavMeshAgent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9ff2ec5163204af481ac0a675d8e1bf82ac00/20/211b9a09/RigidbodyConstraints.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5bf0c891ea345fe93688f835df32fdc1dda00/49/cefc6a96/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5bf0c891ea345fe93688f835df32fdc1dda00/80/0dec7314/Vector3.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -127,7 +138,8 @@
       <workItem from="1746482722402" duration="652000" />
       <workItem from="1746522043939" duration="1390000" />
       <workItem from="1746530972640" duration="2000" />
-      <workItem from="1746540488763" duration="1817000" />
+      <workItem from="1746540488763" duration="1941000" />
+      <workItem from="1746961477868" duration="3614000" />
     </task>
     <servers />
   </component>

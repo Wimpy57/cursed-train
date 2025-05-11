@@ -1,14 +1,15 @@
 using Core.Scripts.States;
+using TMPro;
 using UnityEngine;
 
 namespace Core.Scripts.UI
 {
     public class MainMenu : MonoBehaviour, IStateChanger
     {
-
         [SerializeField] private GameObject _mainMenuPanel;
         [SerializeField] private GameObject _settingsPanel;
         [SerializeField] private Door _coupeDoor;
+        [SerializeField] private TextMeshProUGUI _volumeValueText;
         
         private void Start()
         {
@@ -19,8 +20,6 @@ namespace Core.Scripts.UI
             }
             _mainMenuPanel.SetActive(true);
             _settingsPanel.SetActive(false);
-            _coupeDoor.Close();
-            _coupeDoor.Lock();
         }
         
         public void StartGame()
@@ -40,6 +39,12 @@ namespace Core.Scripts.UI
         {
             _mainMenuPanel.SetActive(true);
             _settingsPanel.SetActive(false);
+        }
+
+        public void SetVolume(float volume)
+        {
+            AudioManager.Instance.SetVolume(volume);
+            _volumeValueText.text = (int)(volume * 100) + "%";
         }
 
         public void Quit()
