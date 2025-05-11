@@ -2,8 +2,17 @@ namespace Core.Scripts.Achievements
 {
     // it is not allowed to change Achievement's IDs
     // should always be as specified
+    // if it is necessary to add a new one, you should give it a unique ID
     public enum Achievement
     {
-        TrashSearcher = 113,
+        TrashSearcher = 113, // find the coin inside trash bin in toilet
+        ElectroWizard = 263, // put fingers inside the coupe socket in the beginning 
+        SunHater = 303, // close all the curtains in corridor before making the train dark
+        Inadequate = 500, // try to kill the old man with extinguisher
+        HideAndSeek = 562, // find the coin under conductor's seat
+        AreYouScared = 666, // encounter screamer when there is no light and train horns loudly
+        SlowGuy = 707, // complete the game in more than 20 minutes
+        TheFastest = 777, // complete the game in less than 5 minutes
+        Hardcore = 999, // complete the game without any single death
     }
 }

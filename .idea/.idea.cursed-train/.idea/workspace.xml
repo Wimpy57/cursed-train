@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/DoorSocket.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/DoorSocket.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/DoorSocket.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/DoorSocket.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/Achievement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/Achievement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/CollectableAchievement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/CollectableAchievement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +141,7 @@
       <workItem from="1746522043939" duration="1390000" />
       <workItem from="1746530972640" duration="2000" />
       <workItem from="1746540488763" duration="1941000" />
-      <workItem from="1746961477868" duration="5723000" />
+      <workItem from="1746961477868" duration="7928000" />
     </task>
     <servers />
   </component>

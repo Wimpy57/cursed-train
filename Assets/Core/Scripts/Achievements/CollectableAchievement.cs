@@ -6,9 +6,14 @@ namespace Core.Scripts.Achievements
     {
         [SerializeField] private Achievement _achievement;
 
-        private void GetAchievement()
+        public void InitializeAchievement(Achievement achievement)
         {
-            PlayerPrefs.SetInt(((int)_achievement).ToString(), 1);
+            _achievement = achievement;
+        }
+        
+        public void GetAchievement()
+        {
+            // PlayerPrefs.SetInt(((int)_achievement).ToString(), 1);
             Destroy(gameObject);
         }
     }
