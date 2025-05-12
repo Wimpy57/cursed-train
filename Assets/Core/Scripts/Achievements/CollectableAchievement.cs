@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace Core.Scripts.Achievements
@@ -13,7 +14,14 @@ namespace Core.Scripts.Achievements
         
         public void GetAchievement()
         {
-            // PlayerPrefs.SetInt(((int)_achievement).ToString(), 1);
+            StartCoroutine(Disappear());
+        }
+
+        private IEnumerator Disappear()
+        {
+            // todo play animation and sound
+            yield return null;
+            PlayerPrefs.SetInt(((int)_achievement).ToString(), 1);
             Destroy(gameObject);
         }
     }

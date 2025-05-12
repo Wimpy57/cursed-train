@@ -6,6 +6,7 @@ namespace Core.Scripts.Achievements
     public enum Achievement
     {
         TrashSearcher = 113, // find the coin inside trash bin in toilet
+        HoldYourHorses = 156, // try to open conductor door earlier than you should
         ElectroWizard = 263, // put fingers inside the coupe socket in the beginning 
         SunHater = 303, // close all the curtains in corridor before making the train dark
         Inadequate = 500, // try to kill the old man with extinguisher

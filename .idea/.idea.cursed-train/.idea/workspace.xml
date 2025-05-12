@@ -8,7 +8,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/Achievement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/Achievement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/AchievementConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/AchievementConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/CollectableAchievement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/CollectableAchievement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EarthRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EarthRotation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +30,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/SpiderStateMachine/SpiderDisappearState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/FadeEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/IStateChanger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/Timer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/UGUI/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/UGUI/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
@@ -141,7 +146,9 @@
       <workItem from="1746522043939" duration="1390000" />
       <workItem from="1746530972640" duration="2000" />
       <workItem from="1746540488763" duration="1941000" />
-      <workItem from="1746961477868" duration="7928000" />
+      <workItem from="1746961477868" duration="7971000" />
+      <workItem from="1747046420643" duration="2000" />
+      <workItem from="1747056901278" duration="2796000" />
     </task>
     <servers />
   </component>

@@ -7,7 +7,7 @@ namespace Core.Scripts
         [SerializeField] private int _maxHp;
         
         public static Player Instance { get; private set; }
-
+        
         private int _hp;
         
         private void Awake()
@@ -22,7 +22,7 @@ namespace Core.Scripts
             }
             DontDestroyOnLoad(gameObject);
         }
-
+        
         private void Start()
         {
             _hp = _maxHp;
@@ -36,7 +36,7 @@ namespace Core.Scripts
                 //todo player is dead
             }
         }
-
+        
         public void Heal(int heal)
         {
             _hp += heal;

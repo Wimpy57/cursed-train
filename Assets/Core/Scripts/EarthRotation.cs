@@ -1,13 +1,16 @@
 using UnityEngine;
 
-public class EarthRotation : MonoBehaviour
+namespace Core.Scripts
 {
-
-    [SerializeField] private float Speed;
-    
-    // Update is called once per frame
-    void Update()
+    public class EarthRotation : MonoBehaviour
     {
-        transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y + Time.deltaTime * Speed, transform.localEulerAngles.z);
+
+        [SerializeField] private float Speed;
+    
+        // Update is called once per frame
+        void Update()
+        {
+            transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y + Time.deltaTime * Speed, transform.localEulerAngles.z);
+        }
     }
 }
