@@ -69,7 +69,6 @@ namespace Core.Scripts
             _time = 0f;
             StopTimer();
         }
-        
 
         private void OnDisable()
         {

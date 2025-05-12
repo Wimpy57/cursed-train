@@ -1,8 +1,10 @@
+using System.Linq;
+using Core.Scripts.States;
 using UnityEngine;
 
 namespace Core.Scripts
 {
-    public class Door : MonoBehaviour
+    public class Door : AvailableAtState
     {
         [SerializeField] private GameObject[] _handles;
         [SerializeField] private DoorState _defaultState = 0;
@@ -12,10 +14,11 @@ namespace Core.Scripts
         private Vector3 _defaultPosition;
         private ConfigurableJoint _doorJoint;
         
-        private void Start()
+        protected override void Start()
         {
             _doorJoint = GetComponent<ConfigurableJoint>();
             _defaultPosition = transform.position;
+            
             switch (_defaultState)
             {
                 case DoorState.Locked:
@@ -26,11 +29,21 @@ namespace Core.Scripts
                     Unlock();
                     break;
             }
+            
+            base.Start();
         }
 
         public void Close()
         {
             transform.position = _defaultPosition;
+        }
+
+        protected override void TryEnable()
+        {
+            if (AvailableAtStates.Contains(StateManager.Instance.CurrentState))
+            {
+                Unlock();
+            }
         }
 
         public void Lock()
