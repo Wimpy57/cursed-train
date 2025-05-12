@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/AvailableAtState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/AvailableAtState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Door.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Timer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +146,7 @@
       <workItem from="1747046420643" duration="2000" />
       <workItem from="1747056901278" duration="3893000" />
       <workItem from="1747074690887" duration="76000" />
-      <workItem from="1747074781126" duration="2156000" />
+      <workItem from="1747074781126" duration="3681000" />
     </task>
     <servers />
   </component>

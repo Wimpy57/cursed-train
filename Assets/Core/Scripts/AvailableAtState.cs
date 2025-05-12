@@ -10,7 +10,7 @@ namespace Core.Scripts
     public class AvailableAtState : MonoBehaviour
     {
         [SerializeField] protected State[] AvailableAtStates;
-        [SerializeField] private bool _useGravityAfterFirstInteraction;
+        [SerializeField] protected bool UseGravityAfterFirstInteraction;
 
         private XRGrabInteractable _xrGrabInteractable;
         private Rigidbody _rigidbody;
@@ -21,17 +21,19 @@ namespace Core.Scripts
             TryEnable();
             
             StateManager.Instance.OnStateChanged += StateManager_OnStateChanged;
-            if (_useGravityAfterFirstInteraction)
+            if (UseGravityAfterFirstInteraction)
             {
                 _rigidbody = gameObject.GetComponent<Rigidbody>();
                 _rigidbody.useGravity = false;
-                _xrGrabInteractable.firstSelectEntered.AddListener(OnFirstSelection);
+                _xrGrabInteractable.selectExited.AddListener(TurnOnGravity);
             }
         }
 
-        public void OnFirstSelection(SelectEnterEventArgs args)
+        private void TurnOnGravity(SelectExitEventArgs args)
         {
+            Debug.Log("OnFirstSelection");
             _rigidbody.useGravity = true;
+            _xrGrabInteractable.selectExited.RemoveListener(TurnOnGravity);
         }
         
         private void StateManager_OnStateChanged(object sender, EventArgs e)

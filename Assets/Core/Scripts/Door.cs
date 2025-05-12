@@ -16,6 +16,9 @@ namespace Core.Scripts
         
         protected override void Start()
         {
+            // todo fix this shi
+            UseGravityAfterFirstInteraction = false;
+            
             _doorJoint = GetComponent<ConfigurableJoint>();
             _defaultPosition = transform.position;
             
