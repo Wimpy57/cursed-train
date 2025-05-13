@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Animations/Monster1Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Animations/Monster1Controller.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Monster.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Train/ConductorCoupe/Textures/Lever/Lever.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Train/ConductorCoupe/Textures/Lever/Lever.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene/NavMesh-NavMesh Surface 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene/NavMesh-NavMesh Surface 3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/Monsters/Monster1/MonsterAttack.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/NPC/Monsters/Monster1/MonsterAttack.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/Monsters/Monster1/MonsterChase.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/NPC/Monsters/Monster1/MonsterChase.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/Monsters/Monster1/MonsterIdle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/NPC/Monsters/Monster1/MonsterIdle.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

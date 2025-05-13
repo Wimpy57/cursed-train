@@ -78,15 +78,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hp: 3
-  Damage: 0
+  Damage: 1
   DistanceToAggress: 5
   DistanceToAttack: 1
-  ChaseStateSpeed: 0
+  ChaseStateSpeed: 1
   HpToRage: 1
-  HitIntervalMin: 0
-  HitIntervalMax: 0
+  HitIntervalMin: 1
+  HitIntervalMax: 2
   RageHitInterval: 0
-  RageLifetime: 0
+  RageLifetime: 1
   EnemyAnimator: {fileID: 0}
 --- !u!195 &1288443656976520067
 NavMeshAgent:
