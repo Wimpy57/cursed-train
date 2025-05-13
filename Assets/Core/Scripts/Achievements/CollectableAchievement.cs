@@ -7,13 +7,22 @@ namespace Core.Scripts.Achievements
     {
         [SerializeField] private Achievement _achievement;
 
-        public void InitializeAchievement(Achievement achievement)
+        private void Start()
         {
-            if (AchievementManager.IsAchieved(achievement))
+            if (AchievementManager.IsAchieved(_achievement))
             {
                 Destroy(gameObject);
             }
+        }
+        
+        public void InitializeAchievement(Achievement achievement)
+        {
             _achievement = achievement;
+            
+            if (AchievementManager.IsAchieved(_achievement))
+            {
+                Destroy(gameObject);
+            }
         }
         
         public void GetAchievement()

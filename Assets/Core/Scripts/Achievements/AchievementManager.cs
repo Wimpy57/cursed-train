@@ -27,6 +27,10 @@ namespace Core.Scripts.Achievements
         {
             foreach (Achievement achievement in Enum.GetValues(typeof(Achievement)))
             {
+                // if (PlayerPrefs.HasKey(((int)achievement).ToString()))
+                // {
+                //     Debug.Log($"{achievement}: {PlayerPrefs.GetInt(((int)achievement).ToString())}");
+                // }
                 PlayerPrefs.SetInt(((int)achievement).ToString(), 0);
             }
         }

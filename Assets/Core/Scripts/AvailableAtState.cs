@@ -31,7 +31,6 @@ namespace Core.Scripts
 
         private void TurnOnGravity(SelectExitEventArgs args)
         {
-            Debug.Log("OnFirstSelection");
             _rigidbody.useGravity = true;
             _xrGrabInteractable.selectExited.RemoveListener(TurnOnGravity);
         }
