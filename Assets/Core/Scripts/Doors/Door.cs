@@ -1,12 +1,13 @@
 using System.Linq;
 using Core.Scripts.States;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-namespace Core.Scripts
+namespace Core.Scripts.Doors
 {
     public class Door : AvailableAtState
     {
-        [SerializeField] private GameObject[] _handles;
+        [SerializeField] protected GameObject[] Handles;
         [SerializeField] private DoorState _defaultState = 0;
         
         public bool IsLocked { get; private set; }
@@ -52,7 +53,7 @@ namespace Core.Scripts
         public void Lock()
         {
             _doorJoint.zMotion = ConfigurableJointMotion.Locked;
-            foreach (GameObject handle in _handles)
+            foreach (GameObject handle in Handles)
             {
                 handle.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
             }
@@ -62,7 +63,7 @@ namespace Core.Scripts
         public void Unlock()
         {
             _doorJoint.zMotion = ConfigurableJointMotion.Limited;
-            foreach (GameObject handle in _handles)
+            foreach (GameObject handle in Handles)
             {
                 handle.GetComponent<Rigidbody>().constraints = (RigidbodyConstraints)6;
             }
