@@ -7,28 +7,33 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.003
-    second: {fileID: 2100000, guid: 2ed2e07ec461f4ab382a509673a6a3b6, type: 2}
+      name: Material.004
+    second: {fileID: 2100000, guid: 2cc001cdd96e2472ab73afdbf51054fd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.004
-    second: {fileID: 2100000, guid: 2cc001cdd96e2472ab73afdbf51054fd, type: 2}
+      name: texture_material
+    second: {fileID: 2100000, guid: ec29f7a4d96764cb88b0b7b20a3a88cf, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: foresta pix4d_texture
+    second: {fileID: 2800000, guid: cc5755acabe9e4983b9c0a4f18f415ad, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: forrest_ground_01_diff_2k
-    second: {fileID: 2800000, guid: 153ea6e48e0cc40c898ede2780064423, type: 3}
+    second: {fileID: 2800000, guid: 862457de2be0f40ce8e5097341ca2248, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: forrest_ground_01_nor_gl_2k
-    second: {fileID: 2800000, guid: a2d26176c6eed44cfae7a745bb56a615, type: 3}
+    second: {fileID: 2800000, guid: 8ac3e2f589c0547d1953a79308f93316, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: forrest_ground_01_rough_2k
-    second: {fileID: 2800000, guid: 71b96f13ebe1a4970af8bbdfe384621c, type: 3}
+    second: {fileID: 2800000, guid: fd0ea2d1caff44d4a955eabe460ec75c, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
