@@ -9,6 +9,10 @@ namespace Core.Scripts.Achievements
 
         public void InitializeAchievement(Achievement achievement)
         {
+            if (AchievementManager.IsAchieved(achievement))
+            {
+                Destroy(gameObject);
+            }
             _achievement = achievement;
         }
         

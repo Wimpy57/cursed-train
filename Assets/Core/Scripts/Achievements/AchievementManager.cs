@@ -33,11 +33,16 @@ namespace Core.Scripts.Achievements
         
         public void GenerateAchievement(Achievement achievement)
         {
-            string achievementIdKey = ((int)achievement).ToString();
-            if (PlayerPrefs.HasKey(achievementIdKey) && PlayerPrefs.GetInt(achievementIdKey) == 1) return;
+            if (IsAchieved(achievement)) return;
             CollectableAchievement spawnedAchievement = Instantiate(_achievementPrefab, 
                 Player.Instance.transform.position, Quaternion.identity).GetComponent<CollectableAchievement>();
             spawnedAchievement.InitializeAchievement(achievement);
+        }
+
+        public static bool IsAchieved(Achievement achievement)
+        {
+            string achievementIdKey = ((int)achievement).ToString();
+            return PlayerPrefs.HasKey(achievementIdKey) && PlayerPrefs.GetInt(achievementIdKey) == 1;
         }
     }
 }
