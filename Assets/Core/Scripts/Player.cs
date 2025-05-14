@@ -1,13 +1,27 @@
+using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Core.Scripts
 {
     public class Player : MonoBehaviour
     {
-        [SerializeField] private int _maxHp;
+        [SerializeField] public int MaxHp;
         
         public static Player Instance { get; private set; }
         
+        public event EventHandler OnHpChanged;
+        
+        public int Hp
+        {
+            get => _hp;
+            private set
+            {
+                OnHpChanged?.Invoke(this, EventArgs.Empty);
+                _hp = value;
+            }
+        }
+
         private int _hp;
         
         private void Awake()
@@ -25,13 +39,13 @@ namespace Core.Scripts
         
         private void Start()
         {
-            _hp = _maxHp;
+            Hp = MaxHp;
         }
         
         public void Hurt(int damage)
         {
-            _hp -= damage;
-            if (_hp <= 0)
+            Hp -= damage;
+            if (Hp <= 0)
             {
                 //todo player is dead
             }
@@ -39,7 +53,7 @@ namespace Core.Scripts
         
         public void Heal(int heal)
         {
-            _hp += heal;
+            Hp += heal;
         }
     }
 }
