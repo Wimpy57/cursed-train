@@ -33,14 +33,6 @@ namespace Core.Scripts.States
             DontDestroyOnLoad(gameObject);
         }
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Player.Instance.Hurt(10);
-            }
-        }
-
         public void UpgradeState(IStateChanger stateChanger)
         {
             if (stateChanger == null) return;
