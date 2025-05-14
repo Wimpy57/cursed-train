@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Core.Scripts.Quests
 {
-    public class QuestInfo : MonoBehaviour
+    public static class QuestInfo
     {
         private const string MENU_STATE_QUEST = "";
         private const string COUPE_STATE_QUEST = "Направляйтесь в туалет";
@@ -25,5 +26,17 @@ namespace Core.Scripts.Quests
             { States.State.ChildDefence, CHILD_DEFENCE_QUEST },
             { States.State.Final, FINAL_QUEST }
         };
+
+        // public static readonly Dictionary<States.State, Image> QuestIconByState = new()
+        // {
+        //     { States.State.Menu, MENU_STATE_QUEST },
+        //     { States.State.CoupeState, COUPE_STATE_QUEST },
+        //     { States.State.DarkNewTrain, DARK_NEW_TRAIN_QUEST },
+        //     { States.State.OldManSpeech, OLD_MAN_SPEECH_QUEST },
+        //     { States.State.FindLever, FIND_LEVER_QUEST },
+        //     { States.State.OldTrain, OLD_TRAIN_QUEST },
+        //     { States.State.ChildDefence, CHILD_DEFENCE_QUEST },
+        //     { States.State.Final, FINAL_QUEST }
+        // };
     }
 }

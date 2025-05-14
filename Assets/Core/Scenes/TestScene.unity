@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &14839198 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1563839374255578177, guid: 5c3eb122456ca334a84b9c24b0177cf0, type: 3}
+  m_PrefabInstance: {fileID: 1424346426115413588}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &110212753
 GameObject:
   m_ObjectHideFlags: 0
@@ -18562,6 +18573,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1612164905}
     m_Modifications:
+    - target: {fileID: 4347029995903739703, guid: 5c3eb122456ca334a84b9c24b0177cf0, type: 3}
+      propertyPath: _questIcons
+      value: 
+      objectReference: {fileID: 11400000, guid: bc0b792f3277d6b48824b7adba2b709c, type: 2}
+    - target: {fileID: 4347029995903739703, guid: 5c3eb122456ca334a84b9c24b0177cf0, type: 3}
+      propertyPath: _questImageIcon
+      value: 
+      objectReference: {fileID: 14839198}
     - target: {fileID: 6549276224515350985, guid: 5c3eb122456ca334a84b9c24b0177cf0, type: 3}
       propertyPath: m_Name
       value: Watch

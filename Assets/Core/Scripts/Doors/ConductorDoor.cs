@@ -22,6 +22,7 @@ namespace Core.Scripts.Doors
             if (!AvailableAtStates.Contains(StateManager.Instance.CurrentState))
             {
                 AchievementManager.Instance.GenerateAchievement(Achievement.HoldYourHorses);
+                e.interactableObject.selectEntered.RemoveListener(SelectHandle);
             }
         }
     }
