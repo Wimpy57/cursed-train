@@ -16,8 +16,8 @@ namespace Core.Scripts
             get => _hp;
             private set
             {
-                OnHpChanged?.Invoke(this, EventArgs.Empty);
                 _hp = value;
+                OnHpChanged?.Invoke(this, EventArgs.Empty);
             }
         }
 

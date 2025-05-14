@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Data/QuestIconsSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Data/QuestIconsSO.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Doors/ConductorDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Doors/ConductorDoor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Quests/QuestInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Quests/QuestInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/ScriptableObjects/QuestIconsSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/ScriptableObjects/QuestIconsSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/WristMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/UI/WristMenu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +154,7 @@
       <workItem from="1747074781126" duration="3681000" />
       <workItem from="1747144733025" duration="596000" />
       <workItem from="1747166107510" duration="6256000" />
-      <workItem from="1747224419842" duration="5768000" />
+      <workItem from="1747224419842" duration="6089000" />
     </task>
     <servers />
   </component>
