@@ -14,15 +14,20 @@ namespace Core.Scripts.UI
         [SerializeField] private string _defaultText;
         [SerializeField] private QuestIconsSO _questIcons;
         [SerializeField] private Image _questImageIcon;
-        [Space(10)]
         [Header("Heart beat parameters")]
         [SerializeField] private Animator _heartBeatAnimator;
         [SerializeField] private int _normalHpPercentLimit;
         [SerializeField] private int _lowHpPercentLimit;
         [SerializeField] private int _criticalHpPercentLimit;
+
+        [Header("Metal material parameters")] 
+        [SerializeField] private Material _metalMaterial;
+        [SerializeField] private Color _defaultMetalMaterialColor;
+        [SerializeField] private Color _criticalMetalMaterialColor;
         
         private void Start()
         {
+            _metalMaterial.color = _defaultMetalMaterialColor;
             _hpText.text = _defaultText + Player.Instance.MaxHp;
             if (Player.Instance == null)
             {
@@ -82,10 +87,13 @@ namespace Core.Scripts.UI
             {
                 _heartBeatAnimator.speed = .3f;
             }
+            _metalMaterial.color = Color.Lerp(_defaultMetalMaterialColor, _criticalMetalMaterialColor,  
+                1f - (float) Player.Instance.Hp / Player.Instance.MaxHp);
         }
 
         private void OnDisable()
         {
+            _metalMaterial.color = _defaultMetalMaterialColor;
             if (Player.Instance == null) return;
             Player.Instance.OnHpChanged -= Player_OnHpChanged;
         }

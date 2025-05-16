@@ -20,6 +20,14 @@ namespace Core.Scripts.States
             }
         }
 
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Player.Instance.Hurt(1);
+            }
+        }
+
         private void Awake()
         {
             if (Instance == null)

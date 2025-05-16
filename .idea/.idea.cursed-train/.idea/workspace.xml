@@ -7,9 +7,11 @@
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Watch.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Watch.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/HeartBeatAnimationSpeed.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/HeartBeatAnimationSpeed.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/States/StateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/States/StateManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/WristMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/UI/WristMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/01- Apple.Watch/Belt.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/01- Apple.Watch/Belt.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/01- Apple.Watch/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/01- Apple.Watch/New Material.mat.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +163,7 @@
       <workItem from="1747166107510" duration="6256000" />
       <workItem from="1747224419842" duration="6089000" />
       <workItem from="1747243953843" duration="3378000" />
-      <workItem from="1747417685047" duration="1825000" />
+      <workItem from="1747417685047" duration="2569000" />
     </task>
     <servers />
   </component>

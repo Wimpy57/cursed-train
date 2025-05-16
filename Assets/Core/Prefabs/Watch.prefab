@@ -762,6 +762,9 @@ MonoBehaviour:
   _normalHpPercentLimit: 70
   _lowHpPercentLimit: 50
   _criticalHpPercentLimit: 30
+  _metalMaterial: {fileID: 2100000, guid: 6fead1d6cf609cd4bbb0b641f2060fcc, type: 2}
+  _defaultMetalMaterialColor: {r: 0.2627451, g: 0.25490198, b: 0.25490198, a: 1}
+  _criticalMetalMaterialColor: {r: 0.76729554, g: 0.13270822, b: 0.13270822, a: 1}
 --- !u!1 &7601871108791327703
 GameObject:
   m_ObjectHideFlags: 0
