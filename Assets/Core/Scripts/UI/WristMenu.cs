@@ -9,10 +9,17 @@ namespace Core.Scripts.UI
 {
     public class WristMenu : MonoBehaviour
     {
+        [Header("Watch interface")]
         [SerializeField] private TextMeshProUGUI _hpText;
         [SerializeField] private string _defaultText;
         [SerializeField] private QuestIconsSO _questIcons;
         [SerializeField] private Image _questImageIcon;
+        [Space(10)]
+        [Header("Heart beat parameters")]
+        [SerializeField] private Animator _heartBeatAnimator;
+        [SerializeField] private int _normalHpPercentLimit;
+        [SerializeField] private int _lowHpPercentLimit;
+        [SerializeField] private int _criticalHpPercentLimit;
         
         private void Start()
         {
@@ -21,6 +28,8 @@ namespace Core.Scripts.UI
             {
                 _hpText.text = _defaultText;
             }
+            
+            _heartBeatAnimator.speed = 0f;
             
             Player.Instance.OnHpChanged += Player_OnHpChanged;
             StateManager.Instance.OnStateChanged += StateManager_OnStateChanged;
@@ -60,6 +69,19 @@ namespace Core.Scripts.UI
         private void Player_OnHpChanged(object sender, EventArgs e)
         {
             _hpText.text = _defaultText + Player.Instance.Hp;
+            
+            if (Player.Instance.Hp <= Player.Instance.MaxHp * (_criticalHpPercentLimit / 100))
+            {
+                _heartBeatAnimator.speed = 1f;
+            }
+            else if (Player.Instance.Hp <=  Player.Instance.MaxHp * (_lowHpPercentLimit / 100))
+            {
+                _heartBeatAnimator.speed = .5f;
+            }
+            else if (Player.Instance.Hp <=  Player.Instance.MaxHp * (_normalHpPercentLimit / 100))
+            {
+                _heartBeatAnimator.speed = .3f;
+            }
         }
 
         private void OnDisable()

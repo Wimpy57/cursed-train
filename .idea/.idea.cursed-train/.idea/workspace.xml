@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/AchievementCoin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/AchievementCoin.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/DayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/DayScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Watch.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Watch.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/HeartBeatAnimationSpeed.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/HeartBeatAnimationSpeed.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/WristMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/UI/WristMenu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +161,7 @@
       <workItem from="1747166107510" duration="6256000" />
       <workItem from="1747224419842" duration="6089000" />
       <workItem from="1747243953843" duration="3378000" />
-      <workItem from="1747417685047" duration="1005000" />
+      <workItem from="1747417685047" duration="1825000" />
     </task>
     <servers />
   </component>

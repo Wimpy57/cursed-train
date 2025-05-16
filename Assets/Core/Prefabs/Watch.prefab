@@ -531,7 +531,6 @@ GameObject:
   - component: {fileID: 6007691385838166810}
   - component: {fileID: 6123106436646778684}
   - component: {fileID: 4355439576137109690}
-  - component: {fileID: 4375970806071794279}
   m_Layer: 0
   m_Name: HeartBeat
   m_TagString: Untagged
@@ -618,21 +617,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4375970806071794279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4657331048652557632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 331a2ac5a139e0f4d80e74ea904e3a23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _normalHpLimit: 70
-  _lowHpLimit: 50
-  _criticalHpLimit: 30
 --- !u!1 &4705564392462830675
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +758,10 @@ MonoBehaviour:
   _defaultText: 'hp: '
   _questIcons: {fileID: 11400000, guid: bc0b792f3277d6b48824b7adba2b709c, type: 2}
   _questImageIcon: {fileID: 1563839374255578177}
+  _heartBeatAnimator: {fileID: 4355439576137109690}
+  _normalHpPercentLimit: 70
+  _lowHpPercentLimit: 50
+  _criticalHpPercentLimit: 30
 --- !u!1 &7601871108791327703
 GameObject:
   m_ObjectHideFlags: 0
