@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Watch.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Watch.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/AchievementCoin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/AchievementCoin.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/DayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/DayScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/States/StateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/States/StateManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +49,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/77c95d4fdf1c463496f3c7ba3c00fe5111200/cf/20f071df/NavMeshAgent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9ff2ec5163204af481ac0a675d8e1bf82ac00/20/211b9a09/RigidbodyConstraints.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5bf0c891ea345fe93688f835df32fdc1dda00/49/cefc6a96/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5bf0c891ea345fe93688f835df32fdc1dda00/4b/dd4f656b/Transform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5bf0c891ea345fe93688f835df32fdc1dda00/80/0dec7314/Vector3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -159,7 +159,8 @@
       <workItem from="1747144733025" duration="596000" />
       <workItem from="1747166107510" duration="6256000" />
       <workItem from="1747224419842" duration="6089000" />
-      <workItem from="1747243953843" duration="1261000" />
+      <workItem from="1747243953843" duration="3378000" />
+      <workItem from="1747417685047" duration="1005000" />
     </task>
     <servers />
   </component>
