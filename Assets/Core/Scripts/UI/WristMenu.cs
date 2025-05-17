@@ -34,7 +34,7 @@ namespace Core.Scripts.UI
                 _hpText.text = _defaultText;
             }
             
-            _heartBeatAnimator.speed = 0f;
+            _heartBeatAnimator.speed = .15f;
             
             Player.Instance.OnHpChanged += Player_OnHpChanged;
             StateManager.Instance.OnStateChanged += StateManager_OnStateChanged;
@@ -75,15 +75,15 @@ namespace Core.Scripts.UI
         {
             _hpText.text = _defaultText + Player.Instance.Hp;
             
-            if (Player.Instance.Hp <= Player.Instance.MaxHp * (_criticalHpPercentLimit / 100))
+            if (Player.Instance.Hp <= Player.Instance.MaxHp * ((float) _criticalHpPercentLimit / 100))
             {
-                _heartBeatAnimator.speed = 1f;
+                _heartBeatAnimator.speed = .8f;
             }
-            else if (Player.Instance.Hp <=  Player.Instance.MaxHp * (_lowHpPercentLimit / 100))
+            else if (Player.Instance.Hp <=  Player.Instance.MaxHp * ((float) _lowHpPercentLimit / 100))
             {
-                _heartBeatAnimator.speed = .5f;
+                _heartBeatAnimator.speed = .45f;
             }
-            else if (Player.Instance.Hp <=  Player.Instance.MaxHp * (_normalHpPercentLimit / 100))
+            else if (Player.Instance.Hp <=  Player.Instance.MaxHp * ((float) _normalHpPercentLimit / 100))
             {
                 _heartBeatAnimator.speed = .3f;
             }
