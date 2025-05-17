@@ -6,25 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/EnemySpawnTrigger.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/EnemySpawnTrigger.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/TestScene/ReflectionProbe-0.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/NpcEnemySpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/EnemySpawner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/NpcEnemySpawner.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/ToiletEnterTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/LockDoorAndUpdateStateTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/ToiletEnterTrigger.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/LockDoorAndUpdateStateTrigger.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Global Volume Profile - Tonemapping.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Global Volume Profile - Tonemapping.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Global Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Global Volume Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Train/ConductorCoupe/Textures/Walls/New Material.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Train/ConductorCoupe/Textures/Walls/New Material.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Train/ConductorCoupe/Textures/Walls/Walls.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Train/ConductorCoupe/Textures/Walls/Walls.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Train/Coupe/Textures/Walls/Celing.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Train/Coupe/Textures/Walls/Celing.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Train/Coupe/Textures/Walls/Walls.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Train/Coupe/Textures/Walls/Walls.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Train/Coupe/Textures/Windows/WindowLeather.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Train/Coupe/Textures/Windows/WindowLeather.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Train/Toilet/Textures/Bin/Bag.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Train/Toilet/Textures/Bin/Bag.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/AchievementManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/AchievementManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Crane.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Crane.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +161,7 @@
       <workItem from="1747224419842" duration="6089000" />
       <workItem from="1747243953843" duration="3378000" />
       <workItem from="1747417685047" duration="4261000" />
-      <workItem from="1747488607486" duration="9489000" />
+      <workItem from="1747488607486" duration="10784000" />
     </task>
     <servers />
   </component>

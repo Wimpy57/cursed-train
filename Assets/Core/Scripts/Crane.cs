@@ -2,6 +2,8 @@ using System.Collections;
 using Core.Scripts.Scenes;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 namespace Core.Scripts
 {
@@ -9,9 +11,16 @@ namespace Core.Scripts
     {
         [SerializeField] private SceneName _sceneToLoad;
 
-        private void Interact()
+        protected override void Start()
+        {
+            base.Start();
+            GetComponent<XRGrabInteractable>().selectEntered.AddListener(Interact);
+        }
+        
+        private void Interact(SelectEnterEventArgs args)
         {
             StartCoroutine(LoadScene());
+            GetComponent<XRGrabInteractable>().selectEntered.RemoveListener(Interact);
         }
 
         private IEnumerator LoadScene()

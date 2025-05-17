@@ -39,7 +39,8 @@ namespace Core.Scripts.Achievements
         {
             if (IsAchieved(achievement)) return;
             CollectableAchievement spawnedAchievement = Instantiate(_achievementPrefab, 
-                Player.Instance.transform.position, Quaternion.identity).GetComponent<CollectableAchievement>();
+                Player.Instance.transform.position + Vector3.up * 0.2f, 
+                Quaternion.identity).GetComponent<CollectableAchievement>();
             spawnedAchievement.InitializeAchievement(achievement);
         }
 
