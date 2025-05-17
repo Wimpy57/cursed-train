@@ -1,6 +1,4 @@
 using Core.Scripts.EnemyStateMachine.MonsterStateMachine;
-using UnityEditor.Animations;
-using UnityEngine;
 
 namespace Core.Scripts
 {

@@ -11,6 +11,8 @@ namespace Core.Scripts.ScriptableObjects
         public Sprite OldManSpeechIcon;
         public Sprite FindLeverQuestIcon;
         public Sprite OldTrainQuestIcon;
+        public Sprite FindTheKeyQuestIcon;
+        public Sprite OpenTheDoorQuestIcon;
         public Sprite ChildDefenceQuestIcon;
         public Sprite FinalQuestIcon;
     }

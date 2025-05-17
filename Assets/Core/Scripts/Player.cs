@@ -1,11 +1,17 @@
 using System;
+using Core.Scripts.States;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Core.Scripts
 {
     public class Player : MonoBehaviour
     {
         [SerializeField] public int MaxHp;
+        [SerializeField] private Transform _conductorCoupeSpawnPosition;
+        
+        // used for debugging, will be deleted later
+        [SerializeField] private bool _changePositionDependingOnState;
         
         public static Player Instance { get; private set; }
         
@@ -25,20 +31,26 @@ namespace Core.Scripts
         
         private void Awake()
         {
-            if (Instance == null)
-            {
-                Instance = this;
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
-            DontDestroyOnLoad(gameObject);
+            Instance = this;
+            // if (Instance == null)
+            // {
+            //     Instance = this;
+            // }
+            // else
+            // {
+            //     Destroy(gameObject);
+            // }
+            //DontDestroyOnLoad(gameObject);
         }
         
         private void Start()
         {
             Hp = MaxHp;
+            if (StateManager.Instance.CurrentState != State.Menu && _changePositionDependingOnState)
+            {
+                transform.position = _conductorCoupeSpawnPosition.position;
+                transform.rotation = _conductorCoupeSpawnPosition.rotation;
+            }
         }
         
         public void Hurt(int damage)

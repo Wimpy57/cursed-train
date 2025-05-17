@@ -1,5 +1,6 @@
 using System.Collections;
 using Core.Scripts.Scenes;
+using Core.Scripts.States;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -7,9 +8,10 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 namespace Core.Scripts
 {
-    public class Crane : AvailableAtState
+    public class Crane : AvailableAtState, IStateChanger
     {
         [SerializeField] private SceneName _sceneToLoad;
+        [SerializeField] private State _stateToUpgrade;
 
         protected override void Start()
         {
@@ -26,6 +28,10 @@ namespace Core.Scripts
         private IEnumerator LoadScene()
         {
             //todo visual scene transition
+            if(StateManager.Instance.CurrentState == _stateToUpgrade)
+            {
+                StateManager.Instance.UpgradeState(this);
+            }
             SceneManager.LoadScene(SceneInfo.SceneStringNameDictionary[_sceneToLoad]);
             yield return null;
         }

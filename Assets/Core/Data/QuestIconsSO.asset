@@ -18,5 +18,7 @@ MonoBehaviour:
   OldManSpeechIcon: {fileID: 21300000, guid: 3aad042fcb57b4bed9d9a46b932df060, type: 3}
   FindLeverQuestIcon: {fileID: 21300000, guid: 9e4e923f2e0534a56b6a0c2321388194, type: 3}
   OldTrainQuestIcon: {fileID: 21300000, guid: f8ecc54972abacc46a93f671b0602139, type: 3}
+  FindTheKeyQuestIcon: {fileID: 21300000, guid: db6c53a51f4ff0243919f780d898a0c2, type: 3}
+  OpenTheDoorQuestIcon: {fileID: 21300000, guid: 29e31833c32435a479338cf97dff5d06, type: 3}
   ChildDefenceQuestIcon: {fileID: 21300000, guid: 3b2e62babc5249f42921c2cd027852cd, type: 3}
   FinalQuestIcon: {fileID: 21300000, guid: f997d60d79a4e45cab6b1814e377a1b3, type: 3}

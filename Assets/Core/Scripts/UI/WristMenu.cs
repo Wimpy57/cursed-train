@@ -62,6 +62,12 @@ namespace Core.Scripts.UI
                 case State.OldTrain:
                     _questImageIcon.sprite = _questIcons.OldTrainQuestIcon;
                     break;
+                case State.FindTheKey:
+                    _questImageIcon.sprite = _questIcons.FindTheKeyQuestIcon;
+                    break;
+                case State.OpenTheDoor:
+                    _questImageIcon.sprite = _questIcons.OpenTheDoorQuestIcon;
+                    break;
                 case State.ChildDefence:
                     _questImageIcon.sprite = _questIcons.ChildDefenceQuestIcon;
                     break;

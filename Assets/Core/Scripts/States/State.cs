@@ -8,6 +8,8 @@ namespace Core.Scripts.States
         OldManSpeech,
         FindLever,
         OldTrain,
+        FindTheKey,
+        OpenTheDoor,
         ChildDefence,
         Final,
     }
