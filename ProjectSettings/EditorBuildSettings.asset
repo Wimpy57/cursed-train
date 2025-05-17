@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Core/Scenes/NewTrainScene.unity
     guid: 6b2a62ca90d67881591e6b1e79562793
   - enabled: 1
+    path: Assets/Core/Scenes/DarkNewTrainScene.unity
+    guid: 06c92d3b038c79046966cf5f2ea3fba5
+  - enabled: 1
     path: Assets/Core/Scenes/OldTrainScene.unity
     guid: 95b947bd5c11c46f1bbcd540cd0463f6
   m_configObjects:

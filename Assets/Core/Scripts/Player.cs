@@ -9,6 +9,7 @@ namespace Core.Scripts
     {
         [SerializeField] public int MaxHp;
         [SerializeField] private Transform _conductorCoupeSpawnPosition;
+        [SerializeField] private Transform _toiletSpawnPosition;
         
         // used for debugging, will be deleted later
         [SerializeField] private bool _changePositionDependingOnState;
@@ -31,6 +32,10 @@ namespace Core.Scripts
         
         private void Awake()
         {
+            if (Instance != null)
+            {
+                Hp = Instance.Hp;
+            }
             Instance = this;
             // if (Instance == null)
             // {
@@ -46,7 +51,12 @@ namespace Core.Scripts
         private void Start()
         {
             Hp = MaxHp;
-            if (StateManager.Instance.CurrentState != State.Menu && _changePositionDependingOnState)
+            if (StateManager.Instance.CurrentState == State.DarkNewTrain && _changePositionDependingOnState)
+            {
+                transform.position = _toiletSpawnPosition.position;
+                transform.rotation = _toiletSpawnPosition.rotation;
+            }
+            else if (StateManager.Instance.CurrentState != State.Menu && _changePositionDependingOnState)
             {
                 transform.position = _conductorCoupeSpawnPosition.position;
                 transform.rotation = _conductorCoupeSpawnPosition.rotation;

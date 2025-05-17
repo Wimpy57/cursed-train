@@ -102,6 +102,8 @@ namespace Core.Scripts.UI
             _metalMaterial.color = _defaultMetalMaterialColor;
             if (Player.Instance == null) return;
             Player.Instance.OnHpChanged -= Player_OnHpChanged;
+            StateManager.Instance.OnStateChanged -= StateManager_OnStateChanged;
+
         }
     }
 }

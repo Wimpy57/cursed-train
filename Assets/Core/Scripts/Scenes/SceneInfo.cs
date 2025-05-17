@@ -4,9 +4,10 @@ namespace Core.Scripts.Scenes
 {
     public static class SceneInfo
     {
-        public static Dictionary<SceneName, string> SceneStringNameDictionary = new()
+        public static readonly Dictionary<SceneName, string> SceneStringNameDictionary = new()
         {
             { SceneName.NewTrainScene, "NewTrainScene" },
+            { SceneName.DarkNewTrainScene, "DarkNewTrainScene" },
             { SceneName.OldTrainScene, "OldTrainScene" },
         };
     }

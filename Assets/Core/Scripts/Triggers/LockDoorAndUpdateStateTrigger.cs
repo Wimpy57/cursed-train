@@ -34,7 +34,6 @@ namespace Core.Scripts.Triggers
         protected override void TryEnable()
         {
             _collider.enabled = AvailableAtStates.Contains(StateManager.Instance.CurrentState);
-
         }
 
         private IEnumerator LockDoor()
