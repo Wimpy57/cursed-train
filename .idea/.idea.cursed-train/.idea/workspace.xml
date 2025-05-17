@@ -7,24 +7,6 @@
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/DarkTrainLightManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/DarkTrainSceneSwitcher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/DarkTrainLightManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/DarkTrainSceneSwitcher.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Scenes/SceneInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Scenes/SceneInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Scenes/SceneName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Scenes/SceneName.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/LockDoorAndUpdateStateTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/LockDoorAndUpdateStateTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/WristMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/UI/WristMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/OldTrain/Corridor/NightTextures/Carpet/Carpet.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/OldTrain/Corridor/NightTextures/Carpet/Carpet.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/OldTrain/Corridor/NightTextures/Windows/Covers.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/OldTrain/Corridor/NightTextures/Windows/Covers.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/OldTrain/Corridor/NightTextures/Windows/Glass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/OldTrain/Corridor/NightTextures/Windows/Glass.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/OldTrain/Coupe/Textures/Walls/Walls.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/OldTrain/Coupe/Textures/Walls/Walls.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/OldTrain/Coupe/Textures/Windows/Covers.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/OldTrain/Coupe/Textures/Windows/Covers.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/OldTrain/Coupe/Textures/Windows/Glass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/OldTrain/Coupe/Textures/Windows/Glass.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Train/Corridor/Textures/Floor/Floor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Train/Corridor/Textures/Floor/Floor.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Solution Studio/PBR Lamps Pack/Large round lamp/Materials/Large round lamp.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Solution Studio/PBR Lamps Pack/Large round lamp/Materials/Large round lamp.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +54,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5bf0c891ea345fe93688f835df32fdc1dda00/4b/dd4f656b/Transform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5bf0c891ea345fe93688f835df32fdc1dda00/80/0dec7314/Vector3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/cca89918937e838503d883f1aa1784c57493a1cacd61b1f5fe1ebf5a1e3567a/System.Numerics.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -182,7 +165,7 @@
       <workItem from="1747224419842" duration="6089000" />
       <workItem from="1747243953843" duration="3378000" />
       <workItem from="1747417685047" duration="4261000" />
-      <workItem from="1747488607486" duration="21759000" />
+      <workItem from="1747488607486" duration="26593000" />
     </task>
     <servers />
   </component>
