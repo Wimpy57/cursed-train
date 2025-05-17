@@ -30,5 +30,7 @@ namespace Core.Scripts
                 audioSource.volume = _volume;
             }
         }
+
+        public float GetVolume() => _volume;
     }
 }
