@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Core.Scripts.Achievements;
 using Core.Scripts.States;
 using TMPro;
 using UnityEngine;
@@ -49,6 +50,14 @@ namespace Core.Scripts
                 RemovePhrase();
             }
             StateManager.Instance.UpgradeState(this);
+        }
+
+        private void OnCollisionEnter(Collision other)
+        {
+            if (other.gameObject.CompareTag("Extinguisher"))
+            {
+                AchievementManager.Instance.GenerateAchievement(Achievement.Inadequate);
+            }
         }
 
         private void DisplayPhrase(string phrase)

@@ -254,7 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isInverted: 0
-  _lowerIntensityPercent: 90
+  _lowerIntensityPercent: 75
   _maxBlinkingDelay: 0.7
   _minBlinkingDelay: 0.3
   _maxBlinkingFrequency: 0.1

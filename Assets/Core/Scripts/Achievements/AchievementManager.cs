@@ -19,6 +19,7 @@ namespace Core.Scripts.Achievements
             {
                 Destroy(gameObject);
             }
+            DontDestroyOnLoad(gameObject);
         }
         
         // todo remove this method
