@@ -9,6 +9,7 @@ namespace Core.Scripts
     public class BlinkingLamp : MonoBehaviour
     {
         [Header("Parameters")] 
+        [SerializeField] private bool _blinkOnSceneLoad;
         [SerializeField] private bool _isInverted;
         [SerializeField] private float _lowerIntensityPercent;
         [SerializeField] private float _maxBlinkingDelay;
@@ -30,6 +31,11 @@ namespace Core.Scripts
             {
                 _light.range = _invertedRange;
                 _light.intensity = 0f;
+            }
+
+            if (_blinkOnSceneLoad)
+            {
+                StartCoroutine(BlinkOnSceneLoad());
             }
             _currentBlinkingDelay = Random.Range(_minBlinkingDelay, _maxBlinkingDelay);
         }
@@ -67,6 +73,14 @@ namespace Core.Scripts
                 _light.intensity = Vector2.Lerp(new Vector2(0, startIntensity), new Vector2(0, endIntensity), (i/(duration*100))).Y;
                 yield return new WaitForSeconds(.001f);
             }
+        }
+
+        private IEnumerator BlinkOnSceneLoad()
+        {
+            yield return new WaitForSeconds(3f);
+            yield return StartCoroutine(ChangeIntensity(_light.intensity, 0f, .5f));
+            yield return new WaitForSeconds(.1f);
+            yield return StartCoroutine(ChangeIntensity(_light.intensity, _higherIntensityValue, .5f));
         }
     }
 }

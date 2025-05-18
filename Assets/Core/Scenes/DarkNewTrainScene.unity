@@ -268,7 +268,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: c8966e51703a24d44a00724bc32f0177, type: 3}
       propertyPath: 'm_Materials.Array.data[3]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1426413c178dcb046b98b2ca95d098c7, type: 2}
+      objectReference: {fileID: 2100000, guid: 3a951dca7678042fdbfdf472415a0efe, type: 2}
     - target: {fileID: 919132149155446097, guid: c8966e51703a24d44a00724bc32f0177, type: 3}
       propertyPath: m_Name
       value: coupe_box (5)
@@ -14509,6 +14509,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 893566477}
     m_Modifications:
+    - target: {fileID: 1199386726468892477, guid: 82c28d6c4cbeffb42b927ac72683fd4e, type: 3}
+      propertyPath: _blinkOnSceneLoad
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2506449475386276041, guid: 82c28d6c4cbeffb42b927ac72683fd4e, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5981276937255314874, guid: 82c28d6c4cbeffb42b927ac72683fd4e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.803581
@@ -18001,6 +18009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fadeDelay: 0.07
+  _unFadeOnSceneLoad: 1
 --- !u!23 &2110126393
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18009,7 +18018,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110126390}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -18023,7 +18032,8 @@ MeshRenderer:
   m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials: []
+  m_Materials:
+  - {fileID: 2100000, guid: 0469c082d1fecd710b4b9a2bedb444a8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -27,14 +27,14 @@ namespace Core.Scripts
             {
                 if (_typeAction != HeadCollisionTypeAction.PushBack)
                 {
-                    _fadeEffect.Fade(false);
+                    StartCoroutine(_fadeEffect.Fade(false));
                 }
                 return;
             }
 
             if (_detector.IsInsideCollider && _typeAction != HeadCollisionTypeAction.PushBack)
             {
-                _fadeEffect.Fade(true);
+                StartCoroutine(_fadeEffect.Fade(true));
             }
 
             switch (_typeAction)
@@ -60,7 +60,7 @@ namespace Core.Scripts
 
         private void BlackScreen()
         {
-            _fadeEffect.Fade(true);
+            StartCoroutine(_fadeEffect.Fade(true));
         }
     }
 

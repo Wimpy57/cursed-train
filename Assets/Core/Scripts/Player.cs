@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Core.Scripts.States;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -17,6 +18,10 @@ namespace Core.Scripts
         public static Player Instance { get; private set; }
         
         public event EventHandler OnHpChanged;
+
+        private static Vector3 _position;
+        private static Quaternion _rotation;
+        
         
         public int Hp
         {
@@ -35,17 +40,10 @@ namespace Core.Scripts
             if (Instance != null)
             {
                 Hp = Instance.Hp;
+                transform.position = _position;
+                transform.rotation = _rotation;
             }
             Instance = this;
-            // if (Instance == null)
-            // {
-            //     Instance = this;
-            // }
-            // else
-            // {
-            //     Destroy(gameObject);
-            // }
-            //DontDestroyOnLoad(gameObject);
         }
         
         private void Start()
@@ -62,6 +60,18 @@ namespace Core.Scripts
                 transform.rotation = _conductorCoupeSpawnPosition.rotation;
             }
         }
+
+        public IEnumerator Fade(float fadeDuration)
+        {
+            FadeEffect fadeEffect = GetComponentInChildren<FadeEffect>();
+            yield return StartCoroutine(fadeEffect.Fade(true, fadeDuration));
+        }
+
+        // public IEnumerator UnFade(float fadeDuration)
+        // {
+        //     FadeEffect fadeEffect = GetComponentInChildren<FadeEffect>();
+        //     yield return StartCoroutine(fadeEffect.UnFade(fadeDuration));
+        // }
         
         public void Hurt(int damage)
         {
@@ -75,6 +85,12 @@ namespace Core.Scripts
         public void Heal(int heal)
         {
             Hp += heal;
+        }
+
+        private void OnDisable()
+        {
+             _position = transform.position;
+             _rotation = transform.rotation;
         }
     }
 }

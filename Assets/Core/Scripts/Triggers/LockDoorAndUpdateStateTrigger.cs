@@ -11,11 +11,12 @@ namespace Core.Scripts.Triggers
         
         protected override void OnTriggerEnter(Collider other)
         {
+            if (!other.CompareTag("Player")) return;
             base.OnTriggerEnter(other);
             StartCoroutine(LockDoor());
         }
-
-
+        
+        
         private IEnumerator LockDoor()
         {
             _door.Close();

@@ -6,6 +6,7 @@ namespace Core.Scripts
     public class FadeEffect : MonoBehaviour
     {
         [SerializeField] private float _fadeDelay = 0.07f;
+        [SerializeField] private float _unFadeOnSceneLoad;
     
         private Material _material;
         private bool _isFadingOut = false;
@@ -13,32 +14,49 @@ namespace Core.Scripts
         private void Start()
         {
             _material = GetComponent<MeshRenderer>().material;
+            StartCoroutine(UnFade(_unFadeOnSceneLoad));
         }
 
-        public void Fade(bool fadeOut)
+        public IEnumerator Fade(bool fadeOut, float fadeDelay = 0.07f)
+        {
+            if (!IsFadeAvailable(fadeOut)) yield break;
+            
+            _isFadingOut = fadeOut;
+            StopAllCoroutines();
+            yield return StartCoroutine(PlayEffect(fadeOut, fadeDelay));
+        }
+
+        private IEnumerator UnFade(float fadeDelay)
+        {
+            _material.SetFloat("_Alpha", 1f);
+            _isFadingOut = false;
+            StopAllCoroutines();
+            yield return StartCoroutine(PlayEffect(_isFadingOut, fadeDelay));
+        }
+
+        private bool IsFadeAvailable(bool fadeOut)
         {
             if (fadeOut && _isFadingOut)
             {
-                return;
+                return false;
             }
 
             if (!fadeOut && !_isFadingOut)
             {
-                return;
+                return false;
             }
-            _isFadingOut = fadeOut;
-            StopAllCoroutines();
-            StartCoroutine(PlayEffect(fadeOut));
-        }
 
-        private IEnumerator PlayEffect(bool fadeOut)
+            return true;
+        }
+        
+        private IEnumerator PlayEffect(bool fadeOut, float fadeDelay)
         {
             float startAlpha = _material.GetFloat("_Alpha");
             float endAlpha = fadeOut ? 1f : 0f;
-            float remainingTime = _fadeDelay * Mathf.Abs(endAlpha - startAlpha);
+            float remainingTime = fadeDelay * Mathf.Abs(endAlpha - startAlpha);
         
             float elapsedTime = 0f;
-            while (elapsedTime < _fadeDelay)
+            while (elapsedTime < fadeDelay)
             {
                 elapsedTime += Time.deltaTime;
                 float currentValue = Mathf.Lerp(startAlpha, endAlpha, elapsedTime / remainingTime);

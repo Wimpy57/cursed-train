@@ -19,6 +19,7 @@ namespace Core.Scripts
         [SerializeField] private List<string> _npcSpeechPhrases;
         
         private AudioSource _audioSource;
+        private bool _wasAchievementSpawned;
         
         private void Start()
         {
@@ -54,9 +55,10 @@ namespace Core.Scripts
 
         private void OnCollisionEnter(Collision other)
         {
-            if (other.gameObject.CompareTag("Extinguisher"))
+            if (other.gameObject.CompareTag("Extinguisher") && !_wasAchievementSpawned)
             {
                 AchievementManager.Instance.GenerateAchievement(Achievement.Inadequate);
+                _wasAchievementSpawned = true;
             }
         }
 

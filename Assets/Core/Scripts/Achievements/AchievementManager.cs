@@ -14,26 +14,23 @@ namespace Core.Scripts.Achievements
             if (Instance == null)
             {
                 Instance = this;
+                
+                // todo remove this method
+                // now it is used just to test achievement getting
+                foreach (Achievement achievement in Enum.GetValues(typeof(Achievement)))
+                {
+                    // if (PlayerPrefs.HasKey(((int)achievement).ToString()))
+                    // {
+                    //     Debug.Log($"{achievement}: {PlayerPrefs.GetInt(((int)achievement).ToString())}");
+                    // }
+                    PlayerPrefs.SetInt(((int)achievement).ToString(), 0);
+                }
             }
             else
             {
                 Destroy(gameObject);
             }
             DontDestroyOnLoad(gameObject);
-        }
-        
-        // todo remove this method
-        // now it is used just to test achievement getting
-        private void Start()
-        {
-            foreach (Achievement achievement in Enum.GetValues(typeof(Achievement)))
-            {
-                // if (PlayerPrefs.HasKey(((int)achievement).ToString()))
-                // {
-                //     Debug.Log($"{achievement}: {PlayerPrefs.GetInt(((int)achievement).ToString())}");
-                // }
-                PlayerPrefs.SetInt(((int)achievement).ToString(), 0);
-            }
         }
         
         public void GenerateAchievement(Achievement achievement)

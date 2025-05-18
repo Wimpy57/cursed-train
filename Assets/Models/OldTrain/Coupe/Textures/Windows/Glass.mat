@@ -48,8 +48,8 @@ Material:
     - _DstBlend: 1
     - _DstBlendAlpha: 1
     - _Glossiness: 0.59999996
-    - _Metallic: 0.003
-    - _Smoothness: 0.65
+    - _Metallic: 0
+    - _Smoothness: 0.568
     - _Surface: 1
     - _ZWrite: 0
     m_Colors:
