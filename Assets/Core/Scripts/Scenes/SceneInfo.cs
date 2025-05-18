@@ -9,6 +9,7 @@ namespace Core.Scripts.Scenes
             { SceneName.NewTrainScene, "NewTrainScene" },
             { SceneName.DarkNewTrainScene, "DarkNewTrainScene" },
             { SceneName.OldTrainScene, "OldTrainScene" },
+            { SceneName.FinalScene, "FinalScene" }
         };
     }
 }

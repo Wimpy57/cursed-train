@@ -22,6 +22,9 @@ namespace Core.Scripts
         [Header("Enemy animation")] 
         [SerializeField] public Animator EnemyAnimator;
         
+        //todo reset total monsters killed
+        public static int TotalMonstersKilled { get; private set; }
+        
         private NavMeshAgent _agent;
         
         protected EnemyState CurrentState;
@@ -75,6 +78,7 @@ namespace Core.Scripts
 
         public void Die()
         {
+            TotalMonstersKilled++;
             Destroy(gameObject);
         }
 

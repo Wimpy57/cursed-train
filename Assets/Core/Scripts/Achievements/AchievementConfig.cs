@@ -15,7 +15,6 @@ namespace Core.Scripts.Achievements
             {Achievement.AreYouScared, new () { "Испугался?", "Пережить скример"} },
             {Achievement.SlowGuy, new () { "Спешить некуда", "Потратить на прохождение игры более 20-и минут"} },
             {Achievement.TheFastest, new () { "Бегун", "Потратить на прохождение игры менее 5-и минут"} },
-            {Achievement.Hardcore, new () { "Хардкор", "Пройти игру, ни разу не умерев"} },
         };
     }
 }

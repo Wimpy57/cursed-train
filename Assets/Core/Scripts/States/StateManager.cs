@@ -47,5 +47,10 @@ namespace Core.Scripts.States
             
             CurrentState++;
         }
+
+        public void Restart()
+        {
+            CurrentState = State.Menu;
+        }
     }
 }

@@ -5,5 +5,6 @@ namespace Core.Scripts.Scenes
         OldTrainScene,
         DarkNewTrainScene,
         NewTrainScene,
+        FinalScene,
     }
 }

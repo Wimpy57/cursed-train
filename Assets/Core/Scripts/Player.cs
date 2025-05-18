@@ -17,6 +17,9 @@ namespace Core.Scripts
         
         public static Player Instance { get; private set; }
         
+        //todo reset total hp lost
+        public static int TotalHpLost { get; private set; }
+        
         public event EventHandler OnHpChanged;
 
         private static Vector3 _position;
@@ -76,6 +79,7 @@ namespace Core.Scripts
         public void Hurt(int damage)
         {
             Hp -= damage;
+            TotalHpLost += damage;
             if (Hp <= 0)
             {
                 //todo player is dead

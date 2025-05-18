@@ -14,6 +14,5 @@ namespace Core.Scripts.Achievements
         AreYouScared = 666, // encounter screamer when there is no light and train horns loudly todo 
         SlowGuy = 707, // complete the game in more than 20 minutes todo
         TheFastest = 777, // complete the game in less than 5 minutes todo
-        Hardcore = 999, // complete the game without any single death todo
     }
 }
