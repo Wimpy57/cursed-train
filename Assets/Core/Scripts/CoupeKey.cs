@@ -11,7 +11,7 @@ namespace Core.Scripts
         private void OnTriggerEnter(Collider other)
         {
             if (!other.gameObject.CompareTag("Watch")) return;
-            Player.Instance.StoreData();
+            Player.Instance.OperateWithWatchData(true, true);
 
             if (StateManager.Instance.CurrentState != _stateWhenCanUpgrade) return;
             StateManager.Instance.UpgradeState(this);

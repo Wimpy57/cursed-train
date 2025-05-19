@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
+using Core.Scripts.Scenes;
 using Core.Scripts.States;
 using Core.Scripts.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Core.Scripts
 {
@@ -10,6 +12,7 @@ namespace Core.Scripts
     {
         [Header("Player parameters")]
         [SerializeField] public int MaxHp;
+        [SerializeField] private bool _isKeyDataStored;
         [Header("Spawn points")]
         [SerializeField] private Transform _conductorCoupeSpawnPosition;
         [SerializeField] private Transform _toiletSpawnPosition;
@@ -28,9 +31,8 @@ namespace Core.Scripts
 
         private static Vector3 _position;
         private static Quaternion _rotation;
-        
-        public bool IsKeyDataStored { get; private set; }
-        
+        private static bool _wasKeyDataStored;
+        private static int _previousSceneHp;
         
         public int Hp
         {
@@ -46,32 +48,34 @@ namespace Core.Scripts
         
         private void Awake()
         {
-            if (Instance != null)
-            {
-                Hp = Instance.Hp;
-                IsKeyDataStored = Instance.IsKeyDataStored;
-                transform.position = _position;
-                transform.rotation = _rotation;
-            }
-            else
-            {
-                Hp = MaxHp;
-            }
+            _isKeyDataStored = _wasKeyDataStored;
+            // transform.position = _position;
+            // transform.rotation = _rotation;
+            Hp = _previousSceneHp == 0 ? MaxHp : _previousSceneHp;
+            
             Instance = this;
         }
         
         private void Start()
         {
-            // if (StateManager.Instance.CurrentState == State.DarkNewTrain && !_savePositionOnAnyState)
-            // {
-            //     transform.position = _toiletSpawnPosition.position;
-            //     transform.rotation = _toiletSpawnPosition.rotation;
-            // }
-            // else if (StateManager.Instance.CurrentState != State.Menu && !_savePositionOnAnyState)
-            // {
-            //     transform.position = _conductorCoupeSpawnPosition.position;
-            //     transform.rotation = _conductorCoupeSpawnPosition.rotation;
-            // }
+            SceneName currentScene = SceneName.NewTrainScene;
+            foreach (var item in SceneInfo.SceneStringNameDictionary)
+            {
+                if (item.Value == SceneManager.GetActiveScene().name) currentScene = item.Key;
+            }
+
+            if (currentScene != SceneName.DarkNewTrainScene) return;
+            
+            if (StateManager.Instance.CurrentState == State.DarkNewTrain && !_savePositionOnAnyState)
+            {
+                transform.position = _toiletSpawnPosition.position;
+                transform.rotation = _toiletSpawnPosition.rotation;
+            }
+            else if (StateManager.Instance.CurrentState != State.Menu && !_savePositionOnAnyState)
+            {
+                transform.position = _conductorCoupeSpawnPosition.position;
+                transform.rotation = _conductorCoupeSpawnPosition.rotation;
+            }
         }
 
         public IEnumerator Fade(float fadeDuration)
@@ -94,16 +98,22 @@ namespace Core.Scripts
             Hp += heal;
         }
 
-        public void StoreData()
+        public void OperateWithWatchData(bool isSuccess, bool isKeyDataChanged=false)
         {
-            IsKeyDataStored = true;
-            _wristWatch.StoreDataVisual();
+            if (isKeyDataChanged)
+            {
+                _isKeyDataStored = isSuccess;
+            }
+            _wristWatch.IndicateWatchOperation(isSuccess);
         }
+
+        public bool IsKeyDataStored() => _isKeyDataStored;
         
         private void OnDisable()
         {
-             _position = transform.position;
-             _rotation = transform.rotation;
+             // _position = transform.position;
+             // _rotation = transform.rotation;
+             _wasKeyDataStored = _isKeyDataStored;
         }
     }
 }

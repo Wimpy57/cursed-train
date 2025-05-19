@@ -6656,7 +6656,8 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8216231574191788987, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
@@ -7895,7 +7896,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7495546816028807751, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8216231574191788987, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3637430797826657480, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
@@ -15881,6 +15883,10 @@ PrefabInstance:
       propertyPath: m_ExcludeLayers.m_Bits
       value: 256
       objectReference: {fileID: 0}
+    - target: {fileID: 4750754723252678873, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
+      propertyPath: _isOpenable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5702350162052600266, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
       propertyPath: m_Constraints
       value: 118
@@ -17655,6 +17661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHp: 100
+  _isKeyDataStored: 0
   _conductorCoupeSpawnPosition: {fileID: 1869389371}
   _toiletSpawnPosition: {fileID: 1536175360}
   _wristWatch: {fileID: 1424346426115413590}

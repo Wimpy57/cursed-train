@@ -4,6 +4,7 @@ using Core.Scripts.ScriptableObjects;
 using Core.Scripts.States;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Core.Scripts.UI
@@ -21,11 +22,13 @@ namespace Core.Scripts.UI
         [SerializeField] private int _lowHpPercentLimit;
         [SerializeField] private int _criticalHpPercentLimit;
 
-        [Header("Metal material parameters")] 
-        [SerializeField] private Material _metalMaterial;
-        [SerializeField] private Color _defaultMetalMaterialColor;
-        [SerializeField] private Color _criticalMetalMaterialColor;
-        [SerializeField] private Color _dataStoredMetalMaterialColor;
+        [Header("Screen material parameters")] 
+        [SerializeField] private Material _screenMaterial;
+        [SerializeField] private Light _screenLight;
+        [SerializeField] private Color _defaultScreenMaterialColor;
+        [SerializeField] private Color _criticalScreenMaterialColor;
+        [SerializeField] private Color _dataStoredScreenMaterialColor;
+        [SerializeField] private Color _wrongDataScreenMaterialColor;
         [SerializeField] private float _dataStoringEffectDuration;
 
         private bool _isDataStoring;
@@ -33,7 +36,9 @@ namespace Core.Scripts.UI
         
         private void Start()
         {
-            _metalMaterial.color = _defaultMetalMaterialColor;
+            _screenLight.intensity = 0f;
+            _screenLight.color = _criticalScreenMaterialColor;
+            
             _hpText.text = _defaultText + Player.Instance.MaxHp;
             if (Player.Instance == null)
             {
@@ -99,39 +104,44 @@ namespace Core.Scripts.UI
             {
                 _heartBeatAnimator.speed = .3f;
             }
-            _metalMaterial.color = Color.Lerp(_defaultMetalMaterialColor, _criticalMetalMaterialColor,  
-                1f - (float) Player.Instance.Hp / Player.Instance.MaxHp);
+
+            float percentage = 1f - (float)Player.Instance.Hp / Player.Instance.MaxHp;
+            _screenMaterial.color = Color.Lerp(_defaultScreenMaterialColor, _criticalScreenMaterialColor, percentage);
+            _screenLight.color = _criticalScreenMaterialColor;
+            _screenLight.intensity = Mathf.Lerp(0f, 1f, 1f - (float) Player.Instance.Hp / Player.Instance.MaxHp);
         }
 
-        public void StoreDataVisual()
+        public void IndicateWatchOperation(bool isSuccess)
         {
-            StartCoroutine(StoreData());
+            Color color = isSuccess ? _dataStoredScreenMaterialColor : _wrongDataScreenMaterialColor;
+            StartCoroutine(IndicateOperation(color));
         }
 
-        private IEnumerator StoreData()
+        private IEnumerator IndicateOperation(Color resultColor)
         {
             if (_isDataStoring) yield break;
             
             _isDataStoring = true;
             float elapsedTime = 0f;
-            Color defaultColor = _metalMaterial.color;
-            
-            while (_metalMaterial.color != _dataStoredMetalMaterialColor)
+            Color defaultColor = _screenMaterial.color;
+            _screenLight.intensity = 1f;
+            _screenLight.color = resultColor;
+            while (_screenMaterial.color != resultColor)
             {
                 elapsedTime += Time.deltaTime;
-                Color color = Color.Lerp(defaultColor, _dataStoredMetalMaterialColor, elapsedTime/_dataStoringEffectDuration);
-                _metalMaterial.color = color;
+                _screenMaterial.color = Color.Lerp(defaultColor, resultColor, elapsedTime/_dataStoringEffectDuration);
                 yield return null;
             }
 
             yield return new WaitForSeconds(1f);
             
             elapsedTime = 0f;
-            while (_metalMaterial.color != defaultColor)
+            _screenLight.intensity = 0f;
+            _screenLight.color = _criticalScreenMaterialColor;
+            while (_screenMaterial.color != defaultColor)
             {
                 elapsedTime += Time.deltaTime;
-                Color color = Color.Lerp(_dataStoredMetalMaterialColor, defaultColor, elapsedTime/_dataStoringEffectDuration);
-                _metalMaterial.color = color;
+                _screenMaterial.color = Color.Lerp(resultColor, defaultColor, elapsedTime/_dataStoringEffectDuration);
                 yield return null;
             }
 
@@ -140,7 +150,7 @@ namespace Core.Scripts.UI
 
         private void OnDisable()
         {
-            _metalMaterial.color = _defaultMetalMaterialColor;
+            _screenMaterial.color = _defaultScreenMaterialColor;
             if (Player.Instance == null) return;
             Player.Instance.OnHpChanged -= Player_OnHpChanged;
             StateManager.Instance.OnStateChanged -= StateManager_OnStateChanged;
