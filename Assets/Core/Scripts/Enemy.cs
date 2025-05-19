@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Core.Scripts.EnemyStateMachine;
 using UnityEngine.AI;
@@ -21,9 +22,8 @@ namespace Core.Scripts
 
         [Header("Enemy animation")] 
         [SerializeField] public Animator EnemyAnimator;
-        
-        //todo reset total monsters killed
-        public static int TotalMonstersKilled { get; private set; }
+
+        public static event EventHandler OnMonsterKilled;
         
         private NavMeshAgent _agent;
         
@@ -78,7 +78,7 @@ namespace Core.Scripts
 
         public void Die()
         {
-            TotalMonstersKilled++;
+            OnMonsterKilled?.Invoke(this, EventArgs.Empty);
             Destroy(gameObject);
         }
 

@@ -7178,7 +7178,8 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8216231574191788987, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
@@ -8442,6 +8443,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4750754723252678873, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
+      propertyPath: _door
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6489155028955711500, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
       propertyPath: m_Name
       value: DoorSocket
@@ -8472,7 +8477,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7495546816028807751, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8216231574191788987, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3637430797826657480, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
@@ -18923,10 +18929,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHp: 100
+  _isKeyDataStored: 0
   _conductorCoupeSpawnPosition: {fileID: 0}
   _toiletSpawnPosition: {fileID: 0}
   _wristWatch: {fileID: 5415192290374173361}
   _fadeEffect: {fileID: 2110126391}
+  _snapSocket: {fileID: 0}
   _savePositionOnAnyState: 0
 --- !u!114 &2001203081
 MonoBehaviour:

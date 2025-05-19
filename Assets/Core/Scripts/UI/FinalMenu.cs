@@ -65,8 +65,8 @@ namespace Core.Scripts.UI
             float timeSpent = Timer.Instance.GetTime();
             string timeSpentString = $"{(int) timeSpent / 60} мин. {(int)(timeSpent % 60)} сек.";
             
-            _hpLostAmountText.text = Player.TotalHpLost.ToString();
-            _monstersKilledAmountText.text = Enemy.TotalMonstersKilled.ToString();
+            _hpLostAmountText.text = StateManager.Instance.TotalHpLost.ToString();
+            _monstersKilledAmountText.text = StateManager.Instance.TotalMonstersKilled.ToString();
             _timerResultText.text = timeSpentString;
         }
 

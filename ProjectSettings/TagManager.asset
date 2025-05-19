@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Extinguisher
   - Watch
+  - SnappableObject
   layers:
   - Default
   - TransparentFX

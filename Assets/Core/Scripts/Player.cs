@@ -6,6 +6,7 @@ using Core.Scripts.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 namespace Core.Scripts
 {
     public class Player : MonoBehaviour
@@ -19,28 +20,34 @@ namespace Core.Scripts
         [Header("Linked objects")]
         [SerializeField] private WristMenu _wristWatch;
         [SerializeField] private FadeEffect _fadeEffect;
+        [SerializeField] private SnapSocket _snapSocket;
         [Header("For debug only")]
         [SerializeField] private bool _savePositionOnAnyState;
         
         public static Player Instance { get; private set; }
-        
-        //todo reset total hp lost
-        public static int TotalHpLost { get; private set; }
-        
-        public event EventHandler OnHpChanged;
 
-        private static Vector3 _position;
-        private static Quaternion _rotation;
-        private static bool _wasKeyDataStored;
-        private static int _previousSceneHp;
+        public static event EventHandler OnInstanceCreated;
+        public event EventHandler<OnHpChangedEventArgs> OnHpChanged;
+        public event EventHandler OnKeyDataStored;
+
+        public class OnHpChangedEventArgs : EventArgs
+        {
+            public int HpDifference;
+        }
         
         public int Hp
         {
             get => _hp;
             private set
             {
+                if (value < 0 || value > MaxHp) return;
+                
+                int hpDifference = value - _hp;
                 _hp = value;
-                OnHpChanged?.Invoke(this, EventArgs.Empty);
+                OnHpChanged?.Invoke(this, new OnHpChangedEventArgs
+                {
+                    HpDifference = hpDifference
+                });
             }
         }
 
@@ -48,12 +55,12 @@ namespace Core.Scripts
         
         private void Awake()
         {
-            _isKeyDataStored = _wasKeyDataStored;
-            // transform.position = _position;
-            // transform.rotation = _rotation;
-            Hp = _previousSceneHp == 0 ? MaxHp : _previousSceneHp;
+            _isKeyDataStored = StateManager.Instance.WasKeyDataStored;
+            Hp = StateManager.Instance.PlayerHpOnPreviousScene == 0 ? 
+                MaxHp : StateManager.Instance.PlayerHpOnPreviousScene;
             
             Instance = this;
+            OnInstanceCreated?.Invoke(this, EventArgs.Empty);
         }
         
         private void Start()
@@ -63,7 +70,7 @@ namespace Core.Scripts
             {
                 if (item.Value == SceneManager.GetActiveScene().name) currentScene = item.Key;
             }
-
+            
             if (currentScene != SceneName.DarkNewTrainScene) return;
             
             if (StateManager.Instance.CurrentState == State.DarkNewTrain && !_savePositionOnAnyState)
@@ -86,7 +93,6 @@ namespace Core.Scripts
         public void Hurt(int damage)
         {
             Hp -= damage;
-            TotalHpLost += damage;
             if (Hp <= 0)
             {
                 //todo player is dead
@@ -103,17 +109,20 @@ namespace Core.Scripts
             if (isKeyDataChanged)
             {
                 _isKeyDataStored = isSuccess;
+                if (isSuccess)
+                {
+                    OnKeyDataStored?.Invoke(this, EventArgs.Empty);
+                }
             }
             _wristWatch.IndicateWatchOperation(isSuccess);
         }
 
+        public void SnapObject(SnappableObject snappableObject)
+        {
+            _snapSocket.SnapObject(snappableObject);
+        }
+        
         public bool IsKeyDataStored() => _isKeyDataStored;
         
-        private void OnDisable()
-        {
-             // _position = transform.position;
-             // _rotation = transform.rotation;
-             _wasKeyDataStored = _isKeyDataStored;
-        }
     }
 }
