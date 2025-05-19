@@ -272,9 +272,10 @@ GameObject:
   m_Component:
   - component: {fileID: 9179023205205809126}
   - component: {fileID: 2555918907456571421}
+  - component: {fileID: 3319731082715699877}
   m_Layer: 0
   m_Name: Watch
-  m_TagString: Untagged
+  m_TagString: Watch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -324,6 +325,29 @@ MonoBehaviour:
   _metalMaterial: {fileID: 2100000, guid: 6fead1d6cf609cd4bbb0b641f2060fcc, type: 2}
   _defaultMetalMaterialColor: {r: 0.2627451, g: 0.25490198, b: 0.25490198, a: 1}
   _criticalMetalMaterialColor: {r: 0.76729554, g: 0.13270822, b: 0.13270822, a: 1}
+  _dataStoredMetalMaterialColor: {r: 0.1337367, g: 0.61635214, b: 0.17102104, a: 1}
+  _dataStoringEffectDuration: 0.5
+--- !u!65 &3319731082715699877
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371766922483299165}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.039142657, y: 0.009200688, z: 0.043943595}
+  m_Center: {x: 0.000106006846, y: -0.0010576489, z: -0.00016268251}
 --- !u!1 &2425926609333960913
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,7 +361,7 @@ GameObject:
   - component: {fileID: 570882134894094560}
   m_Layer: 0
   m_Name: Plane_3
-  m_TagString: Untagged
+  m_TagString: Watch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -423,7 +447,7 @@ GameObject:
   - component: {fileID: 734141715419984531}
   m_Layer: 0
   m_Name: Plane_1
-  m_TagString: Untagged
+  m_TagString: Watch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -509,7 +533,7 @@ GameObject:
   - component: {fileID: 3707145260300020736}
   m_Layer: 0
   m_Name: Plane_2
-  m_TagString: Untagged
+  m_TagString: Watch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -595,7 +619,7 @@ GameObject:
   - component: {fileID: 7050024442379877069}
   m_Layer: 0
   m_Name: Circle.007_0
-  m_TagString: Untagged
+  m_TagString: Watch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -793,7 +817,7 @@ GameObject:
   - component: {fileID: 8468607835663115076}
   m_Layer: 0
   m_Name: Plane_4
-  m_TagString: Untagged
+  m_TagString: Watch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1015,7 +1039,7 @@ GameObject:
   - component: {fileID: 8371162205307969236}
   m_Layer: 0
   m_Name: Plane_0
-  m_TagString: Untagged
+  m_TagString: Watch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

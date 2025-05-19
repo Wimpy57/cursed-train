@@ -2943,6 +2943,8 @@ MonoBehaviour:
   MaxHp: 0
   _conductorCoupeSpawnPosition: {fileID: 0}
   _toiletSpawnPosition: {fileID: 0}
+  _wristWatch: {fileID: 1588990032}
+  _fadeEffect: {fileID: 754354483}
   _changePositionDependingOnState: 0
 --- !u!114 &1070116769
 MonoBehaviour:
@@ -4039,6 +4041,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9179023205205809126, guid: 5c3eb122456ca334a84b9c24b0177cf0, type: 3}
   m_PrefabInstance: {fileID: 1588990030}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1588990032 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2555918907456571421, guid: 5c3eb122456ca334a84b9c24b0177cf0, type: 3}
+  m_PrefabInstance: {fileID: 1588990030}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf8feb36405913846aace5a742033595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1621780162
 PrefabInstance:
   m_ObjectHideFlags: 0

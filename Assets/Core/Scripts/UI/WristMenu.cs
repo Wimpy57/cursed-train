@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Core.Scripts.ScriptableObjects;
 using Core.Scripts.States;
 using TMPro;
@@ -24,6 +25,11 @@ namespace Core.Scripts.UI
         [SerializeField] private Material _metalMaterial;
         [SerializeField] private Color _defaultMetalMaterialColor;
         [SerializeField] private Color _criticalMetalMaterialColor;
+        [SerializeField] private Color _dataStoredMetalMaterialColor;
+        [SerializeField] private float _dataStoringEffectDuration;
+
+        private bool _isDataStoring;
+        
         
         private void Start()
         {
@@ -95,6 +101,41 @@ namespace Core.Scripts.UI
             }
             _metalMaterial.color = Color.Lerp(_defaultMetalMaterialColor, _criticalMetalMaterialColor,  
                 1f - (float) Player.Instance.Hp / Player.Instance.MaxHp);
+        }
+
+        public void StoreDataVisual()
+        {
+            StartCoroutine(StoreData());
+        }
+
+        private IEnumerator StoreData()
+        {
+            if (_isDataStoring) yield break;
+            
+            _isDataStoring = true;
+            float elapsedTime = 0f;
+            Color defaultColor = _metalMaterial.color;
+            
+            while (_metalMaterial.color != _dataStoredMetalMaterialColor)
+            {
+                elapsedTime += Time.deltaTime;
+                Color color = Color.Lerp(defaultColor, _dataStoredMetalMaterialColor, elapsedTime/_dataStoringEffectDuration);
+                _metalMaterial.color = color;
+                yield return null;
+            }
+
+            yield return new WaitForSeconds(1f);
+            
+            elapsedTime = 0f;
+            while (_metalMaterial.color != defaultColor)
+            {
+                elapsedTime += Time.deltaTime;
+                Color color = Color.Lerp(_dataStoredMetalMaterialColor, defaultColor, elapsedTime/_dataStoringEffectDuration);
+                _metalMaterial.color = color;
+                yield return null;
+            }
+
+            _isDataStoring = false;
         }
 
         private void OnDisable()

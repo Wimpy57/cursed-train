@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Extinguisher
+  - Watch
   layers:
   - Default
   - TransparentFX
