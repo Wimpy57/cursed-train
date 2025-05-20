@@ -18,8 +18,8 @@ TagManager:
   - MoveableObjectCollider
   - Enemy
   - Carpet
-  - 
-  - 
+  - FarInteractable
+  - Marker
   - 
   - 
   - 

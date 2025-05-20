@@ -2941,11 +2941,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHp: 0
+  _isKeyDataStored: 0
   _conductorCoupeSpawnPosition: {fileID: 0}
   _toiletSpawnPosition: {fileID: 0}
   _wristWatch: {fileID: 1588990032}
   _fadeEffect: {fileID: 754354483}
-  _changePositionDependingOnState: 0
+  _snapSocket: {fileID: 0}
+  _savePositionOnAnyState: 0
 --- !u!114 &1070116769
 MonoBehaviour:
   m_ObjectHideFlags: 0
