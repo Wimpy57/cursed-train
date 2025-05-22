@@ -30,8 +30,8 @@ namespace Core.Scripts
 
         public virtual void SnapObject(SnappableObject snappableObject)
         {
-            snappableObject.SetSnapSocket(this);
             _isObjectSnapped = true;
+            snappableObject.SetSnapSocket(this);
         }
 
         private void UnSnapObject(SnappableObject snappableObject)

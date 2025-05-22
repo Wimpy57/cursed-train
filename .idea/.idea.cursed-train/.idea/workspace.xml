@@ -6,26 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/AchievementCoin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/AchievementCoin.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Key.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Key.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/SnapSocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/SnapSocket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/SnappableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/SnappableObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/States/StateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/States/StateManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/FinalMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/UI/FinalMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Child/452ee1d9783e49f2a480fca806014b91.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Child/452ee1d9783e49f2a480fca806014b91.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Child/Textures/08c5c2f077934171a9693230ab64fbb4_R_5_meshes_Merge_Opacity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Child/Textures/08c5c2f077934171a9693230ab64fbb4_R_5_meshes_Merge_Opacity.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Child/Textures/24c47300d7f040e2bda087ee974508db_RGB_5_meshes_Merge_Diffuse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Child/Textures/24c47300d7f040e2bda087ee974508db_RGB_5_meshes_Merge_Diffuse.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Child/Textures/77bc06b524184a1080b97d982d882f8a_N_5_meshes_Merge_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Child/Textures/77bc06b524184a1080b97d982d882f8a_N_5_meshes_Merge_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Child/Textures/ChildMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Child/Textures/ChildMaterial.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +180,7 @@
       <workItem from="1747570194885" duration="20733000" />
       <workItem from="1747635089067" duration="11019000" />
       <workItem from="1747647842858" duration="11045000" />
+      <workItem from="1747938439828" duration="1619000" />
     </task>
     <servers />
   </component>

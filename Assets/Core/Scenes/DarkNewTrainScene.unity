@@ -19663,6 +19663,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SnapSocket
       objectReference: {fileID: 0}
+    - target: {fileID: 6444480807133278854, guid: b3aa04d41d1d7ef4faa83408c12acc56, type: 3}
+      propertyPath: _storesObjectsBetweenScenes
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6836065848509148227, guid: b3aa04d41d1d7ef4faa83408c12acc56, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.177
