@@ -274,9 +274,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3863418866272731757, guid: f441634d856f44b499641ef6d41d2b87, type: 3}
+      propertyPath: m_TagString
+      value: SnappableObject
+      objectReference: {fileID: 0}
     - target: {fileID: 4305554281363518197, guid: f441634d856f44b499641ef6d41d2b87, type: 3}
       propertyPath: m_Name
       value: OldDoorHandle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305554281363518197, guid: f441634d856f44b499641ef6d41d2b87, type: 3}
+      propertyPath: m_TagString
+      value: SnappableObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 5009735021339348543, guid: f441634d856f44b499641ef6d41d2b87, type: 3}
+      propertyPath: m_TagString
+      value: SnappableObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 8691769044111431675, guid: f441634d856f44b499641ef6d41d2b87, type: 3}
+      propertyPath: m_TagString
+      value: SnappableObject
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

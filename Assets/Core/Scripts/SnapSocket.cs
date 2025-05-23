@@ -13,7 +13,7 @@ namespace Core.Scripts
 
         public static event EventHandler OnObjectUnsnapped;
 
-        private bool _isObjectSnapped;
+        public bool IsObjectSnapped { get; private set; }
         
         private void Start()
         {
@@ -30,7 +30,7 @@ namespace Core.Scripts
 
         public virtual void SnapObject(SnappableObject snappableObject)
         {
-            _isObjectSnapped = true;
+            IsObjectSnapped = true;
             snappableObject.SetSnapSocket(this);
         }
 
@@ -38,15 +38,16 @@ namespace Core.Scripts
         {
             OnObjectUnsnapped?.Invoke(this, EventArgs.Empty);
             snappableObject.SetSnapSocket(null);
-            _isObjectSnapped = false;
+            IsObjectSnapped = false;
         }
 
         private void OnTriggerEnter(Collider other)
         {
+            Debug.Log("OnTriggerEnter");
             if (!other.gameObject.CompareTag("SnappableObject")) return;
-            if (_isObjectSnapped) return;
+            if (IsObjectSnapped) return;
             
-            SnappableObject snappableObject = other.gameObject.GetComponent<SnappableObject>();
+            SnappableObject snappableObject = other.gameObject.GetComponentInParent<SnappableObject>();
             if (snappableObject.TryGetSnapSocket(out var socket))
             {
                 socket.UnSnapObject(snappableObject);

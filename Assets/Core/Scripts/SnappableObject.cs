@@ -36,9 +36,8 @@ namespace Core.Scripts
         }
 
         private void SetGrabEnabled(bool isEnabled)
-        {
-            Debug.Log("set enabled");
-            _rigidbody.isKinematic = isEnabled;
+        { 
+            //_rigidbody.isKinematic = isEnabled;
             _xrGrabInteractable.enabled = isEnabled;
         }
 

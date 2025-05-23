@@ -1,7 +1,6 @@
 using System.Linq;
 using Core.Scripts.States;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Core.Scripts.Doors
 {
@@ -50,7 +49,7 @@ namespace Core.Scripts.Doors
             }
         }
 
-        public void Lock()
+        public virtual void Lock()
         {
             _doorJoint.zMotion = ConfigurableJointMotion.Locked;
             foreach (GameObject handle in Handles)
@@ -60,7 +59,7 @@ namespace Core.Scripts.Doors
             IsLocked = true;
         }
 
-        public void Unlock()
+        public virtual void Unlock()
         {
             _doorJoint.zMotion = ConfigurableJointMotion.Limited;
             foreach (GameObject handle in Handles)
