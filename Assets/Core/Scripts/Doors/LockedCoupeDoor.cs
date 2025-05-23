@@ -8,17 +8,17 @@ namespace Core.Scripts.Doors
     {
         [SerializeField] private SnapSocket _snapSocket;
         [SerializeField] private XRGrabInteractable _doorHandleOutside;
+        [SerializeField] private GameObject _doorHandleOutsideVisual;
 
         protected override void Start()
         {
             base.Start();
-            SnapSocket.OnObjectUnsnapped += SnapSocket_OnObjectUnsnapped;
+            SnappableObject.OnObjectSnapped += SnappableObject_OnObjectSnapped;
         }
 
-        private void SnapSocket_OnObjectUnsnapped(object sender, EventArgs e)
+        private void SnappableObject_OnObjectSnapped(object sender, EventArgs e)
         {
-            if (!TryGetComponent(out SnapSocket snapSocket)) return;
-            if (snapSocket != _snapSocket) return;
+            if (!_snapSocket.IsObjectSnapped) return;
             
             _snapSocket.gameObject.SetActive(false);
             TryEnable();
@@ -41,12 +41,13 @@ namespace Core.Scripts.Doors
         public override void Unlock()
         {
             base.Unlock();
+            _doorHandleOutsideVisual.SetActive(true);
             _doorHandleOutside.enabled = true;
         }
 
         private void OnDisable()
         {
-            SnapSocket.OnObjectUnsnapped -= SnapSocket_OnObjectUnsnapped;
+            SnappableObject.OnObjectSnapped -= SnappableObject_OnObjectSnapped;
         }
     }
 }

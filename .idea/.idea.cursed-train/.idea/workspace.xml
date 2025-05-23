@@ -6,24 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Key.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Key.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 1.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 1.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 2.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 2.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 3.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 3.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 4.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 4.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 5.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 5.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 6.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 6.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 7.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 7.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 8.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 8.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 9.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/Corridor/CorridorDrawTexture 9.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/CoupeDrawTexture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/CoupeDrawTexture.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Doors/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Doors/Door.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Doors/LockedCoupeDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Doors/LockedCoupeDoor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/SnapSocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/SnapSocket.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/SnappableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/SnappableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +183,7 @@
       <workItem from="1747647842858" duration="11045000" />
       <workItem from="1747938439828" duration="3180000" />
       <workItem from="1747951946718" duration="2000" />
-      <workItem from="1748010016917" duration="2086000" />
+      <workItem from="1748010016917" duration="3783000" />
     </task>
     <servers />
   </component>

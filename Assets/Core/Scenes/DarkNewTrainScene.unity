@@ -17453,7 +17453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.2
+      value: 0.911
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17461,7 +17461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.61
+      value: -23.699
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17667,7 +17667,7 @@ MonoBehaviour:
   _wristWatch: {fileID: 1424346426115413590}
   _fadeEffect: {fileID: 2110126391}
   _snapSocket: {fileID: 4778602796158064330}
-  _savePositionOnAnyState: 0
+  _savePositionOnAnyState: 1
 --- !u!114 &2001203081
 MonoBehaviour:
   m_ObjectHideFlags: 0

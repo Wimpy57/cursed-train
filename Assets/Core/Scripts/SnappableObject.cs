@@ -15,7 +15,7 @@ namespace Core.Scripts
         
         public static event EventHandler OnObjectSnapped;
         
-        private SnapSocket _snapSocket;
+        public SnapSocket SnapSocket { get; private set; }
         
         private void Start()
         {
@@ -37,7 +37,7 @@ namespace Core.Scripts
 
         private void SetGrabEnabled(bool isEnabled)
         { 
-            //_rigidbody.isKinematic = isEnabled;
+            _rigidbody.isKinematic = isEnabled;
             _xrGrabInteractable.enabled = isEnabled;
         }
 
@@ -45,20 +45,22 @@ namespace Core.Scripts
         {
             if (snapSocket is null)
             {
-                _snapSocket = null;
+                SnapSocket = null;
                 SetGrabEnabled(true);
                 return;
             }
             
             OnObjectSnapped?.Invoke(this, EventArgs.Empty);
-            _snapSocket = snapSocket;
-            SetGrabEnabled(true);
+            SnapSocket = snapSocket;
+            SetGrabEnabled(false);
                 
             _rigidbody.useGravity = false;
             gameObject.transform.SetParent(snapSocket.transform);
             gameObject.transform.localScale = new Vector3(1, 1, 1);
             gameObject.transform.localPosition = new Vector3(0, 0, 0);
             gameObject.transform.localRotation = Quaternion.identity;
+            
+            SetGrabEnabled(true);
             
             _xrGrabInteractable.selectExited.AddListener(OnSelectExitWhileSnapped);
         }
@@ -67,8 +69,8 @@ namespace Core.Scripts
         {
             snapSocket = null;
             
-            if (_snapSocket is null) return false;
-            snapSocket = _snapSocket;
+            if (SnapSocket is null) return false;
+            snapSocket = SnapSocket;
             return true;
         }
 

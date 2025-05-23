@@ -43,15 +43,14 @@ namespace Core.Scripts
 
         private void OnTriggerEnter(Collider other)
         {
-            Debug.Log("OnTriggerEnter");
             if (!other.gameObject.CompareTag("SnappableObject")) return;
             if (IsObjectSnapped) return;
             
             SnappableObject snappableObject = other.gameObject.GetComponentInParent<SnappableObject>();
-            if (snappableObject.TryGetSnapSocket(out var socket))
-            {
-                socket.UnSnapObject(snappableObject);
-            }
+            // if (snappableObject.TryGetSnapSocket(out var socket))
+            // {
+            //     socket.UnSnapObject(snappableObject);
+            // }
             
             SnapObject(snappableObject);
         }
