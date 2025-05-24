@@ -15,7 +15,7 @@ Material:
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -42,15 +42,15 @@ Material:
     m_Ints: []
     m_Floats:
     - _DensityMulti: 1
-    - _DensityMultiplyer: 0.96
-    - _DensityThreshold: 0.814
-    - _LightScattering: 0
-    - _MaxDistance: 100
-    - _NoiseOffset: 2
-    - _NoiseTiling: -10.29
-    - _StepSize: 1
+    - _DensityMultiplyer: 0.88
+    - _DensityThreshold: 0.935
+    - _LightScattering: 0.801
+    - _MaxDistance: 20
+    - _NoiseOffset: 0.5
+    - _NoiseTiling: 6
+    - _StepSize: 0.5
     m_Colors:
-    - _Color: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 1}
-    - _LightContribution: {r: 1, g: 0.7877358, b: 0.7877358, a: 0}
+    - _Color: {r: 0.18867922, g: 0.15943648, b: 0.12044616, a: 1}
+    - _LightContribution: {r: 0.44025147, g: 0.44025147, b: 0.44025147, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

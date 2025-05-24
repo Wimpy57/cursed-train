@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0, g: 0, b: 0, a: 0}
   m_FogMode: 3
   m_FogDensity: 0.035
@@ -514,6 +514,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5916237397784266917, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8855229134904044810, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -707,6 +711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5916237397784266917, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8855229134904044810, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6771,7 +6779,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: f69ac2dad99afb3458145b469acd3886, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: a9fb61c2c6a74c040a8a8bbc82be67f6, type: 2}
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: -7511558181221131132, guid: f69ac2dad99afb3458145b469acd3886, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
@@ -7499,6 +7507,10 @@ PrefabInstance:
       propertyPath: 'AvailableAtStates.Array.data[8]'
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 7724987491571769475, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8216231574191788987, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
@@ -7533,6 +7545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5916237397784266917, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8855229134904044810, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7947,6 +7963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5916237397784266917, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8855229134904044810, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8797,6 +8817,10 @@ PrefabInstance:
       propertyPath: 'AvailableAtStates.Array.data[3]'
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7724987491571769475, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     m_RemovedComponents:
     - {fileID: 7495546816028807751, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
     m_RemovedGameObjects:
@@ -9598,6 +9622,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5916237397784266917, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8855229134904044810, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -10125,7 +10153,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2048
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: f2426ae1b74ab19449cabe9de1dbccfe, type: 2}
   m_TargetDisplay: 0
@@ -10134,7 +10162,7 @@ Camera:
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 0
+  m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!1 &903906711 stripped
@@ -10703,7 +10731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &964519013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16832,6 +16860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5916237397784266917, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8855229134904044810, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -17010,6 +17042,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5916237397784266917, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8855229134904044810, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -17341,6 +17377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 5916237397784266917, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8855229134904044810, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -17728,7 +17768,7 @@ Transform:
   m_GameObject: {fileID: 1450170032}
   serializedVersion: 2
   m_LocalRotation: {x: 0.08436592, y: -0.5363318, z: 0.053993024, w: 0.8380426}
-  m_LocalPosition: {x: 4.83256, y: 2.3351247, z: -0.18159406}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19638,7 +19678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1721282989
 Transform:
   m_ObjectHideFlags: 0
@@ -20539,7 +20579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1873168424
 MonoBehaviour:
   m_ObjectHideFlags: 0

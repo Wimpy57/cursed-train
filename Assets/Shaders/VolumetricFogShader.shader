@@ -64,7 +64,8 @@ Shader "Unlit/VolumetricFogShader"
 
             half4 frag (Varyings IN) : SV_Target
             {
-                float4 col = SAMPLE_TEXTURE2D(_BlitTexture, sampler_LinearClamp, IN.texcoord);
+                UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(IN);
+                float4 col = SAMPLE_TEXTURE2D_X(_BlitTexture, sampler_LinearClamp, IN.texcoord);
                 
                 float depth = SampleSceneDepth(IN.texcoord);
                 float3 worldPos = ComputeWorldSpacePosition(IN.texcoord, depth, UNITY_MATRIX_I_VP);
@@ -85,10 +86,14 @@ Shader "Unlit/VolumetricFogShader"
                     float3 rayPos = entryPoint + rayDir * distTravelled;
                     
                     float density = get_density(rayPos);
-                    if( density > 0)
+                    Light mainLight = GetMainLight(TransformWorldToShadowCoord(rayPos));
+                    
+                    if(mainLight.shadowAttenuation > .8 && rayPos.x > -2 && rayPos.x < 3)
                     {
                         Light mainLight = GetMainLight(TransformWorldToShadowCoord(rayPos));
-                        fogCol.rgb += mainLight.color.rgb * _LightContribution.rgb * henyey_greenstein(dot(rayDir, mainLight.direction), _LightScattering) * density * _StepSize * mainLight.shadowAttenuation;
+                        //fogCol.rgb +=  _LightContribution.rgb * mainLight.color.rgb *henyey_greenstein(dot(rayDir, mainLight.direction), _LightScattering) * density * _StepSize * mainLight.shadowAttenuation;
+                       
+                        fogCol.rgb +=  _LightContribution.rgb * mainLight.color.rgb *henyey_greenstein(dot(rayDir, mainLight.direction), _LightScattering)  * _StepSize * mainLight.shadowAttenuation;
                         transmittance *= exp(-density * _StepSize);
                     }
                     distTravelled += _StepSize;
