@@ -217,6 +217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5916237397784266917, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8855229134904044810, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5867,6 +5871,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5916237397784266917, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8855229134904044810, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6577,6 +6585,10 @@ PrefabInstance:
       propertyPath: 'AvailableAtStates.Array.data[8]'
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 7724987491571769475, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8216231574191788987, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
@@ -7816,6 +7828,10 @@ PrefabInstance:
       propertyPath: 'AvailableAtStates.Array.data[3]'
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7724987491571769475, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     m_RemovedComponents:
     - {fileID: 7495546816028807751, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
     m_RemovedGameObjects:
@@ -9198,6 +9214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5916237397784266917, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8855229134904044810, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -14948,7 +14968,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: c8922ec0749b51748999743431b6d8e0, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: c48178c559e5dd64b80ffed1efeda982, type: 2}
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: -7511558181221131132, guid: c8922ec0749b51748999743431b6d8e0, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -14988,6 +15008,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5916237397784266917, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8855229134904044810, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -15100,7 +15124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1450170033
 Light:
   m_ObjectHideFlags: 0
@@ -15111,8 +15135,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 4
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Intensity: 0.01
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -15151,12 +15175,12 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 2857
-  m_UseColorTemperature: 1
+  m_BounceIntensity: 0
+  m_ColorTemperature: 1500
+  m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -15377,6 +15401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5916237397784266917, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8855229134904044810, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -15944,6 +15972,10 @@ PrefabInstance:
       propertyPath: 'AvailableAtStates.Array.data[6]'
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7724987491571769475, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8688750916966048462, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
       value: 256
@@ -16739,6 +16771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5916237397784266917, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8855229134904044810, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -19116,6 +19152,10 @@ PrefabInstance:
       propertyPath: 'AvailableAtStates.Array.data[8]'
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 7724987491571769475, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8688750916966048462, guid: 74495a9bf3b107140a60c1ddab85d214, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
       value: 256
@@ -19770,6 +19810,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 5916237397784266917, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fd415115e7ca27c47aa13578ea476c29, type: 2}
     - target: {fileID: 8855229134904044810, guid: c2f9ecfa31042a247b4340eba94308de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

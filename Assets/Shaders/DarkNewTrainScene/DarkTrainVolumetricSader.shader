@@ -1,4 +1,4 @@
-Shader "Unlit/VolumetricFogShader"
+Shader "Unlit/DarkTrainVolumetricShader"
 {
     Properties
     {
@@ -58,7 +58,7 @@ Shader "Unlit/VolumetricFogShader"
                 float4 noise = _FogNoise.SampleLevel(sampler_TrilinearRepeat, worldPos * 0.01 * _NoiseTiling, 0);
                 float density = dot(noise, noise);
                 density = saturate(density - _DensityThreshold) * _DensityMultiplyer;
-                return density;
+                return density / 10;
             }
 
 
@@ -88,12 +88,12 @@ Shader "Unlit/VolumetricFogShader"
                     float density = get_density(rayPos);
                     Light mainLight = GetMainLight(TransformWorldToShadowCoord(rayPos));
                     
-                    if(mainLight.shadowAttenuation > .8 && rayPos.x > -2 && rayPos.x < 3)
+                    if(rayPos.x > -2 && rayPos.x < 3 && rayPos.y < 3.5 && rayPos.y > 0 && rayPos.z > -36 && rayPos.z < 11)
                     {
                         Light mainLight = GetMainLight(TransformWorldToShadowCoord(rayPos));
                         //fogCol.rgb +=  _LightContribution.rgb * mainLight.color.rgb *henyey_greenstein(dot(rayDir, mainLight.direction), _LightScattering) * density * _StepSize * mainLight.shadowAttenuation;
-                       
-                        fogCol.rgb +=  _LightContribution.rgb * mainLight.color.rgb *henyey_greenstein(dot(rayDir, mainLight.direction), _LightScattering)  * _StepSize * mainLight.shadowAttenuation;
+                        //fogCol.rgb +=  _LightContribution.rgb * mainLight.color.rgb *henyey_greenstein(dot(rayDir, mainLight.direction), _LightScattering)  * _StepSize * mainLight.shadowAttenuation;
+                        fogCol = (1,1,1,1);
                         transmittance *= exp(-density * _StepSize);
                     }
                     distTravelled += _StepSize;

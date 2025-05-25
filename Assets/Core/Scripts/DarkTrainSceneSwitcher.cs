@@ -11,6 +11,10 @@ namespace Core.Scripts
     public class DarkTrainSceneSwitcher : MonoBehaviour
     {
         [SerializeField] private float _timeToFade;
+
+        [Header("Shaders")] 
+        [SerializeField] private FullScreenPassRendererFeature _fullScreenPassRendererFeature;
+        [SerializeField] private Material _shaderMaterial;
         
         private void Start()
         {
@@ -27,6 +31,7 @@ namespace Core.Scripts
 
         private IEnumerator SwitchToDarkTrain()
         {
+            _fullScreenPassRendererFeature.passMaterial = _shaderMaterial;
             //todo visual
             yield return StartCoroutine(Player.Instance.Fade(_timeToFade));
             SceneManager.LoadScene(SceneInfo.SceneStringNameDictionary[SceneName.DarkNewTrainScene]);
