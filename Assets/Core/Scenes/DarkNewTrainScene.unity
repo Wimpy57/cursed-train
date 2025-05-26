@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0, g: 0, b: 0, a: 0}
   m_FogMode: 2
-  m_FogDensity: 0.46
+  m_FogDensity: 1
   m_LinearFogStart: -2
   m_LinearFogEnd: 1
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -6151,6 +6151,65 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 0.4801034, z: 0.9999998}
   m_Center: {x: 0.0000000017900784, y: 0.25994873, z: 3.5553466e-10}
+--- !u!1 &313541406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 313541408}
+  - component: {fileID: 313541407}
+  m_Layer: 0
+  m_Name: SceneChanger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &313541407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313541406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60be0f8892e1a6f4abcb7e881b285c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeToFade: 1
+  _fullScreenPassRendererFeature: {fileID: -3183440518194818381, guid: f288ae1f4751b564a96ac7587541f7a2, type: 2}
+  _sceneToShader:
+  - SceneToLoad: 0
+    StateToLoadNextScene: 5
+    LoadOnStateInstantly: 0
+    ShaderMaterial: {fileID: 0}
+  - SceneToLoad: 0
+    StateToLoadNextScene: 6
+    LoadOnStateInstantly: 0
+    ShaderMaterial: {fileID: 0}
+  - SceneToLoad: 0
+    StateToLoadNextScene: 7
+    LoadOnStateInstantly: 0
+    ShaderMaterial: {fileID: 2100000, guid: d0d11e6ece0a245609e5c862ad7671bf, type: 2}
+--- !u!4 &313541408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313541406}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &315452608
 GameObject:
   m_ObjectHideFlags: 0
@@ -17703,7 +17762,7 @@ MonoBehaviour:
   _wristWatch: {fileID: 1424346426115413590}
   _fadeEffect: {fileID: 2110126391}
   _snapSocket: {fileID: 4778602796158064330}
-  _savePositionOnAnyState: 1
+  _savePositionOnAnyState: 0
 --- !u!114 &2001203081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21760,3 +21819,4 @@ SceneRoots:
   - {fileID: 893566477}
   - {fileID: 1337025538}
   - {fileID: 694770704}
+  - {fileID: 313541408}

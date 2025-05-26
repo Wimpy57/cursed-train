@@ -28,11 +28,11 @@ namespace Core.Scripts
         private IEnumerator LoadScene()
         {
             //todo visual scene transition
-            if(StateManager.Instance.CurrentState == _stateToUpgrade)
+            if (StateManager.Instance.CurrentState == _stateToUpgrade)
             {
                 StateManager.Instance.UpgradeState(this);
             }
-            SceneManager.LoadScene(SceneInfo.SceneStringNameDictionary[_sceneToLoad]);
+            SceneChanger.Instance.LoadScene();
             yield return null;
         }
     }

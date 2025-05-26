@@ -11,12 +11,12 @@ namespace Core.Scripts
         
         public static Timer Instance { get; private set; }
 
-        private float _time;
+        private float _time = 276;
         private bool _isGoing = true;
 
         private void Awake()
         {
-            if (Instance == null)
+            if (Instance is null)
             {
                 Instance = this;
             }
@@ -30,6 +30,7 @@ namespace Core.Scripts
         private void Start()
         {
             StateManager.Instance.OnStateChanged += StateManager_OnStateChanged;
+            CheckState();
         }
 
         private void Update()
@@ -41,6 +42,11 @@ namespace Core.Scripts
         public float GetTime() => _time;
         
         private void StateManager_OnStateChanged(object sender, EventArgs e)
+        {
+            CheckState();
+        }
+
+        private void CheckState()
         {
             if (StateManager.Instance.CurrentState == _startsAtState)
             {

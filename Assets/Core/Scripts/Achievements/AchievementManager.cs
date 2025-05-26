@@ -11,7 +11,7 @@ namespace Core.Scripts.Achievements
 
         private void Awake()
         {
-            if (Instance == null)
+            if (Instance is null)
             {
                 Instance = this;
                 
@@ -23,7 +23,7 @@ namespace Core.Scripts.Achievements
                     // {
                     //     Debug.Log($"{achievement}: {PlayerPrefs.GetInt(((int)achievement).ToString())}");
                     // }
-                    if (achievement == Achievement.TrashSearcher)
+                    if (achievement is Achievement.TrashSearcher or Achievement.HideAndSeek or Achievement.TheFastest)
                     {
                         PlayerPrefs.SetInt(((int)achievement).ToString(), 1);
                         continue;
