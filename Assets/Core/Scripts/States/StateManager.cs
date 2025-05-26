@@ -67,7 +67,6 @@ namespace Core.Scripts.States
 
         private void Player_OnKeyDataStored(object sender, EventArgs e)
         {
-            Debug.Log("data was stored");
             WasKeyDataStored = true;
         }
 

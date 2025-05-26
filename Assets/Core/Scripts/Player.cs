@@ -55,16 +55,16 @@ namespace Core.Scripts
         
         private void Awake()
         {
-            _isKeyDataStored = StateManager.Instance.WasKeyDataStored;
-            Hp = StateManager.Instance.PlayerHpOnPreviousScene == 0 ? 
-                MaxHp : StateManager.Instance.PlayerHpOnPreviousScene;
-            
             Instance = this;
             OnInstanceCreated?.Invoke(this, EventArgs.Empty);
         }
         
         private void Start()
         {
+            _isKeyDataStored = StateManager.Instance.WasKeyDataStored;
+            Hp = StateManager.Instance.PlayerHpOnPreviousScene == 0 ? 
+                MaxHp : StateManager.Instance.PlayerHpOnPreviousScene;
+            
             SceneName currentScene = SceneName.NewTrainScene;
             foreach (var item in SceneInfo.SceneStringNameDictionary)
             {
