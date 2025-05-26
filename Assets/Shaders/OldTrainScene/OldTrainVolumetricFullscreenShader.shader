@@ -13,15 +13,20 @@ Shader "Unlit/OldTrainVolumetricShader"
         _DensityThreshold("Density Threshold", Range(0, 1)) = 0.1
         _LightScattering("Light Scattering", Range(0, 1)) = 0.2
         
+        _EdgeSmoothing("Cone Edge Smoothing", Range(0.01, 0.5)) = 0.1
+        
         [HDR] _LightContribution("Light Contribution", Color) = (1,1,1,1) 
     }
     SubShader
     {
-        Tags {"RenderType" = "Opaque" "RenderPipeline" = "UniversalPipeline"}
+        Tags {"RenderType" = "Opaque" "RenderPipeline" = "UniversalPipeline" }
         
         Pass
         {
+            
             HLSLPROGRAM
+
+            
             #pragma vertex Vert
             #pragma fragment frag
             #pragma multi_compile _ _MAIN_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _MAIN_LIGHT_SHADOW_SCREEN
@@ -45,6 +50,7 @@ Shader "Unlit/OldTrainVolumetricShader"
             
             float4 _Color;
             float4 _LightContribution;
+            float _EdgeSmoothing;
             
 
 
@@ -84,7 +90,7 @@ Shader "Unlit/OldTrainVolumetricShader"
                 float3 coneApex = float3(-1.15, 4.52, 5.5);     // Tip of the cone
                 float3 coneAxis = normalize(float3(0, -1, 0));  // Direction cone is pointing
                 float coneAngleCos = cos(radians(30));          // Max angle (cosine space)
-                float coneLength = 4.5;     
+                float coneLength = 4.5;
 
                 while(distTravelled < distLimit)
                 {
@@ -92,23 +98,13 @@ Shader "Unlit/OldTrainVolumetricShader"
                     
                     float density = get_density(rayPos);
                     Light mainLight = GetMainLight(TransformWorldToShadowCoord(rayPos));
-
-
-                    float3 apexToRayPos = rayPos - coneApex;
-                    float distFromApex = length(apexToRayPos);
-
-                    apexToRayPos = normalize(apexToRayPos);
-
-                    float angleCos = dot(apexToRayPos, coneAxis);
-
                     
-                    if(distFromApex <= coneLength && angleCos >= coneAngleCos && distFromApex >= 1)
+                    if(rayPos.x > -2 && rayPos.x < 3 && rayPos.y < 3.5 && rayPos.y > 0 && rayPos.z > -36 && rayPos.z < 11)
                     {
                         //fogCol.rgb +=  _LightContribution.rgb * mainLight.color.rgb *henyey_greenstein(dot(rayDir, mainLight.direction), _LightScattering) * density * _StepSize * mainLight.shadowAttenuation;
-                        fogCol.rgb += (.95, .88, .67) * density * _StepSize;
-                     
-                        //fogCol = (1,1,1,1);
-                        transmittance *= exp(-density * _StepSize / (distFromApex*10));
+                        fogCol.rgb +=  _LightContribution.rgb   * _StepSize * density ;
+                    
+                        transmittance *= exp(-density * _StepSize * _LightScattering);
                     }
                     distTravelled += _StepSize;
                 }

@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Old Train Lamp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Old Train Lamp.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/NewTrainScene/NewTrainFullScreenVolumetricShaderMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/NewTrainScene/NewTrainFullScreenVolumetricShaderMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/OldTrainScene/OldTrainFullscreenShader.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/OldTrainScene/OldTrainFullscreenShader.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/OldTrainScene/OldTrainVolumetricFullscreenShader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/OldTrainScene/OldTrainVolumetricFullscreenShader.shader" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,6 +183,7 @@
       <workItem from="1748101638423" duration="10089000" />
       <workItem from="1748180063193" duration="3852000" />
       <workItem from="1748244514894" duration="4951000" />
+      <workItem from="1748253057076" duration="3576000" />
     </task>
     <servers />
   </component>
