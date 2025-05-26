@@ -85,7 +85,7 @@ namespace Core.Scripts.UI
             _isMenuLoading = true;
             StateManager.Instance.Restart();
             yield return StartCoroutine(Player.Instance.Fade(1.5f));
-            SceneManager.LoadScene(SceneInfo.SceneStringNameDictionary[SceneName.NewTrainScene]);
+            SceneChanger.Instance.LoadScene();
         }
     }
 }

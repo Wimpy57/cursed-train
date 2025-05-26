@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0, g: 0, b: 0, a: 0.043137256}
   m_FogMode: 3
-  m_FogDensity: 0.035
+  m_FogDensity: 0.15
   m_LinearFogStart: -2
   m_LinearFogEnd: 1
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -7407,8 +7407,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeToFade: 1
-  _fullScreenPassRendererFeature: {fileID: 0}
-  _sceneToShader: []
+  _fullScreenPassRendererFeature: {fileID: -3183440518194818381, guid: f288ae1f4751b564a96ac7587541f7a2, type: 2}
+  _sceneToShader:
+  - SceneToLoad: 3
+    StateToLoadNextScene: 9
+    LoadOnStateInstantly: 1
+    ShaderMaterial: {fileID: 2100000, guid: 7052f3f0471704888b356c0624b69f8b, type: 2}
+  - SceneToLoad: 1
+    StateToLoadNextScene: 6
+    LoadOnStateInstantly: 0
+    ShaderMaterial: {fileID: 2100000, guid: d0d11e6ece0a245609e5c862ad7671bf, type: 2}
+  - SceneToLoad: 1
+    StateToLoadNextScene: 7
+    LoadOnStateInstantly: 0
+    ShaderMaterial: {fileID: 2100000, guid: d0d11e6ece0a245609e5c862ad7671bf, type: 2}
 --- !u!4 &527487998
 Transform:
   m_ObjectHideFlags: 0

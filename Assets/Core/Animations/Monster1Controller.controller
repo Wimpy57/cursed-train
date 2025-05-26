@@ -9,9 +9,6 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: IsChasing
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
     m_ConditionEvent: IsAgro
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
@@ -38,9 +35,6 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: IsAgro
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: IsChasing
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6787104351398302119}
@@ -160,9 +154,6 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: IsChasing
-    m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: IsAgro
     m_EventTreshold: 0
@@ -219,9 +210,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: IsChasing
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: IsAgro
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3307413218657503181}
   m_Solo: 0
@@ -246,9 +234,6 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 2
     m_ConditionEvent: IsChasing
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: IsAgro
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1211926719073709564}
@@ -302,9 +287,6 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: IsChasing
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: IsAgro
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3307413218657503181}

@@ -105,6 +105,7 @@ namespace Core.Scripts.States
 
         public void Restart()
         {
+            //todo reset fields
             CurrentState = State.Menu;
         }
 

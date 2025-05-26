@@ -28,14 +28,7 @@ namespace Core.Scripts.Scenes
 
         private void Awake()
         {
-            if (Instance is null)
-            {
-                Instance = this;
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
+            Instance = this;
         }
         
         private void Start()

@@ -6186,15 +6186,15 @@ MonoBehaviour:
   - SceneToLoad: 0
     StateToLoadNextScene: 5
     LoadOnStateInstantly: 0
-    ShaderMaterial: {fileID: 0}
+    ShaderMaterial: {fileID: 2100000, guid: d0f772d38fc4f41ed8a4af64b7a17fa0, type: 2}
   - SceneToLoad: 0
     StateToLoadNextScene: 6
     LoadOnStateInstantly: 0
-    ShaderMaterial: {fileID: 0}
+    ShaderMaterial: {fileID: 2100000, guid: d0f772d38fc4f41ed8a4af64b7a17fa0, type: 2}
   - SceneToLoad: 0
     StateToLoadNextScene: 7
     LoadOnStateInstantly: 0
-    ShaderMaterial: {fileID: 2100000, guid: d0d11e6ece0a245609e5c862ad7671bf, type: 2}
+    ShaderMaterial: {fileID: 2100000, guid: d0f772d38fc4f41ed8a4af64b7a17fa0, type: 2}
 --- !u!4 &313541408
 Transform:
   m_ObjectHideFlags: 0
