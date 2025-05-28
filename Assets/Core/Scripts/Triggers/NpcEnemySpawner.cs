@@ -13,7 +13,7 @@ namespace Core.Scripts.Triggers
         [SerializeField] private int _amountOfOldMen;
         [SerializeField] private GameObject _oldManPrefab;
         [SerializeField] private Transform _spawnPoint;
-
+        
         private void OnTriggerEnter(Collider other)
         {
             if (StateManager.Instance.CurrentState != _enableOnState) return;
@@ -41,7 +41,8 @@ namespace Core.Scripts.Triggers
         {
             for (int i = 0; i < amount; i++)
             {
-                Instantiate(prefab, _spawnPoint.position, Quaternion.identity);
+                GameObject instantiatedObject = Instantiate(prefab, _spawnPoint.position, Quaternion.identity);
+                instantiatedObject.transform.rotation = _spawnPoint.rotation;
             }
         }
     }
