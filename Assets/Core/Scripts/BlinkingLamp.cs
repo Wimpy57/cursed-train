@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Numerics;
-using Unity.VisualScripting;
 using UnityEngine;
 using Vector2 = System.Numerics.Vector2;
 

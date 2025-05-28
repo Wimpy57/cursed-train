@@ -6180,20 +6180,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60be0f8892e1a6f4abcb7e881b285c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeToFade: 1
   _fullScreenPassRendererFeature: {fileID: -3183440518194818381, guid: f288ae1f4751b564a96ac7587541f7a2, type: 2}
   _sceneToShader:
   - SceneToLoad: 0
     StateToLoadNextScene: 5
     LoadOnStateInstantly: 0
+    TimeToFade: 1
     ShaderMaterial: {fileID: 2100000, guid: d0f772d38fc4f41ed8a4af64b7a17fa0, type: 2}
   - SceneToLoad: 0
     StateToLoadNextScene: 6
     LoadOnStateInstantly: 0
+    TimeToFade: 1
     ShaderMaterial: {fileID: 2100000, guid: d0f772d38fc4f41ed8a4af64b7a17fa0, type: 2}
   - SceneToLoad: 0
     StateToLoadNextScene: 7
     LoadOnStateInstantly: 0
+    TimeToFade: 1
     ShaderMaterial: {fileID: 2100000, guid: d0f772d38fc4f41ed8a4af64b7a17fa0, type: 2}
 --- !u!4 &313541408
 Transform:
@@ -15543,7 +15545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059390d7106c16f48bd1e0de0b948ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _defaultState: 7
+  _defaultState: 2
 --- !u!4 &1592563664
 Transform:
   m_ObjectHideFlags: 0
@@ -16607,7 +16609,7 @@ GameObject:
   - component: {fileID: 1765158429}
   - component: {fileID: 1765158428}
   - component: {fileID: 1765158432}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Extinguisher
   m_TagString: Extinguisher
   m_Icon: {fileID: 0}
@@ -17604,7 +17606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3074471628601745017, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_RaycastMask.m_Bits
-      value: 2147483745
+      value: 2147484768
       objectReference: {fileID: 0}
     - target: {fileID: 3838591909117182087, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Enabled
@@ -17624,7 +17626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5456733348963664102, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_RaycastMask.m_Bits
-      value: 2147483745
+      value: 2147484768
       objectReference: {fileID: 0}
     - target: {fileID: 5563199296126487199, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_IsActive
@@ -19017,6 +19019,18 @@ PrefabInstance:
     - target: {fileID: 1307440948817043484, guid: e5be4b380fb77bf47895b32a8026114a, type: 3}
       propertyPath: m_LocalPosition.z
       value: 15.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1307440948817043484, guid: e5be4b380fb77bf47895b32a8026114a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1307440948817043484, guid: e5be4b380fb77bf47895b32a8026114a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1307440948817043484, guid: e5be4b380fb77bf47895b32a8026114a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 3044471451129683850, guid: e5be4b380fb77bf47895b32a8026114a, type: 3}
       propertyPath: _enableOnState

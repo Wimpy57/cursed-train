@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace Core.Scripts.EnemyStateMachine
 {
     public class AttackState : EnemyState
@@ -14,6 +16,7 @@ namespace Core.Scripts.EnemyStateMachine
         public override void Enter(Enemy enemyContext)
         {
             enemyContext.SetSpeed(0f);
+            
             
             enemyContext.EnemyAnimator.SetBool("IsAgro", true);
             enemyContext.EnemyAnimator.SetBool("IsChasing", false);

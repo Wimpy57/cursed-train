@@ -39,6 +39,7 @@ namespace Core.Scripts
             OnObjectUnsnapped?.Invoke(this, EventArgs.Empty);
             snappableObject.SetSnapSocket(null);
             IsObjectSnapped = false;
+            Debug.Log("unsnapped");
         }
 
         private void OnTriggerEnter(Collider other)
@@ -47,10 +48,10 @@ namespace Core.Scripts
             if (IsObjectSnapped) return;
             
             SnappableObject snappableObject = other.gameObject.GetComponentInParent<SnappableObject>();
-            // if (snappableObject.TryGetSnapSocket(out var socket))
-            // {
-            //     socket.UnSnapObject(snappableObject);
-            // }
+            if (snappableObject.TryGetSnapSocket(out var socket))
+            {
+                socket.UnSnapObject(snappableObject);
+            }
             
             SnapObject(snappableObject);
         }
