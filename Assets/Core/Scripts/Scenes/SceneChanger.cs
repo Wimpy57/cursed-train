@@ -9,7 +9,6 @@ namespace Core.Scripts.Scenes
     public class SceneChanger : MonoBehaviour
     {
         [Header("General")]
-        [SerializeField] private float _timeToFade;
         [SerializeField] private FullScreenPassRendererFeature _fullScreenPassRendererFeature;
         [SerializeField] private SceneToShader[] _sceneToShader;
 
@@ -17,11 +16,12 @@ namespace Core.Scripts.Scenes
         private struct SceneToShader
         {
             [Header("Scene transition")]
-            [SerializeField] public SceneName SceneToLoad;
-            [SerializeField] public State StateToLoadNextScene;
-            [SerializeField] public bool LoadOnStateInstantly;
+            public SceneName SceneToLoad;
+            public State StateToLoadNextScene;
+            public bool LoadOnStateInstantly;
+            public float TimeToFade;
             [Header("Shaders")]
-            [SerializeField] public Material ShaderMaterial;
+            public Material ShaderMaterial;
         }
         
         public static SceneChanger Instance { get; private set; }
@@ -38,22 +38,33 @@ namespace Core.Scripts.Scenes
 
         private void StateManager_OnStateChanged(object sender, EventArgs e)
         {
-            foreach (var item in _sceneToShader)
+            if (TryFindItemByState(out SceneToShader item))
             {
-                if (item.StateToLoadNextScene == StateManager.Instance.CurrentState && item.LoadOnStateInstantly)
-                {
-                    StartCoroutine(SwitchToScene(item));
-                    break;
-                }
+                if (!item.LoadOnStateInstantly) return;
+                StartCoroutine(SwitchToScene(item));
             }
         }
         
         private IEnumerator SwitchToScene(SceneToShader sceneToShader)
         {
             //todo visual
-            yield return StartCoroutine(Player.Instance.Fade(_timeToFade));
+            yield return StartCoroutine(Player.Instance.Fade(sceneToShader.TimeToFade));
             LoadScene(sceneToShader);
             yield return null;
+        }
+
+        private bool TryFindItemByState(out SceneToShader sceneToShader)
+        {
+            foreach (var item in _sceneToShader)
+            {
+                if (item.StateToLoadNextScene == StateManager.Instance.CurrentState)
+                {
+                    sceneToShader = item;
+                    return true;
+                }
+            }
+            sceneToShader = new SceneToShader();
+            return false;
         }
 
         public void LoadScene()

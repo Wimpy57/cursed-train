@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using Core.Scripts.Achievements;
 using Core.Scripts.States;
 using TMPro;
@@ -15,11 +14,18 @@ namespace Core.Scripts
         [SerializeField] private TextMeshProUGUI _subtitleText;
         [Header("Speech")]
         [SerializeField] private State _speechState;
-        [SerializeField] private List<AudioClip> _npcSpeechClips;
-        [SerializeField] private List<string> _npcSpeechPhrases;
+        [SerializeField] private SpeechData[] _speechData;
         
         private AudioSource _audioSource;
         private bool _wasAchievementSpawned;
+
+        [Serializable]
+        private struct SpeechData
+        {
+            public AudioClip Clip;
+            public string Phrase;
+            public float DelayAfterPhrase;
+        }
         
         private void Start()
         {
@@ -38,18 +44,20 @@ namespace Core.Scripts
 
         private IEnumerator Speak()
         {
-            for (int i = 0; i < _npcSpeechPhrases.Count; i++)
+            foreach (var item in _speechData)
             {
                 float timeToWait = 5f;
-                if (i < _npcSpeechClips.Count)
+                if (item.Clip)
                 {
-                    _audioSource.PlayOneShot(_npcSpeechClips[i], AudioManager.Instance.GetVolume());
-                    timeToWait = _npcSpeechPhrases[i].Length;
-                }   
-                DisplayPhrase(_npcSpeechPhrases[i]);
+                    _audioSource.PlayOneShot(item.Clip, AudioManager.Instance.GetVolume());
+                    timeToWait = item.Clip.length;
+                }
+                DisplayPhrase(item.Phrase);
                 yield return new WaitForSeconds(timeToWait);
+                yield return new WaitForSeconds(item.DelayAfterPhrase);
                 RemovePhrase();
             }
+            
             StateManager.Instance.UpgradeState(this);
         }
 

@@ -9345,12 +9345,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60be0f8892e1a6f4abcb7e881b285c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeToFade: 1
   _fullScreenPassRendererFeature: {fileID: -3183440518194818381, guid: f288ae1f4751b564a96ac7587541f7a2, type: 2}
   _sceneToShader:
   - SceneToLoad: 1
     StateToLoadNextScene: 2
     LoadOnStateInstantly: 1
+    TimeToFade: 1
     ShaderMaterial: {fileID: 2100000, guid: d0d11e6ece0a245609e5c862ad7671bf, type: 2}
 --- !u!1001 &727045483
 PrefabInstance:
@@ -17864,7 +17864,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1451206204
 Transform:
   m_ObjectHideFlags: 0
@@ -17920,7 +17920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TerrainModel: {fileID: 343352488114596422, guid: a419b00cea8614d85bb7bc6fca82a4f6, type: 3}
   SpawnLocation: {fileID: 225384723}
-  Velocity: 50
+  Velocity: 15
 --- !u!4 &1476780867
 Transform:
   m_ObjectHideFlags: 0
@@ -21163,6 +21163,10 @@ PrefabInstance:
     - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_FocalLength
       value: 20.78461
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_projectionMatrixMode

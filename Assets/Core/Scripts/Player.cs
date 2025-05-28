@@ -95,8 +95,13 @@ namespace Core.Scripts
             Hp -= damage;
             if (Hp <= 0)
             {
-                //todo player is dead
+                Die();
             }
+        }
+
+        private void Die()
+        {
+            // todo
         }
         
         public void Heal(int heal)

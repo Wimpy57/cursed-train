@@ -1,29 +1,32 @@
 using UnityEngine;
 
-public class TerrainMovement : MonoBehaviour
+namespace Core.Scripts
 {
-    [SerializeField] private GameObject TerrainModel;
+    public class TerrainMovement : MonoBehaviour
+    {
+        [SerializeField] private GameObject TerrainModel;
     
-    [SerializeField] private Transform SpawnLocation;
+        [SerializeField] private Transform SpawnLocation;
 
-    [SerializeField] private float Velocity;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private float _timer = 0f;
-    private GameObject _currentTerrainModel;
+        [SerializeField] private float Velocity;
+        
+        private float _timer = 0f;
+        private GameObject _currentTerrainModel;
 
   
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (_timer <= 0f)
-        {            
-            Destroy(_currentTerrainModel);         
-            _currentTerrainModel = Instantiate(TerrainModel, SpawnLocation);
-            _currentTerrainModel.GetComponent<Rigidbody>().linearVelocity = new Vector3(0, 0, 0.278f * Velocity);
-            _timer = 216f/Velocity;
-        }
+        // Update is called once per frame
+        void Update()
+        {
+            if (_timer <= 0f)
+            {            
+                Destroy(_currentTerrainModel);         
+                _currentTerrainModel = Instantiate(TerrainModel, SpawnLocation);
+                _currentTerrainModel.GetComponent<Rigidbody>().linearVelocity = new Vector3(0, 0, Velocity);
+                _timer = 180f/Velocity;
+            }
 
-        _timer -= Time.deltaTime;
+            _timer -= Time.deltaTime;
+        }
     }
 }

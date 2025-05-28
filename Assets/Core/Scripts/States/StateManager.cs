@@ -105,7 +105,11 @@ namespace Core.Scripts.States
 
         public void Restart()
         {
-            //todo reset fields
+            WasKeyDataStored = false;
+            WasSnapped = false;
+            PlayerHpOnPreviousScene = 100;
+            TotalHpLost = 0;
+            TotalMonstersKilled = 0;
             CurrentState = State.Menu;
         }
 
