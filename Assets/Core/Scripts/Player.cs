@@ -14,6 +14,7 @@ namespace Core.Scripts
         [Header("Player parameters")]
         [SerializeField] public int MaxHp;
         [SerializeField] private bool _isKeyDataStored;
+        [SerializeField] private bool _setPreviousPosition;
         [Header("Spawn points")]
         [SerializeField] private Transform _conductorCoupeSpawnPosition;
         [SerializeField] private Transform _toiletSpawnPosition;
@@ -64,6 +65,11 @@ namespace Core.Scripts
             _isKeyDataStored = StateManager.Instance.WasKeyDataStored;
             Hp = StateManager.Instance.PlayerHpOnPreviousScene == 0 ? 
                 MaxHp : StateManager.Instance.PlayerHpOnPreviousScene;
+            if (_setPreviousPosition)
+            {
+                transform.position = StateManager.Instance.PreviousPlayerPosition;
+                transform.rotation = StateManager.Instance.PreviousPlayerRotation;
+            }
             
             SceneName currentScene = SceneName.NewTrainScene;
             foreach (var item in SceneInfo.SceneStringNameDictionary)

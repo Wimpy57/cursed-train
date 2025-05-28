@@ -15,6 +15,9 @@ namespace Core.Scripts.States
         public bool WasSnapped { get; private set; }
         public int PlayerHpOnPreviousScene { get; private set; }
         public int TotalMonstersKilled { get; private set; }
+        
+        public Vector3 PreviousPlayerPosition { get; private set; }
+        public Quaternion PreviousPlayerRotation { get; private set; }
 
         private bool _wasInitializedOnStart;
         
@@ -79,7 +82,7 @@ namespace Core.Scripts.States
         {
             if (e.HpDifference < 0)
             {
-                TotalHpLost += e.HpDifference;
+                TotalHpLost += Math.Abs(e.HpDifference);
             }
         }
 
@@ -94,6 +97,13 @@ namespace Core.Scripts.States
                 Destroy(gameObject);
             }
             DontDestroyOnLoad(gameObject);
+        }
+
+        public void SavePlayerInfo()
+        {
+            PlayerHpOnPreviousScene = Player.Instance.Hp;
+            PreviousPlayerPosition = Player.Instance.transform.position;
+            PreviousPlayerRotation = Player.Instance.transform.rotation;
         }
 
         public void UpgradeState(IStateChanger stateChanger)
@@ -115,7 +125,6 @@ namespace Core.Scripts.States
 
         public void OnDisable()
         {
-            PlayerHpOnPreviousScene = Player.Instance.Hp;
             Enemy.OnMonsterKilled -= Enemy_OnMonsterKilled;               
             Player.OnInstanceCreated -= Player_OnInstanceCreated;
             Player.Instance.OnHpChanged -= Player_OnHpChanged;

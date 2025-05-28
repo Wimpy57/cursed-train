@@ -21416,6 +21416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHp: 100
   _isKeyDataStored: 0
+  _setPreviousPosition: 0
   _conductorCoupeSpawnPosition: {fileID: 0}
   _toiletSpawnPosition: {fileID: 0}
   _wristWatch: {fileID: 5415192290374173361}

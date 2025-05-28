@@ -41,6 +41,8 @@ namespace Core.Scripts.Scenes
             if (TryFindItemByState(out SceneToShader item))
             {
                 if (!item.LoadOnStateInstantly) return;
+                
+                StateManager.Instance.SavePlayerInfo();
                 StartCoroutine(SwitchToScene(item));
             }
         }
@@ -73,6 +75,8 @@ namespace Core.Scripts.Scenes
             {
                 if (item.StateToLoadNextScene == StateManager.Instance.CurrentState)
                 {
+                    StateManager.Instance.SavePlayerInfo();
+                    
                     StartCoroutine(SwitchToScene(item));
                     break;
                 }

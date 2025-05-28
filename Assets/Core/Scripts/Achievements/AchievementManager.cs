@@ -23,11 +23,6 @@ namespace Core.Scripts.Achievements
                     // {
                     //     Debug.Log($"{achievement}: {PlayerPrefs.GetInt(((int)achievement).ToString())}");
                     // }
-                    if (achievement is Achievement.TrashSearcher or Achievement.HideAndSeek or Achievement.TheFastest)
-                    {
-                        PlayerPrefs.SetInt(((int)achievement).ToString(), 1);
-                        continue;
-                    }
                     PlayerPrefs.SetInt(((int)achievement).ToString(), 0);
                 }
             }

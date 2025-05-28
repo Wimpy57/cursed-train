@@ -26,6 +26,7 @@ namespace Core.Scripts
         public static event EventHandler OnMonsterKilled;
         
         private NavMeshAgent _agent;
+        private bool _isDead;
         
         protected EnemyState CurrentState;
         
@@ -78,6 +79,9 @@ namespace Core.Scripts
 
         public void Die()
         {
+            if (_isDead) return;
+            
+            _isDead = true;
             OnMonsterKilled?.Invoke(this, EventArgs.Empty);
             Destroy(gameObject);
         }
