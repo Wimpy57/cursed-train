@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7592237996748632583}
   - component: {fileID: 7737956770929934571}
   - component: {fileID: 717886567420108255}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AchievementCoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,6 +293,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 885588f95f69fcf4893cd7aff8caedad, type: 3}
       propertyPath: m_Name
       value: bronze_cup
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 885588f95f69fcf4893cd7aff8caedad, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

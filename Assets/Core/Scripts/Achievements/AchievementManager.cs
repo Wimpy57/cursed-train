@@ -8,6 +8,8 @@ namespace Core.Scripts.Achievements
         [SerializeField] private GameObject _achievementPrefab;
         
         public static AchievementManager Instance { get; private set; }
+        
+        public static event EventHandler OnAchievementSpawned;
 
         private void Awake()
         {
@@ -40,6 +42,7 @@ namespace Core.Scripts.Achievements
                 Player.Instance.transform.position + Vector3.up * 0.2f, 
                 Quaternion.identity).GetComponent<CollectableAchievement>();
             spawnedAchievement.InitializeAchievement(achievement);
+            OnAchievementSpawned?.Invoke(this, EventArgs.Empty);
         }
 
         public static bool IsAchieved(Achievement achievement)
