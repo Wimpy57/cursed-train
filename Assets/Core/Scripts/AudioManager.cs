@@ -10,12 +10,12 @@ namespace Core.Scripts
     public class AudioManager : MonoBehaviour
     {
         [SerializeField] private float _volume = 1f;
-        [SerializeField] private AudioSource[] _audioSources;
         [SerializeField] private AudioRefsSO _audioRefsSO;
         
         public static AudioManager Instance { get; private set; }
         
         private readonly Dictionary<AudioSource, float> _audioSourceDefaultVolume = new ();
+        private AudioSource[] _audioSources;
 
         public void Awake()
         {
@@ -32,11 +32,13 @@ namespace Core.Scripts
 
         public void OnEnable()
         {
+            _audioSources = Resources.FindObjectsOfTypeAll<AudioSource>();
+            
             foreach (AudioSource audioSource in _audioSources)
             {
                 _audioSourceDefaultVolume.Add(audioSource, audioSource.volume);
             }
-
+            
             SubscribeOnSoundEvents();
         }
 
@@ -62,7 +64,7 @@ namespace Core.Scripts
             PlayClip(e.IsSuccess ? _audioRefsSO.CorrectSound : _audioRefsSO.IncorrectSound, e.Position);
         }
 
-        private void PlayClip(AudioClip clip, Vector3 position)
+        public void PlayClip(AudioClip clip, Vector3 position)
         {
             AudioSource.PlayClipAtPoint(clip, position, GetVolume());
         }

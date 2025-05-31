@@ -6,20 +6,11 @@ using UnityEngine;
 
 namespace Core.Scripts.Triggers
 {
-    public class MainMenuMusicVolumeReducer : AvailableAtState
+    public class MainMenuMusicVolumeReducer : EmptyTrigger
     {
         [SerializeField] private AudioSource _audioSource;
         [SerializeField] private float _timeToTurnOff;
         
-        private Collider _collider;
-        
-        protected override void Start()
-        {
-            UseGravityAfterFirstInteraction = false;
-            _collider = GetComponent<Collider>();
-            base.Start();
-        }
-
         protected void OnTriggerEnter(Collider other)
         {
             if (!other.CompareTag("Player")) return;
@@ -27,7 +18,7 @@ namespace Core.Scripts.Triggers
             StartCoroutine(ReduceVolume());
             
             // turn collider off not to change states more than once
-            _collider.enabled = false;
+            DisableCollider();
         }
 
         private IEnumerator ReduceVolume()
@@ -43,11 +34,6 @@ namespace Core.Scripts.Triggers
                 yield return null;
             }
             _audioSource.volume = 0f;
-        }
-        
-        protected override void TryEnable()
-        {
-            _collider.enabled = AvailableAtStates.Contains(StateManager.Instance.CurrentState);
         }
     }
 }

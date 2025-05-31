@@ -19,6 +19,7 @@ namespace Core.Scripts.Scenes
             public SceneName SceneToLoad;
             public State StateToLoadNextScene;
             public bool LoadOnStateInstantly;
+            public bool DarkTransition;
             public float TimeToFade;
             [Header("Shaders")]
             public Material ShaderMaterial;

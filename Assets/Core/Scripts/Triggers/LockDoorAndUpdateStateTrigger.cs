@@ -16,7 +16,6 @@ namespace Core.Scripts.Triggers
             StartCoroutine(LockDoor());
         }
         
-        
         private IEnumerator LockDoor()
         {
             _door.Close();
