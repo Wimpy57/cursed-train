@@ -5,12 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Data/New Audio Refs SO.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Data/New Audio Refs SO.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/ScriptableObjects/AudioRefsSO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/ScriptableObjects/AudioRefsSO.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/MainMenuMusicVolumeReducer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/MainMenuMusicVolumeReducer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Sounds/Music.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Sounds/Music/just-relax.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Sounds/Music/just-relax.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Sounds/SFX.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Sounds/SFX/a-train-on-the-railways.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Sounds/SFX/a-train-on-the-railways.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Sounds/SFX/achievementSpawned.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Sounds/SFX/achievementSpawned.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Sounds/SFX/correct.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Sounds/SFX/correct.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Sounds/SFX/incorrect.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Sounds/SFX/incorrect.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Sounds/wrong-47985.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Sounds/wrong-47985.mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/AchievementCoin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/AchievementCoin.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/AchievementManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/AchievementManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/WristKeyReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/WristKeyReader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Sounds/biodynamic-impact-braam-tonal-dark-176441.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Sounds/biodynamic-impact-braam-tonal-dark-176441.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Sounds/horror-hit-logo-142395.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Sounds/horror-hit-logo-142395.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Sounds/marker-circle-6789.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Sounds/marker-circle-6789.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Sounds/punch-140236.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Sounds/punch-140236.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Sounds/punch-6-166699.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Sounds/punch-6-166699.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Sounds/scary-horror-sound-189949.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Sounds/scary-horror-sound-189949.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Sounds/thunder-307513.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Sounds/thunder-307513.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Sounds/wooden-slide-door-sound-227004.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Sounds/wooden-slide-door-sound-227004.mp3.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +120,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Sounds",
+    "git-widget-placeholder": "Merging master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
