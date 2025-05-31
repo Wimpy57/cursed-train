@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1292f98b34db8cd48add71e12c88545a, type: 3}
+  m_Name: New Audio Refs SO
+  m_EditorClassIdentifier: 
+  IncorrectSound: {fileID: 8300000, guid: eab74babba318bd4fb1bc372ea2d2a14, type: 3}
+  CorrectSound: {fileID: 8300000, guid: c87bd63d7f52b53469d874d55d74132e, type: 3}
+  AchievementSpawnedSound: {fileID: 8300000, guid: 38993c3fc9bbbc54a93b181d8ae43701, type: 3}

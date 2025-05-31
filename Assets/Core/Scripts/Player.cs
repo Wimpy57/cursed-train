@@ -30,10 +30,16 @@ namespace Core.Scripts
         public static event EventHandler OnInstanceCreated;
         public event EventHandler<OnHpChangedEventArgs> OnHpChanged;
         public event EventHandler OnKeyDataStored;
-
         public class OnHpChangedEventArgs : EventArgs
         {
             public int HpDifference;
+        }
+        
+        public static event EventHandler<OnWristKeyReadEventArgs> OnWristKeyRead;
+        public class OnWristKeyReadEventArgs : EventArgs
+        {
+            public bool IsSuccess;
+            public Vector3 Position;
         }
         
         public int Hp
@@ -125,6 +131,11 @@ namespace Core.Scripts
                     OnKeyDataStored?.Invoke(this, EventArgs.Empty);
                 }
             }
+            OnWristKeyRead?.Invoke(this, new OnWristKeyReadEventArgs
+            {
+                IsSuccess = isSuccess, Position = _wristWatch.gameObject.transform.position
+            });
+            
             _wristWatch.IndicateWatchOperation(isSuccess);
         }
 

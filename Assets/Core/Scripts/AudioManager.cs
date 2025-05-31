@@ -1,36 +1,93 @@
+using System;
+using System.Collections.Generic;
+using Core.Scripts.Achievements;
+using Core.Scripts.ScriptableObjects;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Core.Scripts
 {
     public class AudioManager : MonoBehaviour
     {
         [SerializeField] private float _volume = 1f;
-        [SerializeField] public AudioSource[] AudioSources;
+        [SerializeField] private AudioSource[] _audioSources;
+        [SerializeField] private AudioRefsSO _audioRefsSO;
         
         public static AudioManager Instance { get; private set; }
+        
+        private readonly Dictionary<AudioSource, float> _audioSourceDefaultVolume = new ();
 
         public void Awake()
         {
-            if (Instance == null)
+            if (Instance is null)
             {
-                Instance = this;
+                Instance = this;  
             }
             else
             {
                 Destroy(gameObject);
             }
+            DontDestroyOnLoad(gameObject);
         }
 
+        public void OnEnable()
+        {
+            foreach (AudioSource audioSource in _audioSources)
+            {
+                _audioSourceDefaultVolume.Add(audioSource, audioSource.volume);
+            }
+
+            SubscribeOnSoundEvents();
+        }
+
+        private void SubscribeOnSoundEvents()
+        {
+            Player.OnWristKeyRead += Player_OnWristKeyRead;
+            AchievementManager.OnAchievementSpawned += AchievementManager_OnAchievementSpawned;
+        }
+
+        private void UnsubscribeOnSoundEvents()
+        {
+            Player.OnWristKeyRead -= Player_OnWristKeyRead;
+            AchievementManager.OnAchievementSpawned -= AchievementManager_OnAchievementSpawned;
+        }
+
+        private void AchievementManager_OnAchievementSpawned(object sender, EventArgs e)
+        {
+            PlayClip(_audioRefsSO.AchievementSpawnedSound, Player.Instance.transform.position);
+        }
+        
+        private void Player_OnWristKeyRead(object sender, Player.OnWristKeyReadEventArgs e)
+        {
+            PlayClip(e.IsSuccess ? _audioRefsSO.CorrectSound : _audioRefsSO.IncorrectSound, e.Position);
+        }
+
+        private void PlayClip(AudioClip clip, Vector3 position)
+        {
+            AudioSource.PlayClipAtPoint(clip, position, GetVolume());
+        }
+        
+        private void PlaySound(AudioClip[] clip, Vector3 position)
+        {
+            AudioSource.PlayClipAtPoint(clip[Random.Range(0, clip.Length)], position, GetVolume());
+        }
+        
         public void SetVolume(float volume)
         {
             _volume = volume > 1f ? 1f : volume < 0f ? 0f : volume;
 
-            foreach (var audioSource in AudioSources)
+            foreach (var audioSource in _audioSourceDefaultVolume)
             {
-                audioSource.volume = _volume;
+                audioSource.Key.volume = audioSource.Value * volume;
             }
         }
 
         public float GetVolume() => _volume;
+
+        private void OnDisable()
+        {
+            _audioSourceDefaultVolume.Clear();
+            UnsubscribeOnSoundEvents();
+        }
     }
 }
