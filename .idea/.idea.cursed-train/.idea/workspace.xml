@@ -6,40 +6,178 @@
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Terrain.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Terrain.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/InstantiatedSound.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/InstantiatedSound.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Monster.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Watch.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Watch.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene/ReflectionProbe-0.exr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/LightingData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-0_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-0_comp_dir.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-0_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-0_comp_light.exr.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-1_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-1_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-1_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-1_comp_dir.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-1_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-1_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-1_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-1_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/BlinkingLamp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/BlinkingLight.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/BlinkingLamp.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/BlinkingLight.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/PlaySoundTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/PlaySoundTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/UI/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Monster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Monster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/SettingsSlider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/UI/SettingsSlider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/WristMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/UI/WristMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Small BOTD URP.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Small BOTD URP.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Global Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Global Volume Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Settings/Lighting Settings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Settings/Lighting Settings.lighting" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Train/Corridor/Textures/Floor/Floor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Train/Corridor/Textures/Floor/Floor.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Train/Corridor/Textures/Windows/Covers.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Train/Corridor/Textures/Windows/Covers.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Train/Coupe/Textures/Windows/Covers.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Train/Coupe/Textures/Windows/Covers.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Train/Toilet/Textures/Floor/Floor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Train/Toilet/Textures/Floor/Floor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite).meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Demo/Cube 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Demo/Cube 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Demo/Cube 2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Demo/Cube 2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Demo/Cube 3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Demo/Cube 3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Demo/Glowing Ball.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Demo/Glowing Ball.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Demo/Quad.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Demo/Quad.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Demo/Text.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Demo/Text/LiberationSans SDF.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Demo/Text/LiberationSans SDF.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Fog.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Fog/Composite.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Fog/Composite.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Fog/Depth.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Fog/Depth.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Fog/New Lighting Settings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Fog/New Lighting Settings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Fog/Volumetric Fog (High Quality).mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Fog/Volumetric Fog (High Quality).mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Fog/Volumetric Fog (Medium Quality).mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Materials/Fog/Volumetric Fog (Medium Quality).mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Prefabs/Slider.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Prefabs/Slider.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/README.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/README.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Demo Baking Set-Default.CellData.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Demo Baking Set-Default.CellData.bytes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Demo Baking Set-Default.CellOptionalData.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Demo Baking Set-Default.CellOptionalData.bytes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Demo Baking Set.CellBricksData.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Demo Baking Set.CellBricksData.bytes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Demo Baking Set.CellSharedData.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Demo Baking Set.CellSharedData.bytes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Demo Baking Set.CellSupportData.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Demo Baking Set.CellSupportData.bytes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Demo Baking Set.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Demo Baking Set.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Global Volume Profile - Tonemapping.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Global Volume Profile - Tonemapping.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Global Volume Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Global Volume Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/LightingData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/LightingData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Lightmap-0_comp_dir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Lightmap-0_comp_dir.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Lightmap-0_comp_light.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Lightmap-0_comp_light.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/ReflectionProbe-0.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/ReflectionProbe-0.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/ReflectionProbe-1.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/ReflectionProbe-1.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/ReflectionProbe-2.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/ReflectionProbe-2.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/ReflectionProbe-3.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/ReflectionProbe-3.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/ReflectionProbe-4.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/ReflectionProbe-4.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/ReflectionProbe-5.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/ReflectionProbe-5.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Virtual Camera Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scenes/Demo/Virtual Camera Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts/CameraController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts/CameraController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts/CameraControllerUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts/CameraControllerUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts/DemoController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts/DemoController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts/FPSDisplay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts/FPSDisplay.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts/FPSTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts/FPSTest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts/Rotator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts/Rotator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts/VolumetricFogControllerLite.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts/VolumetricFogControllerLite.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts/VolumetricFogRendererFeatureLite.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Scripts/VolumetricFogRendererFeatureLite.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Settings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Settings/Lighting Settings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Settings/Lighting Settings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Settings/URP-VolumetricFogLite-Renderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Settings/URP-VolumetricFogLite-Renderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Settings/URP-VolumetricFogLite.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Settings/URP-VolumetricFogLite.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Shaders/Composite (Lite).shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Shaders/Composite (Lite).shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Shaders/Depth Texture (Lite).shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Shaders/Depth Texture (Lite).shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Shaders/Includes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Shaders/Includes/Compositing.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Shaders/Includes/Compositing.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Shaders/Includes/CustomLighting.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Shaders/Includes/CustomLighting.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Shaders/Includes/VolumetricFogLite.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Shaders/Includes/VolumetricFogLite.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Shaders/Volumetric Fog (Lite).shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirza Beig/Volumetric Fog (Lite)/Shaders/Volumetric Fog (Lite).shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/Editor/SSR_Editor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/Editor/SSR_Editor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/HLSL.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/HLSL/GbufferSample.hlsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/HLSL/GbufferSample.hlsl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/HLSL/SSR_Blur.hlsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/HLSL/SSR_Blur.hlsl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/HLSL/SSR_Opaque.hlsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/HLSL/SSR_Opaque.hlsl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/HLSL/SSR_Transparent.hlsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/HLSL/SSR_Transparent.hlsl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/REFLECT_Documentation.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/REFLECT_Documentation.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/Resources/SSR_Composite.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/Resources/SSR_Composite.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/Resources/SSR_Renderer.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/Resources/SSR_Renderer.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/Scripts/ReflectRenderPass.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/Scripts/ReflectRenderPass.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/Scripts/SSR.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/Scripts/SSR.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/ShaderGraphs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/ShaderGraphs/SSR_Composite.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/ShaderGraphs/SSR_Composite.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/ShaderGraphs/SSR_Renderer.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/ShaderGraphs/SSR_Renderer.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/ShaderGraphs/SSR_Transparent.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/ShaderGraphs/SSR_Transparent.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/Sub-Graphs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/Sub-Graphs/SampleGbuffer.shadersubgraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/REFLECT/Sub-Graphs/SampleGbuffer.shadersubgraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunInfo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunInfo.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunSettings.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/DefaultVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/DefaultVolumeProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/DarkNewTrainScene/DarkTrainFullScreenVolumetricShaderMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/DarkNewTrainScene/DarkTrainFullScreenVolumetricShaderMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/DarkNewTrainScene/DarkTrainVolumetricSader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/DarkNewTrainScene/DarkTrainVolumetricSader.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Shaders/NewTrainScene/NewTrainFullScreenVolumetricShaderMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/NewTrainScene/NewTrainFullScreenVolumetricShaderMaterial.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +196,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/CoupeKey.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/Doors/ConductorDoor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/Doors/LockedCoupeDoor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/EnemyState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/SpiderStateMachine/SpiderDisappearState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/FadeEffect.cs" root0="FORCE_HIGHLIGHTING" />
@@ -68,6 +207,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/ScriptableObjects/QuestIconsSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/SnapSocket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/Timer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/Triggers/MainMenuMusicVolumeReducer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/Triggers/NpcEnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/Triggers/UpdateStateTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/UI/AchievementUI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -83,6 +223,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal/ShaderLibrary/UnityInput.hlsl" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph/Editor/Drawing/Controllers/BlackboardController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/TMP/TMP_SubMeshUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/UGUI/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/UGUI/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/UGUI/UI/Core/Graphic.cs" root0="SKIP_HIGHLIGHTING" />
@@ -138,6 +279,17 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Builds/cursedTrainBuildTry\Cursed train.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\PROGANIE\Builds\cursedTrainBuildTry" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
@@ -242,6 +394,10 @@
       <workItem from="1748430117980" duration="837000" />
       <workItem from="1748430979263" duration="8038000" />
       <workItem from="1748704241949" duration="4255000" />
+      <workItem from="1748766145383" duration="3333000" />
+      <workItem from="1748777112998" duration="5992000" />
+      <workItem from="1748783274848" duration="79000" />
+      <workItem from="1748783581134" duration="1484000" />
     </task>
     <servers />
   </component>

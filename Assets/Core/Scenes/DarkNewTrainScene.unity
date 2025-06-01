@@ -5645,6 +5645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _volume: 1
   _audioRefsSO: {fileID: 11400000, guid: eee922c65b6cb7749be5a6682eda2264, type: 2}
+  _soundSourcePrefab: {fileID: 0}
 --- !u!4 &151552517
 Transform:
   m_ObjectHideFlags: 0
@@ -7960,7 +7961,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &717494653
 Transform:
   m_ObjectHideFlags: 0
@@ -17690,7 +17691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 153982007679157697, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_MoveSpeed
-      value: 1.5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1178791450436251564, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_CameraYOffset
@@ -17802,7 +17803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6232745470614056090, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Height
-      value: 1.5
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 6232745470614056090, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Center.y

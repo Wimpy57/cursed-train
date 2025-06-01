@@ -23,6 +23,10 @@ namespace Core.Scripts
         [Header("Enemy animation")] 
         [SerializeField] public Animator EnemyAnimator;
 
+        [SerializeField] public GameObject Spine;
+        [SerializeField] public GameObject Neck;
+        [SerializeField] public GameObject Head;
+
         public static event EventHandler OnMonsterKilled;
         
         private NavMeshAgent _agent;
@@ -54,6 +58,22 @@ namespace Core.Scripts
         protected void Update()
         {
             UpdateState();
+        }
+
+        private void LateUpdate()
+        {
+            Vector3 SpineLookAt = Camera.main.transform.position;
+            Vector3 MonsterLookAt = SpineLookAt;
+            Vector3 HeadLookAt = SpineLookAt;
+            MonsterLookAt.y = transform.position.y;
+            transform.LookAt(MonsterLookAt);
+            SpineLookAt.y -= 1.9f;
+            HeadLookAt.y -= .7f;
+            Head.transform.LookAt(HeadLookAt);
+            SpineLookAt.Normalize();
+            SpineLookAt.x = Spine.transform.forward.x;
+            SpineLookAt.z = Spine.transform.forward.z;
+            Spine.transform.forward = SpineLookAt;
         }
         
         private void UpdateState()

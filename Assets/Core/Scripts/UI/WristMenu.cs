@@ -1,10 +1,10 @@
 using System;
 using System.Collections;
+using Core.Scripts.Scenes;
 using Core.Scripts.ScriptableObjects;
 using Core.Scripts.States;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Core.Scripts.UI
@@ -16,12 +16,24 @@ namespace Core.Scripts.UI
         [SerializeField] private string _defaultText;
         [SerializeField] private QuestIconsSO _questIcons;
         [SerializeField] private Image _questImageIcon;
+        [Header("Pause")] 
+        [SerializeField] private GameObject _pauseCanvas;
+        [SerializeField] private GameObject _pausePanel;
+        [SerializeField] private Button _settingsButton;
+        [SerializeField] private Button _quitButton;
+        [SerializeField] private Button _mainMenuButton;
+        [Header("Settings")]
+        [SerializeField] private GameObject _settingsPanel;
+        [SerializeField] private Button _volumeSettingsButton;
+        [SerializeField] private Button _graphicsSettingsButton;
+        [SerializeField] private Button _backToPauseButton;
+        [Header("Volume")]
+        [Header("Graphics")]
         [Header("Heart beat parameters")]
         [SerializeField] private Animator _heartBeatAnimator;
         [SerializeField] private int _normalHpPercentLimit;
         [SerializeField] private int _lowHpPercentLimit;
         [SerializeField] private int _criticalHpPercentLimit;
-
         [Header("Screen material parameters")] 
         [SerializeField] private Material _screenMaterial;
         [SerializeField] private Light _screenLight;
@@ -32,7 +44,7 @@ namespace Core.Scripts.UI
         [SerializeField] private float _dataStoringEffectDuration;
 
         private bool _isDataStoring;
-        
+        private bool _isMenuLoading;
         
         private void Start()
         {
@@ -46,6 +58,11 @@ namespace Core.Scripts.UI
             }
             
             _heartBeatAnimator.speed = .15f;
+            //
+            // _settingsButton.onClick.AddListener(OpenSettingsPanel);
+            // _quitButton.onClick.AddListener(ClosePauseCanvas);
+            // _mainMenuButton.onClick.AddListener(BackToMenu);
+            // _backToPauseButton.onClick.AddListener(OpenPauseCanvas);
             
             Player.Instance.OnHpChanged += Player_OnHpChanged;
             StateManager.Instance.OnStateChanged += StateManager_OnStateChanged;
@@ -148,13 +165,59 @@ namespace Core.Scripts.UI
             _isDataStoring = false;
         }
 
+        public void OpenPauseCanvas()
+        {
+            SetPauseCanvasActive(true);
+            SetPausePanelActive(true);
+            SetSettingsActive(false);
+        }
+        
+        private void ClosePauseCanvas()
+        {
+            SetPauseCanvasActive(false);
+        }
+        
+        private void SetPauseCanvasActive(bool isActive)
+        {
+            _pauseCanvas.gameObject.SetActive(isActive);
+        }
+        
+        private void SetPausePanelActive(bool isActive)
+        {
+            _pausePanel.gameObject.SetActive(isActive);
+        }
+
+        private void OpenSettingsPanel()
+        {
+            SetPausePanelActive(false);
+            SetSettingsActive(true);
+        }
+
+        private void SetSettingsActive(bool isActive)
+        {
+            _settingsPanel.gameObject.SetActive(isActive);
+        }
+        
+        private void BackToMenu()
+        {
+            if (_isMenuLoading) return;
+            StartCoroutine(LoadMenuScene());
+        }
+        
+        private IEnumerator LoadMenuScene()
+        {
+            _isMenuLoading = true;
+            StateManager.Instance.Restart();
+            yield return StartCoroutine(Player.Instance.Fade(1.5f));
+            SceneChanger.Instance.LoadScene();
+        }
+
         private void OnDisable()
         {
             _screenMaterial.color = _defaultScreenMaterialColor;
             if (Player.Instance == null) return;
             Player.Instance.OnHpChanged -= Player_OnHpChanged;
             StateManager.Instance.OnStateChanged -= StateManager_OnStateChanged;
-
         }
     }
 }
