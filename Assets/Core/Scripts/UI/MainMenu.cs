@@ -54,7 +54,6 @@ namespace Core.Scripts.UI
 
         public void SetGraphics(int value)
         {
-            Debug.Log(value);
             switch (value)
             {
                 case 0:

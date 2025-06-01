@@ -5,11 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/InstantiatedSound.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/InstantiatedSound.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene/ReflectionProbe-0.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/CoupeDrawMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/CoupeDrawMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/CoupeDrawTexture.renderTexture.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Drawable/CoupeDrawTexture.renderTexture.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-0_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-0_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-0_comp_dir.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-0_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-0_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-0_comp_light.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-1_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-1_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-1_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-1_comp_dir.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-1_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-1_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-1_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-1_comp_light.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-2_comp_dir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-2_comp_dir.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-2_comp_light.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-2_comp_light.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-3_comp_dir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-3_comp_dir.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-3_comp_light.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/Lightmap-3_comp_light.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene/ReflectionProbe-0.exr.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/PlaySoundTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/PlaySoundTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/UI/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FastSky/Materials/RealisticSky.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FastSky/Materials/RealisticSky.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/NewTrainScene/NewTrainFullScreenVolumetricShaderMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/NewTrainScene/NewTrainFullScreenVolumetricShaderMaterial.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,6 +258,7 @@
       <workItem from="1748777112998" duration="5992000" />
       <workItem from="1748783274848" duration="79000" />
       <workItem from="1748783581134" duration="2884000" />
+      <workItem from="1748792170747" duration="5000" />
     </task>
     <servers />
   </component>
@@ -238,7 +267,6 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
-    <option name="hasUnityReference" value="true" />
     <option name="unityProject" value="true" />
     <option name="unityProjectFolder" value="true" />
   </component>

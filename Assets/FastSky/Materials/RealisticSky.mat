@@ -69,7 +69,7 @@ Material:
     - _DayScatterStrength: 26.9
     - _DensityAtSeaLevel: 1.225
     - _DensityPower: 44.4
-    - _EveningBrightness: 0.005
+    - _EveningBrightness: 0.002
     - _EveningScatterStrength: 18.9
     - _EveningThreshold: 0
     - _IndexOfRefraction: 180
@@ -101,7 +101,7 @@ Material:
     - _Colour_Weights: {r: 1, g: 1, b: 1, a: 0}
     - _DayColour: {r: 1, g: 1, b: 1, a: 1}
     - _DensityRemap: {r: 0.1, g: 2, b: 0, a: 0}
-    - _EveningColour: {r: 0, g: 0, b: 0, a: 1}
+    - _EveningColour: {r: 1, g: 1, b: 1, a: 1}
     - _ScatteringCoefficients: {r: 5.8, g: 13.5, b: 33.1, a: 0}
     - _SizeMultiplier: {r: 1, g: 0.1, b: 1, a: 0}
     - _SkyColour: {r: 1, g: 1, b: 1, a: 1}
