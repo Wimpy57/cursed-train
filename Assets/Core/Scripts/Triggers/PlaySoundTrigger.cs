@@ -11,6 +11,7 @@ namespace Core.Scripts.Triggers
         [Header("New audio clip")]
         [SerializeField] private AudioClip _audioClip;
         [SerializeField] private Transform _spotToPlayClip;
+        [SerializeField] private bool _playLooped = true;
         [Header("Audio clip to reduce")]
         [SerializeField] private AudioSource[] _audioSourcesToReduceVolume;
         [SerializeField] private float _reduceVolumeByPercentage;
@@ -23,7 +24,7 @@ namespace Core.Scripts.Triggers
         private void OnTriggerEnter(Collider other)
         {
             if (!other.gameObject.CompareTag("Player")) return;
-            _instantiatedAudio = AudioManager.Instance.PlayClip(_audioClip, _spotToPlayClip.position, true);
+            _instantiatedAudio = AudioManager.Instance.PlayClip(_audioClip, _spotToPlayClip.position, _playLooped);
             ReduceVolume();
             if (_disableWhenTriggerEnter)
             {

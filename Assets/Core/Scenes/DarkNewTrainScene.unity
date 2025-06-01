@@ -5645,7 +5645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _volume: 1
   _audioRefsSO: {fileID: 11400000, guid: eee922c65b6cb7749be5a6682eda2264, type: 2}
-  _soundSourcePrefab: {fileID: 0}
+  _soundSourcePrefab: {fileID: 7174750898159606935, guid: 3ba40d34f45c5dc4ea9e42a9ed3d7064, type: 3}
 --- !u!4 &151552517
 Transform:
   m_ObjectHideFlags: 0
@@ -17695,7 +17695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1178791450436251564, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_CameraYOffset
-      value: 1.9
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 1178791450436251564, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_RequestedTrackingOriginMode
