@@ -12,6 +12,7 @@ namespace Core.Scripts
         [Header("Parameters")] 
         [SerializeField] private GameObject _subtitleCanvas;
         [SerializeField] private TextMeshProUGUI _subtitleText;
+        [SerializeField] private bool _updateStateAfterSpeech = true;
         [Header("Speech")]
         [SerializeField] private State _speechState;
         [SerializeField] private SpeechData[] _speechData;
@@ -58,7 +59,10 @@ namespace Core.Scripts
                 RemovePhrase();
             }
             
-            StateManager.Instance.UpgradeState(this);
+            if (_updateStateAfterSpeech)
+            {
+                StateManager.Instance.UpgradeState(this);
+            }
         }
 
         private void OnCollisionEnter(Collision other)

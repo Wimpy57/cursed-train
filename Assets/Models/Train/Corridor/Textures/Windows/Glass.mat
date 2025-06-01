@@ -44,9 +44,9 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _Blend: 2
-    - _DstBlend: 1
-    - _DstBlendAlpha: 1
+    - _Blend: 0
+    - _DstBlend: 10
+    - _DstBlendAlpha: 10
     - _Glossiness: 0.59999996
     - _Smoothness: 0
     - _Surface: 1
