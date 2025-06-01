@@ -58,17 +58,37 @@ namespace Core.Scripts.UI
             }
             
             _heartBeatAnimator.speed = .15f;
+            SetQuestIcon();
             //
             // _settingsButton.onClick.AddListener(OpenSettingsPanel);
             // _quitButton.onClick.AddListener(ClosePauseCanvas);
             // _mainMenuButton.onClick.AddListener(BackToMenu);
             // _backToPauseButton.onClick.AddListener(OpenPauseCanvas);
             
+        }
+
+        private void OnEnable()
+        {
+            StartCoroutine(SubscribeOnEnable());
+        }
+
+        private IEnumerator SubscribeOnEnable()
+        {
+            while (Player.Instance == null || StateManager.Instance == null)
+            {
+                yield return new WaitForEndOfFrame();
+            }
             Player.Instance.OnHpChanged += Player_OnHpChanged;
             StateManager.Instance.OnStateChanged += StateManager_OnStateChanged;
+            
         }
 
         private void StateManager_OnStateChanged(object sender, EventArgs e)
+        {
+           SetQuestIcon();
+        }
+
+        private void SetQuestIcon()
         {
             switch (StateManager.Instance.CurrentState)
             {

@@ -62,7 +62,7 @@ Material:
     - _CloudScale: 0.5
     - _CloudSmoothness: 0.35
     - _CloudSoftness: 0.316
-    - _CloudSpeed: 4
+    - _CloudSpeed: -5
     - _CloudThickness: 0.307
     - _CloudTwirl: 0
     - _DayBrightness: 0

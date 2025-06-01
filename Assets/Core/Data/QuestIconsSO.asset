@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae8ec61321a4f4b479be12738ce8043a, type: 3}
   m_Name: QuestIconsSO
   m_EditorClassIdentifier: 
-  MenuQuestIcon: {fileID: 21300000, guid: 17d565bb4a7744b41b7e4dc7e3a09e35, type: 3}
-  CoupeQuestIcon: {fileID: 21300000, guid: 10abf1be8eef148d4aa4b96b2af7a9f0, type: 3}
-  DarkNewTrainQuestIcon: {fileID: 21300000, guid: 0265e2b6afccd49de9c1f0b3a1fb4285, type: 3}
-  OldManSpeechIcon: {fileID: 21300000, guid: 3aad042fcb57b4bed9d9a46b932df060, type: 3}
-  FindLeverQuestIcon: {fileID: 21300000, guid: 9e4e923f2e0534a56b6a0c2321388194, type: 3}
-  OldTrainQuestIcon: {fileID: 21300000, guid: f8ecc54972abacc46a93f671b0602139, type: 3}
-  FindTheKeyQuestIcon: {fileID: 21300000, guid: db6c53a51f4ff0243919f780d898a0c2, type: 3}
-  OpenTheDoorQuestIcon: {fileID: 21300000, guid: 29e31833c32435a479338cf97dff5d06, type: 3}
-  ChildDefenceQuestIcon: {fileID: 21300000, guid: 3b2e62babc5249f42921c2cd027852cd, type: 3}
-  FinalQuestIcon: {fileID: 21300000, guid: f997d60d79a4e45cab6b1814e377a1b3, type: 3}
+  MenuQuestIcon: {fileID: 21300000, guid: 004bfb9d627c1764bae3a23b52afde43, type: 3}
+  CoupeQuestIcon: {fileID: 21300000, guid: 9d3480480d09c1246a9641a2b1105d70, type: 3}
+  DarkNewTrainQuestIcon: {fileID: 21300000, guid: 9c71e55a705d0c446863e72c2fcebb30, type: 3}
+  OldManSpeechIcon: {fileID: 21300000, guid: 479b4aa084125494193aef25952047c4, type: 3}
+  FindLeverQuestIcon: {fileID: 21300000, guid: 7cbf6adf5f41d8c4fa0ade700935089b, type: 3}
+  OldTrainQuestIcon: {fileID: 21300000, guid: 479b4aa084125494193aef25952047c4, type: 3}
+  FindTheKeyQuestIcon: {fileID: 21300000, guid: 4a6ce1419cc8fe842abb16a83a975a18, type: 3}
+  OpenTheDoorQuestIcon: {fileID: 21300000, guid: 84db62655f8646345951087b65d301f9, type: 3}
+  ChildDefenceQuestIcon: {fileID: 21300000, guid: 479b4aa084125494193aef25952047c4, type: 3}
+  FinalQuestIcon: {fileID: 21300000, guid: 850fd84be95b3c748bad1f3c7ac145ed, type: 3}

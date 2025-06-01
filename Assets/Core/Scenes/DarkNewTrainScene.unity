@@ -6170,6 +6170,12 @@ MonoBehaviour:
     DarkTransition: 0
     TimeToFade: 1
     ShaderMaterial: {fileID: 2100000, guid: d0f772d38fc4f41ed8a4af64b7a17fa0, type: 2}
+  - SceneToLoad: 2
+    StateToLoadNextScene: 0
+    LoadOnStateInstantly: 1
+    DarkTransition: 0
+    TimeToFade: 2
+    ShaderMaterial: {fileID: 2100000, guid: 7052f3f0471704888b356c0624b69f8b, type: 2}
 --- !u!4 &313541408
 Transform:
   m_ObjectHideFlags: 0
@@ -16181,7 +16187,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: be6b430aba92929478353f230773793e, type: 3}
   m_Resource: {fileID: 8300000, guid: be6b430aba92929478353f230773793e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0

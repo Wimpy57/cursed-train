@@ -51,9 +51,9 @@ Material:
     - _EdgeSmoothing: 0.5
     - _LightScattering: 0.165
     - _MaxDistance: 20
-    - _NoiseOffset: 0.5
+    - _NoiseOffset: 1
     - _NoiseTiling: 10.48
-    - _StepSize: 0.5
+    - _StepSize: 1
     m_Colors:
     - _Color: {r: 0.4716981, g: 0.37702593, b: 0.29221547, a: 1}
     - _LightContribution: {r: 0.044025064, g: 0.01790537, b: 0.004845521, a: 1}

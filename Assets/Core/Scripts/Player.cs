@@ -113,7 +113,7 @@ namespace Core.Scripts
 
         private void Die()
         {
-            // todo
+            StateManager.Instance.Restart();
         }
         
         public void Heal(int heal)
