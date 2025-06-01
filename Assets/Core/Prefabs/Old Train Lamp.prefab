@@ -137,6 +137,10 @@ PrefabInstance:
       propertyPath: _lowerIntensityPercent
       value: 85
       objectReference: {fileID: 0}
+    - target: {fileID: 5351238064728403663, guid: 82c28d6c4cbeffb42b927ac72683fd4e, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5981276937255314874, guid: 82c28d6c4cbeffb42b927ac72683fd4e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -5,20 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterDieState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/LightOffTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/LightOffTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/ReduceVolumeTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/ReduceVolumeTrigger.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Animations/Monster1Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Animations/Monster1Controller.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Monster.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Lamp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Lamp.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Old Train Lamp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Old Train Lamp.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/FinalScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/FinalScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterAttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterAttackState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterRageState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterRageState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterDieState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Monster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Monster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/PlaySoundTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/PlaySoundTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/NewTrainScene/NewTrainFullScreenVolumetricShaderMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/NewTrainScene/NewTrainFullScreenVolumetricShaderMaterial.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +241,7 @@
       <workItem from="1748783274848" duration="79000" />
       <workItem from="1748783581134" duration="2884000" />
       <workItem from="1748792170747" duration="8623000" />
-      <workItem from="1748808599154" duration="3032000" />
+      <workItem from="1748808599154" duration="7704000" />
     </task>
     <servers />
   </component>

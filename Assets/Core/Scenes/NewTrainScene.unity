@@ -501,6 +501,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7b4d9aca0cec054693576df9981196a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 903906720}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f7b4d9aca0cec054693576df9981196a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 903906721}
   m_SourcePrefab: {fileID: 100100000, guid: f7b4d9aca0cec054693576df9981196a, type: 3}
 --- !u!1001 &72299282
 PrefabInstance:
@@ -6325,7 +6328,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 5a1887d3f7a9802478716bc8e12cfede, type: 3}
   m_Resource: {fileID: 8300000, guid: 5a1887d3f7a9802478716bc8e12cfede, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -11541,6 +11544,18 @@ CapsuleCollider:
   m_Height: 0.19177341
   m_Direction: 0
   m_Center: {x: -0.020042658, y: 0.0011181235, z: 0}
+--- !u!114 &903906721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903906711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35651387ce968134995b697a41307e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &905883159
 GameObject:
   m_ObjectHideFlags: 0
