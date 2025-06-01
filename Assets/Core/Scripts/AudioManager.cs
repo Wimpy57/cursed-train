@@ -1,16 +1,19 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using Core.Scripts.Achievements;
 using Core.Scripts.ScriptableObjects;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Core.Scripts
 {
     public class AudioManager : MonoBehaviour
-    {
+    {    
         [SerializeField] private float _volume = 1f;
         [SerializeField] private AudioRefsSO _audioRefsSO;
+        [SerializeField] private GameObject _soundSourcePrefab;
         
         public static AudioManager Instance { get; private set; }
         
@@ -64,9 +67,23 @@ namespace Core.Scripts
             PlayClip(e.IsSuccess ? _audioRefsSO.CorrectSound : _audioRefsSO.IncorrectSound, e.Position);
         }
 
-        public void PlayClip(AudioClip clip, Vector3 position)
+        public AudioSource PlayClip(AudioClip clip, Vector3 position, bool loop = false)
         {
-            AudioSource.PlayClipAtPoint(clip, position, GetVolume());
+            AudioSource audioSource = Instantiate(_soundSourcePrefab, position, Quaternion.identity)
+                .GetComponent<AudioSource>();
+            audioSource.clip = clip;
+            audioSource.volume = GetVolume();
+            audioSource.Play();
+            if (!loop)
+            {
+                StartCoroutine(DestroySoundSource(audioSource, clip.length));
+            }
+            else
+            {
+                audioSource.loop = true;
+            }
+            
+            return audioSource;
         }
         
         private void PlaySound(AudioClip[] clip, Vector3 position)
@@ -86,6 +103,12 @@ namespace Core.Scripts
 
         public float GetVolume() => _volume;
 
+        private IEnumerator DestroySoundSource(AudioSource soundSource, float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            Destroy(soundSource.gameObject);
+        }
+        
         private void OnDisable()
         {
             _audioSourceDefaultVolume.Clear();

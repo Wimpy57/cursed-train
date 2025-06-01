@@ -88,11 +88,10 @@ Shader "Unlit/DarkTrainVolumetricShader"
                     half density = get_density(rayPos);
                     Light mainLight = GetMainLight(TransformWorldToShadowCoord(rayPos));
                     
-                    if(rayPos.x > -2 && rayPos.x < 3 && rayPos.y < 3.5 && rayPos.y > 0 && rayPos.z > -36 && rayPos.z < 11)
+                    if(rayPos.x > -2 && rayPos.x < 3 && rayPos.y < 3.5 && rayPos.y > 0 && rayPos.z > -36 && rayPos.z < 11 && mainLight.shadowAttenuation > .8)
                     {
-                        Light mainLight = GetMainLight(TransformWorldToShadowCoord(rayPos));
-                        //fogCol.rgb +=  _LightContribution.rgb * mainLight.color.rgb *henyey_greenstein(dot(rayDir, mainLight.direction), _LightScattering) * density * _StepSize * mainLight.shadowAttenuation;
-                        fogCol.rgb +=  _LightContribution.rgb   * _StepSize;
+                        fogCol.rgb +=  _LightContribution.rgb * mainLight.color.rgb *henyey_greenstein(dot(rayDir, mainLight.direction), _LightScattering) * density * _StepSize * mainLight.shadowAttenuation;
+                        //fogCol.rgb +=  _LightContribution.rgb   * _StepSize * mainLight.color.rgb*henyey_greenstein(dot(rayDir, mainLight.direction), _LightScattering) * mainLight.shadowAttenuation;
                         //fogCol = (1,1,1,1);
                         transmittance *= exp(-density * _StepSize);
                     }

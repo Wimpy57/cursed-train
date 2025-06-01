@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -6,6 +5,9 @@ namespace Core.Scripts.Triggers
 {
     public class PlaySoundTrigger : EmptyTrigger
     {
+        [Header("Trigger settings")] 
+        [SerializeField] private bool _returnVolumeOnTriggerExit;
+        [SerializeField] private bool _disableWhenTriggerEnter;
         [Header("New audio clip")]
         [SerializeField] private AudioClip _audioClip;
         [SerializeField] private Transform _spotToPlayClip;
@@ -16,13 +18,32 @@ namespace Core.Scripts.Triggers
         [SerializeField] private bool _reduceVolumeForever;
 
         private float _timer;
+        private AudioSource _instantiatedAudio;
         
         private void OnTriggerEnter(Collider other)
         {
             if (!other.gameObject.CompareTag("Player")) return;
-            AudioManager.Instance.PlayClip(_audioClip, _spotToPlayClip.position);
+            _instantiatedAudio = AudioManager.Instance.PlayClip(_audioClip, _spotToPlayClip.position, true);
             ReduceVolume();
-            DisableCollider();
+            if (_disableWhenTriggerEnter)
+            {
+                DisableCollider();
+            }
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            if (!_returnVolumeOnTriggerExit) return;
+            if (!other.gameObject.CompareTag("Player")) return;
+            
+            StopAllCoroutines();
+            
+            foreach (var item in _audioSourcesToReduceVolume)
+            {
+                StartCoroutine(SetVolumeTransition(item, item.volume / (1-_reduceVolumeByPercentage / 100f)));
+            }
+
+            StartCoroutine(SetVolumeTransition(_instantiatedAudio, 0f, true));
         }
 
         private void ReduceVolume()
@@ -49,11 +70,11 @@ namespace Core.Scripts.Triggers
 
             foreach (var item in sources)
             {
-                StartCoroutine(SetVolumeTransition(item, item.volume / 1-(_reduceVolumeByPercentage / 100f)));
+                StartCoroutine(SetVolumeTransition(item, item.volume / (1-_reduceVolumeByPercentage / 100f)));
             }
         }
 
-        private IEnumerator SetVolumeTransition(AudioSource source, float finalVolume)
+        private IEnumerator SetVolumeTransition(AudioSource source, float finalVolume, bool destroyAfterTransition = false)
         {
             float timer = 0f;
             float elapsedTime = 1f;
@@ -63,6 +84,11 @@ namespace Core.Scripts.Triggers
                 source.volume = Mathf.Lerp(startVolume, finalVolume, timer / elapsedTime);
                 timer += Time.deltaTime;
                 yield return null;
+            }
+
+            if (destroyAfterTransition)
+            {
+                Destroy(source.gameObject);
             }
         }
     }

@@ -1,10 +1,12 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
+using LightType = UnityEngine.LightType;
 using Vector2 = System.Numerics.Vector2;
 
 namespace Core.Scripts
 {
-    public class BlinkingLamp : MonoBehaviour
+    public class BlinkingLight : MonoBehaviour
     {
         [Header("Parameters")] 
         [SerializeField] private bool _blinkOnSceneLoad;
@@ -27,7 +29,10 @@ namespace Core.Scripts
             _higherIntensityValue = _light.intensity;
             if (_isInverted)
             {
-                _light.range = _invertedRange;
+                if (_light.type != LightType.Directional)
+                {
+                    _light.range = _invertedRange;
+                }
                 _light.intensity = 0f;
             }
 
@@ -61,14 +66,13 @@ namespace Core.Scripts
             }
             float finalIntensity = _isInverted ? 0f : _higherIntensityValue;
             yield return StartCoroutine(ChangeIntensity(_light.intensity, finalIntensity, blinkingFrequency));
-
         }
 
         private IEnumerator ChangeIntensity(float startIntensity, float endIntensity, float duration)
         {
             for (int i = 0; i <= duration * 100+1; i++)
             {
-                _light.intensity = Vector2.Lerp(new Vector2(0, startIntensity), new Vector2(0, endIntensity), (i/(duration*100))).Y;
+                _light.intensity = Vector3.Slerp(new Vector3(0, startIntensity, 0), new Vector3(0, endIntensity, 0), (i/(duration*100))).y;
                 yield return new WaitForSeconds(.001f);
             }
         }

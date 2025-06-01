@@ -7,10 +7,14 @@ namespace Core.Scripts.UI
 {
     public class MainMenu : MonoBehaviour, IStateChanger
     {
+        
         [SerializeField] private GameObject _mainMenuPanel;
         [SerializeField] private GameObject _settingsPanel;
         [SerializeField] private Door _coupeDoor;
         [SerializeField] private TextMeshProUGUI _volumeValueText;
+        [Header("Graphics")]
+        [SerializeField] private Material _fullScreenPassRendererMaterial;
+
         
         private void Start()
         {
@@ -46,6 +50,27 @@ namespace Core.Scripts.UI
         {
             AudioManager.Instance.SetVolume(volume);
             _volumeValueText.text = (int)(volume * 100) + "%";
+        }
+
+        public void SetGraphics(int value)
+        {
+            Debug.Log(value);
+            switch (value)
+            {
+                case 0:
+                    _fullScreenPassRendererMaterial.SetFloat("_StepSize", .1f);
+                    _fullScreenPassRendererMaterial.SetFloat("_NoiseOffset", .1f);
+                    break;
+                case 1:
+                    _fullScreenPassRendererMaterial.SetFloat("_StepSize", .5f);
+                    _fullScreenPassRendererMaterial.SetFloat("_NoiseOffset", .5f);
+                    break;
+                case 2:
+                    _fullScreenPassRendererMaterial.SetFloat("_StepSize", 1f);
+                    _fullScreenPassRendererMaterial.SetFloat("_NoiseOffset", 1f);
+                    break;
+            }
+            
         }
 
         public void Quit()
