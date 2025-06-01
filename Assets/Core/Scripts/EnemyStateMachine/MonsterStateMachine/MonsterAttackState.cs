@@ -15,10 +15,6 @@ namespace Core.Scripts.EnemyStateMachine.MonsterStateMachine
             {
                 enemyContext.ChangeState(new MonsterChaseState());
             }
-            else if (enemyContext.GetHp() == enemyContext.HpToRage)
-            {
-                enemyContext.ChangeState(new MonsterRageState());
-            }
             else
             {
                 HandleFight(enemyContext);
@@ -29,12 +25,13 @@ namespace Core.Scripts.EnemyStateMachine.MonsterStateMachine
         {
             if (_timeToHit <= 0)
             {
-                Player.Instance.Hurt(enemyContext.GetDamage());
+                // Player.Instance.Hurt(enemyContext.GetDamage());
                 _currentHitInterval = Random.Range(enemyContext.HitIntervalMin, enemyContext.HitIntervalMax);
                 _timeToHit = _currentHitInterval;
                 return;
             }
             _timeToHit -= Time.deltaTime;
         }
+        
     }
 }

@@ -5,22 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterDieState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Data/QuestIconsSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Data/QuestIconsSO.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/OldManNPC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/OldManNPC.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Watch.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Watch.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Animations/Monster1Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Animations/Monster1Controller.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Monster.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/AchievementManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/AchievementManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/WristMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/UI/WristMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FastSky/Materials/RealisticSky.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FastSky/Materials/RealisticSky.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/OldTrainScene/OldTrainFullscreenShader.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/OldTrainScene/OldTrainFullscreenShader.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterAttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterAttackState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterRageState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterRageState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterDieState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Monster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Monster.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +121,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../Builds/cursedTrainBuildTry\Cursed train.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Builds/Cursed Train Try\Cursed train (demo).exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\PROGANIE\Builds\cursedTrainBuildTry" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -241,7 +239,8 @@
       <workItem from="1748777112998" duration="5992000" />
       <workItem from="1748783274848" duration="79000" />
       <workItem from="1748783581134" duration="2884000" />
-      <workItem from="1748792170747" duration="5312000" />
+      <workItem from="1748792170747" duration="8623000" />
+      <workItem from="1748808599154" duration="3032000" />
     </task>
     <servers />
   </component>

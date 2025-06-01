@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using Core.Scripts.EnemyStateMachine;
+using Core.Scripts.EnemyStateMachine.MonsterStateMachine;
 using UnityEngine.AI;
 
 namespace Core.Scripts
@@ -26,6 +27,7 @@ namespace Core.Scripts
         [SerializeField] public GameObject Spine;
         [SerializeField] public GameObject Neck;
         [SerializeField] public GameObject Head;
+        [SerializeField] public DrakeHand RightArm;
 
         public static event EventHandler OnMonsterKilled;
         
@@ -62,18 +64,22 @@ namespace Core.Scripts
 
         private void LateUpdate()
         {
-            Vector3 SpineLookAt = Camera.main.transform.position;
-            Vector3 MonsterLookAt = SpineLookAt;
-            Vector3 HeadLookAt = SpineLookAt;
-            MonsterLookAt.y = transform.position.y;
-            transform.LookAt(MonsterLookAt);
-            SpineLookAt.y -= 1.9f;
-            HeadLookAt.y -= .7f;
-            Head.transform.LookAt(HeadLookAt);
-            SpineLookAt.Normalize();
-            SpineLookAt.x = Spine.transform.forward.x;
-            SpineLookAt.z = Spine.transform.forward.z;
-            Spine.transform.forward = SpineLookAt;
+            if (_isDead) return;
+            if ( RightArm.Timer > 0.2f || CurrentState is not MonsterAttackState)
+            {
+                Vector3 SpineLookAt = Camera.main.transform.position;
+                Vector3 MonsterLookAt = SpineLookAt;
+                Vector3 HeadLookAt = SpineLookAt;
+                MonsterLookAt.y = transform.position.y;
+                transform.LookAt(MonsterLookAt);
+                SpineLookAt.y -= 1.9f;
+                HeadLookAt.y -= .7f;
+                Head.transform.LookAt(HeadLookAt);
+                SpineLookAt.Normalize();
+                SpineLookAt.x = Spine.transform.forward.x;
+                SpineLookAt.z = Spine.transform.forward.z;
+                Spine.transform.forward = SpineLookAt;
+            }
         }
         
         private void UpdateState()
@@ -97,12 +103,14 @@ namespace Core.Scripts
             _agent.speed = speed;
         }
 
-        public void Die()
+        public virtual void Die(bool destroyObject = true)
         {
             if (_isDead) return;
             
             _isDead = true;
             OnMonsterKilled?.Invoke(this, EventArgs.Empty);
+            
+            if (!destroyObject) return;
             Destroy(gameObject);
         }
 
