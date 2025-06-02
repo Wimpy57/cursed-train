@@ -6532,7 +6532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1307440948817043484, guid: e5be4b380fb77bf47895b32a8026114a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.83
+      value: 25.62
       objectReference: {fileID: 0}
     - target: {fileID: 1307440948817043484, guid: e5be4b380fb77bf47895b32a8026114a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6568,7 +6568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3396337836688298205, guid: e5be4b380fb77bf47895b32a8026114a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.63
+      value: -17.03
       objectReference: {fileID: 0}
     - target: {fileID: 3396337836688298205, guid: e5be4b380fb77bf47895b32a8026114a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8609,7 +8609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4848045929337053677, guid: e5be4b380fb77bf47895b32a8026114a, type: 3}
       propertyPath: m_Name
-      value: NPCEnemySpawnTrigger (1)
+      value: OldmanSpawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19408,7 +19408,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1307440948817043484, guid: e5be4b380fb77bf47895b32a8026114a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.3
+      value: 19.65
       objectReference: {fileID: 0}
     - target: {fileID: 1307440948817043484, guid: e5be4b380fb77bf47895b32a8026114a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -19444,7 +19444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3396337836688298205, guid: e5be4b380fb77bf47895b32a8026114a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.049999
+      value: -19.93
       objectReference: {fileID: 0}
     - target: {fileID: 3396337836688298205, guid: e5be4b380fb77bf47895b32a8026114a, type: 3}
       propertyPath: m_LocalRotation.w
