@@ -19,6 +19,7 @@ namespace Core.Scripts
 
         public IEnumerator Fade(bool fadeOut, float fadeDelay = 0.07f)
         {
+            Debug.Log("fadeout: " + fadeOut + " fadedelay: " + fadeDelay + " IsFadeAvailable: " + IsFadeAvailable(fadeOut));
             if (!IsFadeAvailable(fadeOut)) yield break;
             
             _isFadingOut = fadeOut;

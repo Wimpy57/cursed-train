@@ -51,13 +51,13 @@ MonoBehaviour:
   Hp: 10
   Damage: 15
   DistanceToAggress: 5
-  DistanceToAttack: 2
+  DistanceToAttack: 3
   ChaseStateSpeed: 1
   HpToRage: 1
   HitIntervalMin: 1
   HitIntervalMax: 2
   RageHitInterval: 1
-  RageLifetime: 1
+  TimeToTakeHitCooldown: 0.5
   EnemyAnimator: {fileID: 1535384135951269795}
   Spine: {fileID: 3100885959601036307}
   Neck: {fileID: 672894689963197904}

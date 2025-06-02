@@ -21,7 +21,7 @@ namespace Core.Scripts
         [SerializeField] public float HitIntervalMin;
         [SerializeField] public float HitIntervalMax;
         [SerializeField] public float RageHitInterval;
-        [SerializeField] public float RageLifetime;
+        [SerializeField] public float TimeToTakeHitCooldown;
 
         [Header("Enemy animation")] 
         [SerializeField] public Animator EnemyAnimator;
@@ -39,21 +39,19 @@ namespace Core.Scripts
         private bool _isDead;
         private bool _isTakingDamage;
         
-        protected EnemyState CurrentState;
+        public EnemyState CurrentState;
         
         protected void OnCollisionEnter(Collision other)
         {
-            if (other.gameObject.layer != LayerMask.NameToLayer("FarInteractable") || _isTakingDamage || _isDead) return;
+            if (!other.gameObject.CompareTag("Extinguisher") || _isTakingDamage || _isDead) return;
+            StartCoroutine(TakeHitCooldown());
             _hitAudio.Play();
             Hp--;
-            
             
             if (Hp <= 0)
             {
                 Die();
             }
-
-
         }
 
 
@@ -71,6 +69,13 @@ namespace Core.Scripts
         protected void Update()
         {
             UpdateState();
+        }
+
+        private IEnumerator TakeHitCooldown()
+        {
+            _isTakingDamage = true;
+            yield return new WaitForSeconds(TimeToTakeHitCooldown);
+            _isTakingDamage = false;
         }
 
         private void LateUpdate()

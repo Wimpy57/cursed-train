@@ -11,9 +11,10 @@ namespace Core.Scripts
         
         public static Timer Instance { get; private set; }
 
-        private float _time = 276;
-        private bool _isGoing = true;
+        private float _time;
+        private bool _isGoing;
 
+        private float _previousTime = 0f;
         private void Awake()
         {
             if (Instance is null)
@@ -37,6 +38,11 @@ namespace Core.Scripts
         {
             if (!_isGoing) return;
             _time += Time.deltaTime;
+
+            if (_time >= _previousTime + 1f)
+            {
+                _previousTime = _time;
+            }
         }
         
         public float GetTime() => _time;

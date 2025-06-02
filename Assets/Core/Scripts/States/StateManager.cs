@@ -20,6 +20,7 @@ namespace Core.Scripts.States
         public Quaternion PreviousPlayerRotation { get; private set; }
 
         private bool _wasInitializedOnStart;
+        private bool _isSubscribed;
         
         
         public State CurrentState
@@ -34,10 +35,7 @@ namespace Core.Scripts.States
 
         private void Start()
         {
-            Enemy.OnMonsterKilled += Enemy_OnMonsterKilled;
-            Player.OnInstanceCreated += Player_OnInstanceCreated;
-            SnapSocket.OnObjectUnsnapped += SnapSocket_OnObjectUnsnapped;
-            SnappableObject.OnObjectSnapped += SnappableObject_OnObjectSnapped;
+            Subscribe();
             _wasInitializedOnStart = true;
         }
 
@@ -45,13 +43,20 @@ namespace Core.Scripts.States
         {
             if (!_wasInitializedOnStart)
             {
-                Enemy.OnMonsterKilled += Enemy_OnMonsterKilled;
-                Player.OnInstanceCreated += Player_OnInstanceCreated;
-                SnapSocket.OnObjectUnsnapped += SnapSocket_OnObjectUnsnapped;
-                SnappableObject.OnObjectSnapped += SnappableObject_OnObjectSnapped;
+                Subscribe();
             }
         }
 
+        private void Subscribe()
+        {
+            if (_isSubscribed) return;
+            Enemy.OnMonsterKilled += Enemy_OnMonsterKilled;
+            Player.OnInstanceCreated += Player_OnInstanceCreated;
+            SnapSocket.OnObjectUnsnapped += SnapSocket_OnObjectUnsnapped;
+            SnappableObject.OnObjectSnapped += SnappableObject_OnObjectSnapped;
+            _isSubscribed = true;
+        }
+        
         private void Player_OnInstanceCreated(object sender, EventArgs e)
         {
             Player.Instance.OnHpChanged += Player_OnHpChanged;
@@ -131,6 +136,7 @@ namespace Core.Scripts.States
             Player.Instance.OnKeyDataStored -= Player_OnKeyDataStored;
             SnapSocket.OnObjectUnsnapped -= SnapSocket_OnObjectUnsnapped;
             SnappableObject.OnObjectSnapped -= SnappableObject_OnObjectSnapped;
+            _isSubscribed = false;
         }
     }
 }

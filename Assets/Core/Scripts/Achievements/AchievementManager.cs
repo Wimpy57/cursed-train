@@ -17,16 +17,12 @@ namespace Core.Scripts.Achievements
             {
                 Instance = this;
                 
-                // // todo remove this method
-                // // now it is used just to test achievement getting
-                // foreach (Achievement achievement in Enum.GetValues(typeof(Achievement)))
-                // {
-                //     // if (PlayerPrefs.HasKey(((int)achievement).ToString()))
-                //     // {
-                //     //     Debug.Log($"{achievement}: {PlayerPrefs.GetInt(((int)achievement).ToString())}");
-                //     // }
-                //     PlayerPrefs.SetInt(((int)achievement).ToString(), 0);
-                // }
+                // todo remove this method
+                // now it is used just to test achievement getting
+                foreach (Achievement achievement in Enum.GetValues(typeof(Achievement)))
+                {
+                    PlayerPrefs.SetInt(((int)achievement).ToString(), 0);
+                }
             }
             else
             {

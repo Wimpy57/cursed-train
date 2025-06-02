@@ -16,7 +16,11 @@ namespace Core.Scripts.EnemyStateMachine.MonsterStateMachine
                 enemyContext.ChangeState(new MonsterChaseState());
             }
         }
-        
-        
+
+        public override void Enter(Enemy enemyContext)
+        {
+            base.Enter(enemyContext);
+            enemyContext.RightArm.SetInitialTimerValue();
+        }
     }
 }

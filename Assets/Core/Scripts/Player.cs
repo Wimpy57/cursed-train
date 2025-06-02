@@ -15,6 +15,7 @@ namespace Core.Scripts
         [SerializeField] public int MaxHp;
         [SerializeField] private bool _isKeyDataStored;
         [SerializeField] private bool _setPreviousPosition;
+        [SerializeField] private float _intervalToHeal;
         [Header("Spawn points")]
         [SerializeField] private Transform _conductorCoupeSpawnPosition;
         [SerializeField] private Transform _toiletSpawnPosition;
@@ -51,6 +52,11 @@ namespace Core.Scripts
                 
                 int hpDifference = value - _hp;
                 _hp = value;
+                if (!WasHpSetOnSceneLoad)
+                {
+                    WasHpSetOnSceneLoad = true;
+                    return;
+                }
                 OnHpChanged?.Invoke(this, new OnHpChangedEventArgs
                 {
                     HpDifference = hpDifference
@@ -59,6 +65,8 @@ namespace Core.Scripts
         }
 
         private int _hp;
+        private float _healTimer;
+        public bool WasHpSetOnSceneLoad;
         
         private void Awake()
         {
@@ -71,6 +79,7 @@ namespace Core.Scripts
             _isKeyDataStored = StateManager.Instance.WasKeyDataStored;
             Hp = StateManager.Instance.PlayerHpOnPreviousScene == 0 ? 
                 MaxHp : StateManager.Instance.PlayerHpOnPreviousScene;
+            
             if (_setPreviousPosition)
             {
                 transform.position = StateManager.Instance.PreviousPlayerPosition;
@@ -97,6 +106,16 @@ namespace Core.Scripts
             }
         }
 
+        private void Update()
+        {
+            if (Hp == MaxHp) return;
+            if (_healTimer >= _intervalToHeal)
+            {
+                Heal(1);
+                _healTimer = 0;
+            }
+        }
+        
         public IEnumerator Fade(float fadeDuration)
         {
             yield return StartCoroutine(_fadeEffect.Fade(true, fadeDuration));

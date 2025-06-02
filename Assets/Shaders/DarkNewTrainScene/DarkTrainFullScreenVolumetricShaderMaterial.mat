@@ -47,11 +47,11 @@ Material:
     m_Floats:
     - _DensityMulti: 1
     - _DensityMultiplyer: 10
-    - _DensityThreshold: 0.821
-    - _LightScattering: 1
+    - _DensityThreshold: 0.724
+    - _LightScattering: 0.985
     - _MaxDistance: 19.8
     - _NoiseOffset: 0.5
-    - _NoiseTiling: 11.09
+    - _NoiseTiling: 9.72
     - _StepSize: 0.5
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0, a: 0.7294118}

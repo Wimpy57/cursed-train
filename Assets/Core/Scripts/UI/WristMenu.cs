@@ -50,13 +50,8 @@ namespace Core.Scripts.UI
         {
             _screenLight.intensity = 0f;
             _screenLight.color = _criticalScreenMaterialColor;
-            
-            _hpText.text = _defaultText + Player.Instance.MaxHp;
-            if (Player.Instance == null)
-            {
-                _hpText.text = _defaultText;
-            }
-            
+
+            StartCoroutine(SetHpValueOnSceneLoad());
             _heartBeatAnimator.speed = .15f;
             SetQuestIcon();
             //
@@ -81,6 +76,15 @@ namespace Core.Scripts.UI
             Player.Instance.OnHpChanged += Player_OnHpChanged;
             StateManager.Instance.OnStateChanged += StateManager_OnStateChanged;
             
+        }
+        
+        private IEnumerator SetHpValueOnSceneLoad()
+        {
+            while (!Player.Instance.WasHpSetOnSceneLoad)
+            {
+                yield return new WaitForEndOfFrame();
+            }
+            _hpText.text = _defaultText + Player.Instance.Hp;
         }
 
         private void StateManager_OnStateChanged(object sender, EventArgs e)

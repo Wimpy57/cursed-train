@@ -6742,7 +6742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 424539884}
   - component: {fileID: 424539885}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8377,7 +8377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 783752544}
   - component: {fileID: 783752545}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16672,7 +16672,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1728121516}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HandlePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18089,12 +18089,14 @@ MonoBehaviour:
   MaxHp: 100
   _isKeyDataStored: 1
   _setPreviousPosition: 0
+  _intervalToHeal: 5
   _conductorCoupeSpawnPosition: {fileID: 1869389371}
   _toiletSpawnPosition: {fileID: 1536175360}
   _wristWatch: {fileID: 1424346426115413590}
   _fadeEffect: {fileID: 2110126391}
   _snapSocket: {fileID: 4778602796158064330}
   _savePositionOnAnyState: 0
+  WasHpSetOnSceneLoad: 0
 --- !u!114 &2001203081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18733,7 +18735,7 @@ GameObject:
   - component: {fileID: 4058203503157091345}
   - component: {fileID: 1010275161469920076}
   - component: {fileID: 5906338559451973104}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19763,7 +19765,7 @@ GameObject:
   - component: {fileID: 7902398157574703575}
   - component: {fileID: 941801452372728417}
   - component: {fileID: 4148227712084220288}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Fire Extinguisher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22018,7 +22020,7 @@ GameObject:
   - component: {fileID: 4195542585343290961}
   - component: {fileID: 8076892256554045310}
   - component: {fileID: 3948148538223515992}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Cone
   m_TagString: Untagged
   m_Icon: {fileID: 0}

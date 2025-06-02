@@ -92,7 +92,7 @@ Shader "Unlit/DarkTrainVolumetricShader"
                     {
                         //fogCol.rgb +=  _LightContribution.rgb * mainLight.color.rgb *henyey_greenstein(dot(rayDir, mainLight.direction), _LightScattering) * density * _StepSize * mainLight.shadowAttenuation;
                         //fogCol.rgb +=  _LightContribution.rgb   * _StepSize * mainLight.color.rgb*henyey_greenstein(dot(rayDir, mainLight.direction), _LightScattering) * mainLight.shadowAttenuation;
-                        fogCol.rgb +=  _LightContribution.rgb * density * _StepSize;
+                        fogCol.rgb +=  _LightContribution.rgb   * _StepSize * density ;
                         transmittance *= exp(-density * _StepSize);
                     }
                     distTravelled += _StepSize;
