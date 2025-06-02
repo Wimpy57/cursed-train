@@ -5,6 +5,7 @@ using UnityEngine;
 public class DrakeHand : MonoBehaviour
 {
     [SerializeField] private float CooldownTimer;
+    [SerializeField] private Monster Drake;
 
     public float Timer { get; private set; }
     
@@ -14,7 +15,7 @@ public class DrakeHand : MonoBehaviour
         {
             return;
         }
-        Player.Instance.Hurt(20);
+        Player.Instance.Hurt(Drake.GetDamage());
         Timer = CooldownTimer;
 
     }

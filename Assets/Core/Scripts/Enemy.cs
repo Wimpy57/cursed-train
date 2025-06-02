@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Core.Scripts.EnemyStateMachine;
 using Core.Scripts.EnemyStateMachine.MonsterStateMachine;
@@ -29,23 +31,32 @@ namespace Core.Scripts
         [SerializeField] public GameObject Head;
         [SerializeField] public DrakeHand RightArm;
 
+        [SerializeField] public AudioSource _hitAudio;
+
         public static event EventHandler OnMonsterKilled;
         
         private NavMeshAgent _agent;
         private bool _isDead;
+        private bool _isTakingDamage;
         
         protected EnemyState CurrentState;
         
         protected void OnCollisionEnter(Collision other)
         {
-            if (!other.gameObject.CompareTag("Extinguisher")) return;
-            
+            if (other.gameObject.layer != LayerMask.NameToLayer("FarInteractable") || _isTakingDamage || _isDead) return;
+            _hitAudio.Play();
             Hp--;
+            
+            
             if (Hp <= 0)
             {
                 Die();
             }
+
+
         }
+
+
 
         protected virtual void Awake()
         {

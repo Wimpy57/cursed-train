@@ -16130,6 +16130,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
       propertyPath: _speechData.Array.data[0].Clip
       value: 
       objectReference: {fileID: 8300000, guid: 79c04339b59c2ef4abe3fc815b9631ec, type: 3}
@@ -16210,13 +16214,94 @@ PrefabInstance:
         \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u043E \u043F\u043E\u043C\u043E\u0436\u0435\u0442
         \u0442\u0435\u0431\u0435 \u0432 \u0442\u0432\u043E\u0435\u0439 \u0437\u0430\u0434\u0430\u0447\u0435.."
       objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[0].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 79c04339b59c2ef4abe3fc815b9631ec, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[1].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 252310503a165834b84a9707649fa514, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[2].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 84d0f7f750ecbca419ee2833a495e542, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[3].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 137775de8f179914cbee8adca32ebc65, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[4].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1d8dfffa757c30141af2099c2a3a7f70, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[5].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b7aec27cd2a378b4cb24ec8e9fc096a0, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[6].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4b122d7812ab7734abce409825e26b18, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[7].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c8fb5029013d8b644b5b2cf7e78cc8d5, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[0].Phrase
+      value: "\u0414\u0443\u043C\u0430\u044E, \u0442\u044B \u0443\u0436\u0435 \u043F\u043E\u043D\u044F\u043B,
+        \u0432 \u043A\u0430\u043A\u043E\u043C \u043C\u0435\u0441\u0442\u0435 \u0442\u044B
+        \u043E\u043A\u0430\u0437\u0430\u043B\u0441\u044F."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[1].Phrase
+      value: "\u0412\u0435\u0440\u043D\u0435\u0435, \u0432 \u043A\u0430\u043A\u043E\u043C
+        \u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u0442\u044B \u043E\u043A\u0430\u0437\u0430\u043B\u0441\u044F.. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[2].Phrase
+      value: "\u0414\u043E\u0431\u0440\u043E \u043F\u043E\u0436\u0430\u043B\u043E\u0432\u0430\u0442\u044C
+        \u0432 \u043F\u0440\u043E\u0448\u043B\u043E\u0435."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[3].Phrase
+      value: "\u0422\u0435\u043F\u0435\u0440\u044C \u0442\u044B \u0437\u043D\u0430\u0435\u0448\u044C,
+        \u0447\u0442\u043E \u0441\u0442\u043E\u043F-\u043A\u0440\u0430\u043D \u0432
+        \u044D\u0442\u043E\u043C \u043F\u043E\u0435\u0437\u0434\u0435 \u0441\u043B\u0443\u0436\u0438\u0442
+        \u0441\u0432\u043E\u0435\u043E\u0431\u0440\u0430\u0437\u043D\u044B\u043C
+        \u043F\u0440\u043E\u0432\u043E\u0434\u043D\u0438\u043A\u043E\u043C \u043C\u0435\u0436\u0434\u0443
+        \u0432\u0440\u0435\u043C\u0435\u043D\u0430\u043C\u0438."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[4].Phrase
+      value: "\u041A\u0441\u0442\u0430\u0442\u0438, \u0442\u043E\u0442 \u043F\u0440\u0435\u0434\u043C\u0435\u0442,
+        \u0447\u0442\u043E \u0442\u044B \u0432\u0438\u0434\u0438\u0448\u044C \u043D\u0430
+        \u0441\u0442\u043E\u043B\u0435.. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[5].Phrase
+      value: "\u041D\u0435 \u043F\u043E\u0445\u043E\u0436\u0435 \u043D\u0430 \u0438\u0437\u043E\u0431\u0440\u0435\u0442\u0435\u043D\u0438\u0435
+        \u0441\u0435\u043C\u0438\u0434\u0435\u0441\u044F\u0442\u0438\u043B\u0435\u0442\u043D\u0435\u0439
+        \u0434\u0430\u0432\u043D\u043E\u0441\u0442\u0438.. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[6].Phrase
+      value: "\u0421\u043A\u0430\u0436\u0443 \u043F\u043E \u0441\u0435\u043A\u0440\u0435\u0442\u0443,
+        \u0435\u0433\u043E \u0437\u0434\u0435\u0441\u044C \u0437\u0430\u0431\u044B\u043B
+        \u0442\u0432\u043E\u0439 \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u0438\u043A."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[7].Phrase
+      value: "\u0412\u043E\u0437\u043C\u043E\u0436\u043D\u043E, \u044D\u0442\u043E
+        \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u043E \u043F\u043E\u043C\u043E\u0436\u0435\u0442
+        \u0442\u0435\u0431\u0435 \u0432 \u0442\u0432\u043E\u0435\u0439 \u0437\u0430\u0434\u0430\u0447\u0435.. "
+      objectReference: {fileID: 0}
     - target: {fileID: 7656256096730737355, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.479
       objectReference: {fileID: 0}
     - target: {fileID: 7656256096730737355, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.414
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7656256096730737355, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17307,6 +17392,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.size
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
       propertyPath: _speechData.Array.data[0].Clip
       value: 
       objectReference: {fileID: 8300000, guid: 807d365f7c2a0744794e919c9f3cdd69, type: 3}
@@ -17459,6 +17548,46 @@ PrefabInstance:
         \u043F\u0440\u0438\u0432\u0438\u0434\u0435\u043D\u0438\u0435\u043C."
       objectReference: {fileID: 0}
     - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[0].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 807d365f7c2a0744794e919c9f3cdd69, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[1].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0aa206f694b94a1418639f2be05d9e83, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[2].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 825a670660bc4a044b3c5729c6515eef, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[3].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7dacfe862820bdc4aa1ad4ed71fd6634, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[4].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 33160f5577540be468e8d22da72cc9a7, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[5].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 27b1d9404baa40c49b2f34c10fcc7e83, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[6].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3854a55ceda862f448c8ff5678f84b38, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[7].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 05c22d19d3b77204f96bd1a18ea02f93, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[8].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 694ff0c969a2d1b47be5a68c90063289, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[9].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 78e28dc96484a794ebd1eb846d735554, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
       propertyPath: _speechData.Array.data[10].Phrase
       value: "\u0412\u0441\u0435 \u0442\u0435 \u043C\u043E\u043D\u0441\u0442\u0440\u044B,
         \u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u0442\u044B \u043F\u043E\u0432\u0441\u0442\u0440\u0435\u0447\u0430\u043B
@@ -17559,6 +17688,181 @@ PrefabInstance:
         \u043D\u0435 \u043F\u043E\u0433\u0438\u0431 \u0438 \u0431\u043E\u043B\u044C\u0448\u0435
         \u043D\u0435 \u043D\u0443\u0436\u0434\u0430\u043B\u0441\u044F \u043D\u0438
         \u0432 \u0447\u044C\u0435\u0439 \u043E\u043F\u0435\u043A\u0435."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[10].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1db21cdcba3e0b24aa241aa3c127a90a, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[11].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fc24f3e68e6ce65479cf00e3b85e8498, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[12].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 73c5ecde736367246aa33fc57ecf77f5, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[13].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d2a3b1e8d9ae7234382936f029c48592, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[14].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5f59d0b467be3dd47916232dbc04cf59, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[15].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d0858c5a29d0e8e41b0e0a66a451d44c, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[16].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 02a19fad7ed38c245809bbb46fe2f2e4, type: 3}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[0].Phrase
+      value: "\u0410 \u0432\u043E\u0442 \u0438 \u0442\u044B, \u0434\u0440\u0443\u0433
+        \u043C\u043E\u0439."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[1].Phrase
+      value: "\u041F\u0440\u0438\u0437\u043D\u0430\u044E\u0441\u044C \u0447\u0435\u0441\u0442\u043D\u043E,
+        \u044F \u043E\u0447\u0435\u043D\u044C \u0440\u0430\u0434 \u0432\u0438\u0434\u0435\u0442\u044C
+        \u0442\u0435\u0431\u044F \u0437\u0434\u0435\u0441\u044C. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[2].Phrase
+      value: "\u041D\u0430\u0441\u0442\u0430\u043B \u043C\u043E\u043C\u0435\u043D\u0442,
+        \u043A\u043E\u0433\u0434\u0430 \u044F \u0440\u0430\u0441\u0441\u043A\u0430\u0436\u0443
+        \u0442\u0435\u0431\u0435 \u043E \u0441\u043E\u0431\u044B\u0442\u0438\u044F\u0445,
+        \u043F\u0440\u043E\u0438\u0437\u043E\u0448\u0435\u0434\u0448\u0438\u0445
+        \u0437\u0434\u0435\u0441\u044C, \u0432 \u044D\u0442\u043E\u043C \u0441\u0430\u043C\u043E\u043C
+        \u043A\u0443\u043F\u0435.. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[3].Phrase
+      value: "\u0417\u0430 70 \u043B\u0435\u0442 \u0434\u043E \u0442\u043E\u0433\u043E,
+        \u043A\u0430\u043A \u0442\u044B \u043E\u043A\u0430\u0437\u0430\u043B\u0441\u044F
+        \u0432 \u044D\u0442\u043E\u043C \u043F\u0440\u043E\u043A\u043B\u044F\u0442\u043E\u043C
+        \u043F\u043E\u0435\u0437\u0434\u0435, \u0437\u0434\u0435\u0441\u044C \u043F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u0430
+        \u0442\u0440\u0430\u0433\u0435\u0434\u0438\u044F."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[4].Phrase
+      value: "\u041C\u043E\u043B\u043E\u0434\u0430\u044F \u043F\u0430\u0440\u0430
+        \u0440\u043E\u0434\u0438\u0442\u0435\u043B\u0435\u0439 \u043E\u0441\u0442\u0430\u0432\u0438\u043B\u0430
+        \u0437\u0434\u0435\u0441\u044C \u043C\u043B\u0430\u0434\u0435\u043D\u0446\u0430.
+        \u041A\u0441\u0442\u0430\u0442\u0438, \u043F\u043E\u0437\u043D\u0430\u043A\u043E\u043C\u044C\u0441\u044F,
+        \u0432\u043E\u0442 \u0436\u0435 \u043E\u043D. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[5].Phrase
+      value: "\u0420\u0435\u0431\u0451\u043D\u043E\u043A \u0431\u044B\u043B \u043D\u0430\u043F\u0443\u0433\u0430\u043D
+        \u0438 \u043A\u0440\u0438\u0447\u0430\u043B \u0438\u0437\u043E \u0432\u0441\u0435\u0445
+        \u0441\u0432\u043E\u0438\u0445 \u0441\u0438\u043B. \u041E\u0434\u043D\u0430\u043A\u043E,
+        \u043F\u043E\u043C\u043E\u0447\u044C \u0435\u043C\u0443 \u043D\u0438\u043A\u0442\u043E
+        \u0442\u0430\u043A \u0438 \u043D\u0435 \u0441\u043C\u043E\u0433.. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[6].Phrase
+      value: "\u0421\u0442\u0440\u0430\u0445 \u043E\u0432\u043B\u0430\u0434\u0435\u043B
+        \u0438\u043C. \u0418 \u044D\u0442\u043E\u0442 \u0441\u0442\u0440\u0430\u0445
+        \u0431\u044B\u043B \u0441\u0438\u043B\u044C\u043D\u0435\u0435, \u0447\u0435\u043C
+        \u0442\u044B \u043C\u043E\u0436\u0435\u0448\u044C \u0441\u0435\u0431\u0435
+        \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u044C.. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[7].Phrase
+      value: "\u041E\u043D \u0441\u044B\u0433\u0440\u0430\u043B \u0441 \u044D\u0442\u0438\u043C
+        \u043C\u043B\u0430\u0434\u0435\u043D\u0446\u0435\u043C \u0437\u043B\u0443\u044E
+        \u0448\u0443\u0442\u043A\u0443. \u0420\u0435\u0431\u0451\u043D\u043E\u043A
+        \u043D\u0435 \u043F\u043E\u0433\u0438\u0431 \u0438 \u0431\u043E\u043B\u044C\u0448\u0435
+        \u043D\u0435 \u043D\u0443\u0436\u0434\u0430\u043B\u0441\u044F \u043D\u0438
+        \u0432 \u0447\u044C\u0435\u0439 \u043E\u043F\u0435\u043A\u0435. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[8].Phrase
+      value: "\u041E\u0434\u043D\u0430\u043A\u043E \u043D\u0435\u043B\u044C\u0437\u044F
+        \u0431\u044B\u043B\u043E \u0441\u043A\u0430\u0437\u0430\u0442\u044C, \u0447\u0442\u043E
+        \u043E\u043D \u043E\u0441\u0442\u0430\u043B\u0441\u044F \u0432 \u0436\u0438\u0432\u044B\u0445.. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[9].Phrase
+      value: "\u0420\u0435\u0431\u0451\u043D\u043E\u043A \u0441\u0442\u0430\u043B
+        \u043F\u0440\u0438\u0437\u0440\u0430\u043A\u043E\u043C \u043F\u043E\u0435\u0437\u0434\u0430.
+        \u041E\u043D \u0440\u043E\u0441, \u0443\u0447\u0438\u043B\u0441\u044F \u0445\u043E\u0434\u0438\u0442\u044C
+        \u0438 \u0440\u0430\u0437\u0433\u043E\u0432\u0430\u0440\u0438\u0432\u0430\u0442\u044C,
+        \u0431\u0443\u0434\u0443\u0447\u0438 \u043D\u0435\u043E\u0441\u044F\u0437\u0430\u0435\u043C\u044B\u043C
+        \u043F\u0440\u0438\u0432\u0438\u0434\u0435\u043D\u0438\u0435\u043C."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[10].Phrase
+      value: "\u0412\u0441\u0435 \u0442\u0435 \u043C\u043E\u043D\u0441\u0442\u0440\u044B,
+        \u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u0442\u044B \u043F\u043E\u0432\u0441\u0442\u0440\u0435\u0447\u0430\u043B
+        \u043D\u0430 \u0441\u0432\u043E\u0451\u043C \u043F\u0443\u0442\u0438, \u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F
+        \u043F\u043E\u0440\u043E\u0436\u0434\u0435\u043D\u0438\u044F\u043C\u0438
+        \u0442\u043E\u0433\u043E \u0441\u0430\u043C\u043E\u0433\u043E \u0441\u0442\u0440\u0430\u0445\u0430,
+        \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043E\u0432\u043B\u0430\u0434\u0435\u043B
+        \u043C\u043B\u0430\u0434\u0435\u043D\u0446\u0435\u043C \u0432 \u0442\u043E\u0442
+        \u0440\u043E\u043A\u043E\u0432\u043E\u0439 \u0434\u0435\u043D\u044C.. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[11].Phrase
+      value: "\u041C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C, \u0442\u044B
+        \u0443\u0436\u0435 \u0434\u043E\u0433\u0430\u0434\u0430\u043B\u0441\u044F,
+        \u043A\u0442\u043E \u0441\u0435\u0439\u0447\u0430\u0441 \u0441\u0438\u0434\u0438\u0442
+        \u043F\u0435\u0440\u0435\u0434 \u0442\u043E\u0431\u043E\u0439?.."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[12].Phrase
+      value: "\u0418 \u044D\u0442\u043E \u044F - \u043F\u0440\u0438\u0437\u0440\u0430\u043A
+        \u043F\u0440\u043E\u043A\u043B\u044F\u0442\u043E\u0433\u043E \u043F\u043E\u0435\u0437\u0434\u0430. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[13].Phrase
+      value: "\u041E\u0434\u043D\u0430\u043A\u043E, \u0434\u0440\u0443\u0433 \u043C\u043E\u0439,
+        \u043D\u0435 \u0432\u0441\u0451 \u0435\u0449\u0451 \u043F\u043E\u0442\u0435\u0440\u044F\u043D\u043E.. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[14].Phrase
+      value: "\u042F \u0437\u043D\u0430\u044E, \u043A\u0430\u043A \u0442\u044B \u043C\u043E\u0436\u0435\u0448\u044C
+        \u0441\u043F\u0430\u0441\u0442\u0438 \u044D\u0442\u043E\u0433\u043E \u043E\u0431\u0440\u0435\u0447\u0451\u043D\u043D\u043E\u0433\u043E
+        \u043C\u043B\u0430\u0434\u0435\u043D\u0446\u0430."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[15].Phrase
+      value: "\u0417\u0430\u0431\u0435\u0440\u0438 \u0435\u0433\u043E \u0441 \u0441\u043E\u0431\u043E\u0439,
+        \u0432 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0435. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[16].Phrase
+      value: "\u0414\u0430\u0439 \u0435\u043C\u0443 \u0442\u043E, \u0447\u0435\u0433\u043E
+        \u043E\u043D \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u043D\u0435 \u0438\u043C\u0435\u043B:
+        \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u043E\u0435 \u0434\u0435\u0442\u0441\u0442\u0432\u043E
+        \u0432 \u043A\u0440\u0443\u0433\u0443 \u043B\u044E\u0431\u044F\u0449\u0438\u0445
+        \u0435\u0433\u043E \u043B\u044E\u0434\u0435\u0439.. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[17].Phrase
+      value: "\u0414\u0430\u0439 \u0435\u043C\u0443 \u0442\u043E, \u0447\u0435\u0433\u043E
+        \u043E\u043D \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u043D\u0435 \u0438\u043C\u0435\u043B:
+        \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u043E\u0435 \u0434\u0435\u0442\u0441\u0442\u0432\u043E
+        \u0432 \u043A\u0440\u0443\u0433\u0443 \u043B\u044E\u0431\u044F\u0449\u0438\u0445
+        \u0435\u0433\u043E \u043B\u044E\u0434\u0435\u0439.. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[18].Phrase
+      value: "\u0414\u0430\u0439 \u0435\u043C\u0443 \u0442\u043E, \u0447\u0435\u0433\u043E
+        \u043E\u043D \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u043D\u0435 \u0438\u043C\u0435\u043B:
+        \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u043E\u0435 \u0434\u0435\u0442\u0441\u0442\u0432\u043E
+        \u0432 \u043A\u0440\u0443\u0433\u0443 \u043B\u044E\u0431\u044F\u0449\u0438\u0445
+        \u0435\u0433\u043E \u043B\u044E\u0434\u0435\u0439.. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
+      propertyPath: SpeechDataList.Array.data[19].Phrase
+      value: "\u0414\u0430\u0439 \u0435\u043C\u0443 \u0442\u043E, \u0447\u0435\u0433\u043E
+        \u043E\u043D \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u043D\u0435 \u0438\u043C\u0435\u043B:
+        \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u043E\u0435 \u0434\u0435\u0442\u0441\u0442\u0432\u043E
+        \u0432 \u043A\u0440\u0443\u0433\u0443 \u043B\u044E\u0431\u044F\u0449\u0438\u0445
+        \u0435\u0433\u043E \u043B\u044E\u0434\u0435\u0439.. "
       objectReference: {fileID: 0}
     - target: {fileID: 3704386040751991118, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
       propertyPath: _speechData.Array.data[0].DelayAfterPhrase
@@ -17662,7 +17966,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7656256096730737355, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.458
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7656256096730737355, guid: 6844914c531324b419c3ea20cad1c2c7, type: 3}
       propertyPath: m_LocalPosition.z

@@ -12,6 +12,7 @@ namespace Core.Scripts.NPC
         [Header("Old Man parameters")]
         [SerializeField] private bool _updateStateAfterSpeech = true;
         [SerializeField] private State _speechState;
+        [SerializeField] private Animator _animator;
 
         private bool _wasAchievementSpawned;
         
@@ -31,7 +32,9 @@ namespace Core.Scripts.NPC
 
         protected override IEnumerator Speak(SpeechData[] speechDataList)
         {
+            _animator.SetBool("IsTalking", true);
             yield return StartCoroutine(base.Speak(speechDataList));
+            _animator.SetBool("IsTalking", false);
             
             if (_updateStateAfterSpeech)
             {

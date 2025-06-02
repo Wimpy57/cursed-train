@@ -5,8 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Monster.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/OldManNPC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/OldManNPC.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/baby.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/baby.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/DrakeHand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/DrakeHand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterAttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterAttackState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/NPC/OldManNPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/NPC/OldManNPC.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Child/baby.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Child/baby.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/AnikinMike/Textures/58616efccbf44586a8d2cac5ba6eee82_R_016M_02SET_09SHOT_ROUGH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/AnikinMike/Textures/58616efccbf44586a8d2cac5ba6eee82_R_016M_02SET_09SHOT_ROUGH.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/AnikinMike/Textures/5d22bdc450ae420b8d0fdf3f865a841d_R_016M_02SET_09SHOT_AO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/AnikinMike/Textures/5d22bdc450ae420b8d0fdf3f865a841d_R_016M_02SET_09SHOT_AO.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/AnikinMike/Textures/68d32652fb2141d292b5a2c83e768405_RGB_016M_02SET_09SHOT_SPECULAR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/AnikinMike/Textures/68d32652fb2141d292b5a2c83e768405_RGB_016M_02SET_09SHOT_SPECULAR.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/AnikinMike/Textures/924ad2974818456a84ab0cce5aff561e__016M_02SET_09SHOT_NORMAl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/AnikinMike/Textures/924ad2974818456a84ab0cce5aff561e__016M_02SET_09SHOT_NORMAl.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/AnikinMike/Textures/AnikinMike.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/AnikinMike/Textures/AnikinMike.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/AnikinMike/Textures/deb4c596bd664ddba8c391e88af6df94_RGB_016M_02SET_09SHOT_DIFFUSE.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/AnikinMike/Textures/deb4c596bd664ddba8c391e88af6df94_RGB_016M_02SET_09SHOT_DIFFUSE.jpeg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/DarkNewTrainScene/DarkTrainFullScreenVolumetricShaderMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/DarkNewTrainScene/DarkTrainFullScreenVolumetricShaderMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/DarkNewTrainScene/DarkTrainVolumetricSader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/DarkNewTrainScene/DarkTrainVolumetricSader.shader" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +62,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/ScriptableObjects/QuestIconsSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/SnapSocket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/Timer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/Triggers/EmptyTrigger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/Triggers/MainMenuMusicVolumeReducer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/Triggers/NpcEnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/Triggers/UpdateStateTrigger.cs" root0="FORCE_HIGHLIGHTING" />
@@ -231,6 +257,8 @@
       <workItem from="1748792170747" duration="8623000" />
       <workItem from="1748808599154" duration="8395000" />
       <workItem from="1748820767697" duration="2543000" />
+      <workItem from="1748826041262" duration="2618000" />
+      <workItem from="1748830868577" duration="1538000" />
     </task>
     <servers />
   </component>
