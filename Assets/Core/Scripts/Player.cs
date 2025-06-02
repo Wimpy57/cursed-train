@@ -114,6 +114,7 @@ namespace Core.Scripts
                 Heal(1);
                 _healTimer = 0;
             }
+            _healTimer += Time.deltaTime;
         }
         
         public IEnumerator Fade(float fadeDuration)

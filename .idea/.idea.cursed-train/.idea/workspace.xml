@@ -5,30 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/ScreamerTrigger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Triggers/ScreamerTrigger.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/Monster.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/OldManNPC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/OldManNPC.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/DarkNewTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/OldTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/AchievementManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Achievements/AchievementManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/DrakeHand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/DrakeHand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterAttackState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/EnemyStateMachine/MonsterStateMachine/MonsterAttackState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/FadeEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/FadeEffect.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/States/StateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/States/StateManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Timer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/WristMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/UI/WristMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/Monsters/Monster1/textures/Ch25_Body.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/NPC/Monsters/Monster1/textures/Ch25_Body.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/NPC/Monsters/Monster1/textures/Ch25_body1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/NPC/Monsters/Monster1/textures/Ch25_body1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/DarkNewTrainScene/DarkTrainFullScreenVolumetricShaderMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/DarkNewTrainScene/DarkTrainFullScreenVolumetricShaderMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/DarkNewTrainScene/DarkTrainVolumetricSader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/DarkNewTrainScene/DarkTrainVolumetricSader.shader" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +113,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../Builds/Cursed Train Try\Cursed train (demo).exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Builds/Cursed train\Cursed train (demo).exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\PROGANIE\Builds\cursedTrainBuildTry" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -257,6 +237,7 @@
       <workItem from="1748826041262" duration="2618000" />
       <workItem from="1748830868577" duration="1585000" />
       <workItem from="1748844982011" duration="6852000" />
+      <workItem from="1748854845113" duration="90000" />
     </task>
     <servers />
   </component>
