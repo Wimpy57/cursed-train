@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d27e81d-91a2-49a7-ad68-340f3482f740" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/NPC.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/NPC/NPC.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/NPC/NPC.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/NPC/RandomPhraseNpc.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Core/Scripts/NPC/RandomPhraseNpc.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cursed-train/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Prefabs/OldManNPC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Prefabs/OldManNPC.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scenes/NewTrainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/OldManNPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/NPC/OldManNPC.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/OldManNPC.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/NPC/OldManNPC.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +230,7 @@
       <workItem from="1748783581134" duration="2884000" />
       <workItem from="1748792170747" duration="8623000" />
       <workItem from="1748808599154" duration="8395000" />
-      <workItem from="1748820767697" duration="1929000" />
+      <workItem from="1748820767697" duration="2543000" />
     </task>
     <servers />
   </component>
